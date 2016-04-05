@@ -1,2 +1,0 @@
-# CPS-Final
-Type Poop
