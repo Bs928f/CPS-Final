@@ -1,2 +1,3 @@
 # CPS-Final
-Type Poop
+# by Vishnu the God and Reese DeWhat
+This is pur final project. We are bad.
