@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      9741,        221]
-NotebookOptionsPosition[      9313,        202]
-NotebookOutlinePosition[      9656,        217]
-CellTagsIndexPosition[      9613,        214]
+NotebookDataLength[      9839,        223]
+NotebookOptionsPosition[      9409,        204]
+NotebookOutlinePosition[      9752,        219]
+CellTagsIndexPosition[      9709,        216]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -25,9 +25,11 @@ Cell[BoxData[{
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"hrDiagram", "=", 
-   RowBox[{"Import", "[", "\"\<hrcolour.jpg\>\"", "]"}]}], ";"}]}], "Input",
+   RowBox[{"Import", "[", "\"\<Evolution_of_a_Sun-like_star.jpg\>\"", "]"}]}],
+   ";"}]}], "Input",
  CellChangeTimes->{{3.6687208251809793`*^9, 3.6687208473706455`*^9}, {
-  3.668944854191222*^9, 3.6689448550313144`*^9}}],
+   3.668944854191222*^9, 3.6689448550313144`*^9}, 3.668961533681717*^9, {
+   3.668962048841717*^9, 3.668962051666717*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -178,7 +180,7 @@ Cell[BoxData[
 Cell[BoxData[
  DynamicBox[ToBoxes[
    $CellContext`interface[], StandardForm],
-  ImageSizeCache->{411., {223., 230.}}]], "Output",
+  ImageSizeCache->{411., {236., 243.}}]], "Output",
  GeneratedCell->False,
  CellAutoOverwrite->False,
  CellChangeTimes->{
@@ -216,13 +218,13 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 378, 9, 52, "Input"],
-Cell[939, 31, 7050, 134, 412, "Input"],
+Cell[558, 20, 474, 11, 52, "Input"],
+Cell[1035, 33, 7050, 134, 379, "Input"],
 Cell[CellGroupData[{
-Cell[8014, 169, 332, 6, 31, "Input"],
-Cell[8349, 177, 627, 12, 470, "Output"]
+Cell[8110, 171, 332, 6, 31, "Input"],
+Cell[8445, 179, 627, 12, 496, "Output"]
 }, Open  ]],
-Cell[8991, 192, 318, 8, 31, "Input"]
+Cell[9087, 194, 318, 8, 31, "Input"]
 }
 ]
 *)
