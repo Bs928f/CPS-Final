@@ -10,26 +10,24 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      9070,        205]
-NotebookOptionsPosition[      8643,        186]
-NotebookOutlinePosition[      8987,        201]
-CellTagsIndexPosition[      8944,        198]
+NotebookDataLength[      9038,        203]
+NotebookOptionsPosition[      8647,        185]
+NotebookOutlinePosition[      8991,        200]
+CellTagsIndexPosition[      8948,        197]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
-Cell[BoxData[
+Cell[BoxData[{
  RowBox[{
   RowBox[{"SetDirectory", "[", 
-   RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}]], "Input",
- CellChangeTimes->{{3.6687208251809793`*^9, 3.6687208473706455`*^9}}],
-
-Cell[BoxData[
+   RowBox[{"NotebookDirectory", "[", "]"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"hrDiagram", "=", 
-   RowBox[{"Import", "[", "\"\<hrcolour.jpg\>\"", "]"}]}], ";"}]], "Input",
- CellChangeTimes->{{3.668720856090907*^9, 3.66872086549419*^9}, {
-  3.668720910050527*^9, 3.6687209640541477`*^9}}],
+   RowBox[{"Import", "[", "\"\<hrcolour.jpg\>\"", "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.6687208251809793`*^9, 3.6687208473706455`*^9}, {
+  3.668944854191222*^9, 3.6689448550313144`*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -71,10 +69,7 @@ Cell[BoxData[
                 RowBox[{"PointSize", "\[Rule]", "Large"}], ",", 
                 RowBox[{"Point", "[", 
                  RowBox[{"{", 
-                  RowBox[{
-                   RowBox[{"2", "-", 
-                    RowBox[{"2", "k"}]}], ",", 
-                   RowBox[{"1", "+", "k"}]}], "}"}], "]"}]}], "}"}], ",", 
+                  RowBox[{"k", ",", "k"}], "}"}], "]"}]}], "}"}], ",", 
               RowBox[{"PlotRange", "\[Rule]", "1"}]}], "]"}]}], "}"}], ",", 
           "\[IndentingNewLine]", 
           RowBox[{"{", 
@@ -160,7 +155,8 @@ Cell[BoxData[
    3.668892639000414*^9, 3.6688926999500046`*^9}, {3.668892870442688*^9, 
    3.6688928764797716`*^9}, {3.668897609678501*^9, 3.668897667979924*^9}, {
    3.668897755310896*^9, 3.6688978191221724`*^9}, 3.6688978769933295`*^9, {
-   3.6688979074339385`*^9, 3.6688979185341606`*^9}}],
+   3.6688979074339385`*^9, 3.6688979185341606`*^9}, 3.66894494880772*^9, {
+   3.6689450573987613`*^9, 3.668945117179957*^9}, 3.668945229412201*^9}],
 
 Cell[CellGroupData[{
 
@@ -174,14 +170,17 @@ Cell[BoxData[
 
 Cell[BoxData[
  DynamicBox[ToBoxes[
-   $CellContext`interface[$CellContext`face], StandardForm],
+   $CellContext`interface[], StandardForm],
   ImageSizeCache->{411., {223., 230.}}]], "Output",
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
  CellChangeTimes->{
   3.668889339329594*^9, {3.6688893963327703`*^9, 3.6688894191090627`*^9}, 
    3.6688897686931257`*^9, 3.6688903047886515`*^9, {3.6688908849095697`*^9, 
    3.668890905673303*^9}, 3.668891010942778*^9, 3.6688914838286095`*^9, {
    3.668891521237649*^9, 3.668891535137338*^9}, {3.668892365047058*^9, 
-   3.668892383564377*^9}, 3.6688925382549686`*^9, 3.6688926638513737`*^9}]
+   3.668892383564377*^9}, 3.6688925382549686`*^9, 3.6688926638513737`*^9, {
+   3.6689448852446375`*^9, 3.6689449169281225`*^9}}]
 }, Open  ]]
 },
 WindowSize->{1366, 686},
@@ -200,12 +199,11 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 193, 4, 31, "Input"],
-Cell[754, 26, 244, 5, 31, "Input"],
-Cell[1001, 33, 6726, 129, 412, "Input"],
+Cell[558, 20, 378, 9, 52, "Input"],
+Cell[939, 31, 6705, 127, 412, "Input"],
 Cell[CellGroupData[{
-Cell[7752, 166, 332, 6, 31, "Input"],
-Cell[8087, 174, 540, 9, 470, "Output"]
+Cell[7669, 162, 332, 6, 31, "Input"],
+Cell[8004, 170, 627, 12, 470, "Output"]
 }, Open  ]]
 }
 ]
