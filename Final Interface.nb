@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      9038,        203]
-NotebookOptionsPosition[      8647,        185]
-NotebookOutlinePosition[      8991,        200]
-CellTagsIndexPosition[      8948,        197]
+NotebookDataLength[      9167,        206]
+NotebookOptionsPosition[      8776,        188]
+NotebookOutlinePosition[      9120,        203]
+CellTagsIndexPosition[      9077,        200]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -98,7 +98,9 @@ Cell[BoxData[
              RowBox[{"{", 
               RowBox[{"Text", "[", 
                RowBox[{"\"\<Temperature: \>\"", "<>", 
-                RowBox[{"ToString", "[", "k", "]"}], "<>", 
+                RowBox[{"ToString", "[", 
+                 RowBox[{"k", "*", 
+                  SuperscriptBox["10", "6"]}], "]"}], "<>", 
                 "\"\<\\nRadius: \>\"", "<>", 
                 RowBox[{"ToString", "[", 
                  FractionBox["k", "2"], "]"}], "<>", 
@@ -156,7 +158,8 @@ Cell[BoxData[
    3.6688928764797716`*^9}, {3.668897609678501*^9, 3.668897667979924*^9}, {
    3.668897755310896*^9, 3.6688978191221724`*^9}, 3.6688978769933295`*^9, {
    3.6688979074339385`*^9, 3.6688979185341606`*^9}, 3.66894494880772*^9, {
-   3.6689450573987613`*^9, 3.668945117179957*^9}, 3.668945229412201*^9}],
+   3.6689450573987613`*^9, 3.668945117179957*^9}, 3.668945229412201*^9, {
+   3.668952824135002*^9, 3.668952830685757*^9}}],
 
 Cell[CellGroupData[{
 
@@ -200,10 +203,10 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[558, 20, 378, 9, 52, "Input"],
-Cell[939, 31, 6705, 127, 412, "Input"],
+Cell[939, 31, 6834, 130, 412, "Input"],
 Cell[CellGroupData[{
-Cell[7669, 162, 332, 6, 31, "Input"],
-Cell[8004, 170, 627, 12, 470, "Output"]
+Cell[7798, 165, 332, 6, 31, "Input"],
+Cell[8133, 173, 627, 12, 470, "Output"]
 }, Open  ]]
 }
 ]
