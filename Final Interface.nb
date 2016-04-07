@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      9839,        223]
-NotebookOptionsPosition[      9409,        204]
-NotebookOutlinePosition[      9752,        219]
-CellTagsIndexPosition[      9709,        216]
+NotebookDataLength[     10268,        229]
+NotebookOptionsPosition[      9838,        210]
+NotebookOutlinePosition[     10181,        225]
+CellTagsIndexPosition[     10138,        222]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -49,7 +49,8 @@ Cell[BoxData[
              RowBox[{
               RowBox[{"{", 
                RowBox[{
-                RowBox[{"Hue", "[", "0.1", "]"}], ",", 
+                RowBox[{"Hue", "[", 
+                 FractionBox["agePoint", "5"], "]"}], ",", 
                 RowBox[{"Tooltip", "[", 
                  RowBox[{"Sphere", "[", 
                   RowBox[{
@@ -61,7 +62,7 @@ Cell[BoxData[
               RowBox[{"PlotRange", "\[Rule]", 
                RowBox[{"{", 
                 RowBox[{
-                 RowBox[{"-", "1"}], ",", "1"}], "}"}]}]}], "]"}], ",", 
+                 RowBox[{"-", "5"}], ",", "2"}], "}"}]}]}], "]"}], ",", 
             RowBox[{"Graphics", "[", 
              RowBox[{
               RowBox[{"{", 
@@ -165,7 +166,12 @@ Cell[BoxData[
    3.6688979074339385`*^9, 3.6688979185341606`*^9}, 3.66894494880772*^9, {
    3.6689450573987613`*^9, 3.668945117179957*^9}, 3.668945229412201*^9, {
    3.668952824135002*^9, 3.668952830685757*^9}, {3.6689593261422443`*^9, 
-   3.668959347862679*^9}, {3.6689593814458513`*^9, 3.6689593871759653`*^9}}],
+   3.668959347862679*^9}, {3.6689593814458513`*^9, 3.6689593871759653`*^9}, {
+   3.6689893654288716`*^9, 3.668989367862144*^9}, {3.6689894164652004`*^9, 
+   3.668989416792756*^9}, {3.6689894696072454`*^9, 3.6689894996032815`*^9}, {
+   3.6689895435777082`*^9, 3.6689895807196417`*^9}, {3.6689896267531757`*^9, 
+   3.6689896292334642`*^9}, {3.668989681085538*^9, 3.6689897147176285`*^9}, {
+   3.6689900875493956`*^9, 3.6689900885321894`*^9}}],
 
 Cell[CellGroupData[{
 
@@ -180,7 +186,7 @@ Cell[BoxData[
 Cell[BoxData[
  DynamicBox[ToBoxes[
    $CellContext`interface[], StandardForm],
-  ImageSizeCache->{411., {236., 243.}}]], "Output",
+  ImageSizeCache->{411., {223., 230.}}]], "Output",
  GeneratedCell->False,
  CellAutoOverwrite->False,
  CellChangeTimes->{
@@ -189,7 +195,7 @@ Cell[BoxData[
    3.668890905673303*^9}, 3.668891010942778*^9, 3.6688914838286095`*^9, {
    3.668891521237649*^9, 3.668891535137338*^9}, {3.668892365047058*^9, 
    3.668892383564377*^9}, 3.6688925382549686`*^9, 3.6688926638513737`*^9, {
-   3.6689448852446375`*^9, 3.6689449169281225`*^9}}]
+   3.6689448852446375`*^9, 3.6689449169281225`*^9}, 3.6689894321098943`*^9}]
 }, Open  ]],
 
 Cell[BoxData[
@@ -219,12 +225,12 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[558, 20, 474, 11, 52, "Input"],
-Cell[1035, 33, 7050, 134, 379, "Input"],
+Cell[1035, 33, 7455, 140, 403, "Input"],
 Cell[CellGroupData[{
-Cell[8110, 171, 332, 6, 31, "Input"],
-Cell[8445, 179, 627, 12, 496, "Output"]
+Cell[8515, 177, 332, 6, 31, "Input"],
+Cell[8850, 185, 651, 12, 470, "Output"]
 }, Open  ]],
-Cell[9087, 194, 318, 8, 31, "Input"]
+Cell[9516, 200, 318, 8, 31, "Input"]
 }
 ]
 *)
