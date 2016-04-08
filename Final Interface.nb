@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     10268,        229]
-NotebookOptionsPosition[      9838,        210]
-NotebookOutlinePosition[     10181,        225]
-CellTagsIndexPosition[     10138,        222]
+NotebookDataLength[     10417,        229]
+NotebookOptionsPosition[      9986,        210]
+NotebookOutlinePosition[     10330,        225]
+CellTagsIndexPosition[     10287,        222]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -59,10 +59,7 @@ Cell[BoxData[
                    "agePoint"}], "]"}], "]"}]}], "}"}], ",", 
               RowBox[{"Background", "\[Rule]", "Black"}], ",", 
               RowBox[{"Boxed", "\[Rule]", "False"}], ",", 
-              RowBox[{"PlotRange", "\[Rule]", 
-               RowBox[{"{", 
-                RowBox[{
-                 RowBox[{"-", "5"}], ",", "2"}], "}"}]}]}], "]"}], ",", 
+              RowBox[{"PlotRange", "\[Rule]", "1"}]}], "]"}], ",", 
             RowBox[{"Graphics", "[", 
              RowBox[{
               RowBox[{"{", 
@@ -171,7 +168,10 @@ Cell[BoxData[
    3.668989416792756*^9}, {3.6689894696072454`*^9, 3.6689894996032815`*^9}, {
    3.6689895435777082`*^9, 3.6689895807196417`*^9}, {3.6689896267531757`*^9, 
    3.6689896292334642`*^9}, {3.668989681085538*^9, 3.6689897147176285`*^9}, {
-   3.6689900875493956`*^9, 3.6689900885321894`*^9}}],
+   3.6689900875493956`*^9, 3.6689900885321894`*^9}, {3.6690657355536804`*^9, 
+   3.6690657745590706`*^9}, {3.6690658409042377`*^9, 3.669065955164731*^9}, {
+   3.6690659996729507`*^9, 3.6690660129724183`*^9}, {3.669066115135832*^9, 
+   3.6690661559316144`*^9}, {3.669066196688707*^9, 3.669066218545988*^9}}],
 
 Cell[CellGroupData[{
 
@@ -208,8 +208,8 @@ Cell[BoxData[
  CellChangeTimes->{{3.6689590588503923`*^9, 3.668959080079379*^9}, {
   3.668959119189617*^9, 3.668959276970663*^9}}]
 },
-WindowSize->{1350, 686},
-WindowMargins->{{-8, Automatic}, {Automatic, 0}},
+WindowSize->{1366, 686},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
 FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
 StyleDefinitions->"Default.nb"
 ]
@@ -225,12 +225,12 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[558, 20, 474, 11, 52, "Input"],
-Cell[1035, 33, 7455, 140, 403, "Input"],
+Cell[1035, 33, 7603, 140, 436, "Input"],
 Cell[CellGroupData[{
-Cell[8515, 177, 332, 6, 31, "Input"],
-Cell[8850, 185, 651, 12, 470, "Output"]
+Cell[8663, 177, 332, 6, 31, "Input"],
+Cell[8998, 185, 651, 12, 470, "Output"]
 }, Open  ]],
-Cell[9516, 200, 318, 8, 31, "Input"]
+Cell[9664, 200, 318, 8, 31, "Input"]
 }
 ]
 *)
