@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     10417,        229]
-NotebookOptionsPosition[      9986,        210]
-NotebookOutlinePosition[     10330,        225]
-CellTagsIndexPosition[     10287,        222]
+NotebookDataLength[     11873,        257]
+NotebookOptionsPosition[     11478,        239]
+NotebookOutlinePosition[     11822,        254]
+CellTagsIndexPosition[     11779,        251]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -33,7 +33,10 @@ Cell[BoxData[{
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{"interface", "[", "]"}], ":=", "\[IndentingNewLine]", 
+  RowBox[{"interface", "[", "]"}], ":=", 
+  RowBox[{"(*", 
+   RowBox[{"currently", " ", "takes", " ", "no", " ", "parameters"}], "*)"}], 
+  "\[IndentingNewLine]", 
   RowBox[{"DynamicModule", "[", 
    RowBox[{
     RowBox[{"{", "}"}], ",", "\[IndentingNewLine]", 
@@ -41,7 +44,11 @@ Cell[BoxData[
      RowBox[{
       RowBox[{"GraphicsGrid", "[", 
        RowBox[{
-        RowBox[{"{", "\[IndentingNewLine]", 
+        RowBox[{"{", 
+         RowBox[{"(*", 
+          RowBox[{
+          "put", " ", "the", " ", "graphics", " ", "in", " ", "a", " ", 
+           "single", " ", "window"}], "*)"}], "\[IndentingNewLine]", 
          RowBox[{
           RowBox[{"{", 
            RowBox[{
@@ -50,7 +57,11 @@ Cell[BoxData[
               RowBox[{"{", 
                RowBox[{
                 RowBox[{"Hue", "[", 
-                 FractionBox["agePoint", "5"], "]"}], ",", 
+                 FractionBox["agePoint", "5"], "]"}], 
+                RowBox[{"(*", 
+                 RowBox[{
+                 "make", " ", "hue", " ", "dependent", " ", "on", " ", "the", 
+                  " ", "agePoint"}], "*)"}], ",", 
                 RowBox[{"Tooltip", "[", 
                  RowBox[{"Sphere", "[", 
                   RowBox[{
@@ -60,6 +71,9 @@ Cell[BoxData[
               RowBox[{"Background", "\[Rule]", "Black"}], ",", 
               RowBox[{"Boxed", "\[Rule]", "False"}], ",", 
               RowBox[{"PlotRange", "\[Rule]", "1"}]}], "]"}], ",", 
+            RowBox[{"(*", 
+             RowBox[{"exterior", " ", "graphic"}], "*)"}], 
+            "\[IndentingNewLine]", 
             RowBox[{"Graphics", "[", 
              RowBox[{
               RowBox[{"{", 
@@ -71,8 +85,19 @@ Cell[BoxData[
                  RowBox[{"{", 
                   RowBox[{"agePoint", ",", "agePoint"}], "}"}], "]"}]}], 
                "}"}], ",", 
-              RowBox[{"PlotRange", "\[Rule]", "1"}]}], "]"}]}], "}"}], ",", 
-          "\[IndentingNewLine]", 
+              RowBox[{"PlotRange", "\[Rule]", "1"}]}], "]"}]}], 
+           RowBox[{"(*", 
+            RowBox[{
+            "point", " ", "tracking", " ", "across", " ", "the", " ", 
+             "picture"}], "*)"}], "}"}], ",", 
+          RowBox[{"(*", 
+           RowBox[{
+           "HR", " ", "diagram", " ", "picture", " ", "with", " ", "point", 
+            " ", "that", " ", "tracks", " ", "acoss", " ", "it", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"isn", "'"}], "t", " ", "based", " ", "on", " ", "real",
+               " ", "data"}], ")"}]}], "*)"}], "\[IndentingNewLine]", 
           RowBox[{"{", 
            RowBox[{
             RowBox[{"Graphics", "[", 
@@ -85,16 +110,21 @@ Cell[BoxData[
                   RowBox[{
                    RowBox[{"{", 
                     RowBox[{"0", ",", "0"}], "}"}], ",", "agePoint"}], "]"}], 
-                 "]"}], ",", 
+                 RowBox[{"(*", 
+                  RowBox[{"expanding", " ", "disk"}], "*)"}], "]"}], ",", 
                 RowBox[{"Hue", "[", "0.15", "]"}], ",", 
                 RowBox[{"Tooltip", "[", 
                  RowBox[{"Disk", "[", 
                   RowBox[{
                    RowBox[{"{", 
                     RowBox[{"0", ",", "0"}], "}"}], ",", 
-                   RowBox[{"1", "-", "agePoint"}]}], "]"}], "]"}]}], "}"}], 
+                   RowBox[{"1", "-", "agePoint"}]}], "]"}], 
+                 RowBox[{"(*", 
+                  RowBox[{"receding", " ", "disk"}], "*)"}], "]"}]}], "}"}], 
               ",", 
               RowBox[{"PlotRange", "\[Rule]", "1"}]}], "]"}], ",", 
+            RowBox[{"(*", 
+             RowBox[{"interior", " ", "graphic"}], "*)"}], 
             "\[IndentingNewLine]", 
             RowBox[{"Graphics", "[", 
              RowBox[{"{", 
@@ -112,10 +142,17 @@ Cell[BoxData[
                 "\"\<\\nMagnitude: \>\"", "<>", 
                 RowBox[{"ToString", "[", 
                  RowBox[{"agePoint", "*", "7"}], "]"}]}], "]"}], "}"}], 
-             "]"}]}], "}"}]}], "\[IndentingNewLine]", "}"}], ",", 
-        "\[IndentingNewLine]", 
+             "]"}]}], "}"}]}], 
+         RowBox[{"(*", 
+          RowBox[{"text", " ", "readouts"}], "*)"}], "\[IndentingNewLine]", 
+         "}"}], ",", "\[IndentingNewLine]", 
         RowBox[{"ContentSelectable", "\[Rule]", "False"}]}], 
-       "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"(*", 
+        RowBox[{
+        "ensure", " ", "the", " ", "graphics", " ", "cannot", " ", "be", " ", 
+         "selected", " ", "and", " ", "moved", " ", "separately", " ", "of", 
+         " ", "one", " ", "another"}], "*)"}], "\[IndentingNewLine]", "]"}], 
+      ",", "\[IndentingNewLine]", 
       RowBox[{"{", 
        RowBox[{"agePoint", ",", "0", ",", "1"}], "}"}], ",", 
       RowBox[{"ContentSize", "\[Rule]", "Smaller"}]}], "]"}]}], 
@@ -171,7 +208,9 @@ Cell[BoxData[
    3.6689900875493956`*^9, 3.6689900885321894`*^9}, {3.6690657355536804`*^9, 
    3.6690657745590706`*^9}, {3.6690658409042377`*^9, 3.669065955164731*^9}, {
    3.6690659996729507`*^9, 3.6690660129724183`*^9}, {3.669066115135832*^9, 
-   3.6690661559316144`*^9}, {3.669066196688707*^9, 3.669066218545988*^9}}],
+   3.6690661559316144`*^9}, {3.669066196688707*^9, 3.669066218545988*^9}, {
+   3.6693320038938828`*^9, 3.669332031245858*^9}, {3.6693320634962645`*^9, 
+   3.6693321973876247`*^9}, {3.6693322325434513`*^9, 3.6693324031048465`*^9}}],
 
 Cell[CellGroupData[{
 
@@ -196,17 +235,7 @@ Cell[BoxData[
    3.668891521237649*^9, 3.668891535137338*^9}, {3.668892365047058*^9, 
    3.668892383564377*^9}, 3.6688925382549686`*^9, 3.6688926638513737`*^9, {
    3.6689448852446375`*^9, 3.6689449169281225`*^9}, 3.6689894321098943`*^9}]
-}, Open  ]],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"dataBase", "[", 
-   RowBox[{"agePoint_", ",", "column_"}], "]"}], ":=", 
-  RowBox[{"Module", "[", 
-   RowBox[{
-    RowBox[{"{", "}"}], ",", "hi"}], "]"}]}]], "Input",
- CellChangeTimes->{{3.6689590588503923`*^9, 3.668959080079379*^9}, {
-  3.668959119189617*^9, 3.668959276970663*^9}}]
+}, Open  ]]
 },
 WindowSize->{1366, 686},
 WindowMargins->{{-8, Automatic}, {Automatic, -8}},
@@ -225,12 +254,11 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[558, 20, 474, 11, 52, "Input"],
-Cell[1035, 33, 7603, 140, 436, "Input"],
+Cell[1035, 33, 9416, 179, 471, "Input"],
 Cell[CellGroupData[{
-Cell[8663, 177, 332, 6, 31, "Input"],
-Cell[8998, 185, 651, 12, 470, "Output"]
-}, Open  ]],
-Cell[9664, 200, 318, 8, 31, "Input"]
+Cell[10476, 216, 332, 6, 31, "Input"],
+Cell[10811, 224, 651, 12, 470, "Output"]
+}, Open  ]]
 }
 ]
 *)
