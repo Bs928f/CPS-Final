@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     11873,        257]
-NotebookOptionsPosition[     11478,        239]
-NotebookOutlinePosition[     11822,        254]
-CellTagsIndexPosition[     11779,        251]
+NotebookDataLength[     13549,        286]
+NotebookOptionsPosition[     13088,        266]
+NotebookOutlinePosition[     13459,        282]
+CellTagsIndexPosition[     13416,        279]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -26,10 +26,37 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{"hrDiagram", "=", 
    RowBox[{"Import", "[", "\"\<Evolution_of_a_Sun-like_star.jpg\>\"", "]"}]}],
-   ";"}]}], "Input",
+   ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"Initialization", " ", "Cell"}], "*)"}]}]}], "Input",
  CellChangeTimes->{{3.6687208251809793`*^9, 3.6687208473706455`*^9}, {
    3.668944854191222*^9, 3.6689448550313144`*^9}, 3.668961533681717*^9, {
-   3.668962048841717*^9, 3.668962051666717*^9}}],
+   3.668962048841717*^9, 3.668962051666717*^9}, {3.66933532317207*^9, 
+   3.6693353339570704`*^9}}],
+
+Cell["\<\
+Below is the main body of code for our interface. This is our first increment \
+and the simplest portion of our project. It\[CloseCurlyQuote]s currently in a \
+very simplistic form, and uses a standard Manipulate command to provide the \
+temporal slider functionality. This may change as our project goes and we \
+discover ways in which Manipulate is too limited for our needs, especially in \
+terms of formatting. The same goes for GraphicsGrid, another command we use \
+to show multiple outputs. On the whole, though, it\[CloseCurlyQuote]s still \
+an interface, and it\[CloseCurlyQuote]s functional enough for our current \
+needs. Currently the interface displays simplistic placeholder values that \
+have no real bearing on anything star-related, and those values are plugged \
+directly into the interface itself. The rest of our project lies in building \
+databases of complex, real life star data, developing a system of commands to \
+read and interpret those databases, and figuring out how to display that data \
+using this interface, adjusting the interface when that\[CloseCurlyQuote]s \
+not possible.\
+\>", "Text",
+ CellChangeTimes->{{3.66933549100307*^9, 3.66933555467807*^9}, {
+  3.66933563461307*^9, 3.6693359386842813`*^9}, {3.6693359788058863`*^9, 
+  3.6693360986556797`*^9}, {3.669336141477392*^9, 3.669336251989314*^9}, {
+  3.669336287440732*^9, 3.6693364234136705`*^9}, {3.6693364987808666`*^9, 
+  3.6693365143298063`*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -237,6 +264,7 @@ Cell[BoxData[
    3.6689448852446375`*^9, 3.6689449169281225`*^9}, 3.6689894321098943`*^9}]
 }, Open  ]]
 },
+WindowToolbars->"EditBar",
 WindowSize->{1366, 686},
 WindowMargins->{{-8, Automatic}, {Automatic, -8}},
 FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
@@ -253,11 +281,12 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 474, 11, 52, "Input"],
-Cell[1035, 33, 9416, 179, 471, "Input"],
+Cell[558, 20, 630, 15, 72, "Input"],
+Cell[1191, 37, 1451, 21, 125, "Text"],
+Cell[2645, 60, 9416, 179, 463, "Input"],
 Cell[CellGroupData[{
-Cell[10476, 216, 332, 6, 31, "Input"],
-Cell[10811, 224, 651, 12, 470, "Output"]
+Cell[12086, 243, 332, 6, 31, "Input"],
+Cell[12421, 251, 651, 12, 470, "Output"]
 }, Open  ]]
 }
 ]
