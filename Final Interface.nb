@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     20596,        504]
-NotebookOptionsPosition[     19376,        456]
-NotebookOutlinePosition[     19747,        472]
-CellTagsIndexPosition[     19704,        469]
+NotebookDataLength[     24036,        586]
+NotebookOptionsPosition[     22816,        538]
+NotebookOutlinePosition[     23187,        554]
+CellTagsIndexPosition[     23144,        551]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -224,8 +224,9 @@ Cell["Datasets", "Section",
 
 Cell[CellGroupData[{
 
-Cell[TextData[StyleBox["Data Explanations", "Subsubsection"]], "Subsection",
- CellChangeTimes->{{3.669412536298538*^9, 3.6694125583847466`*^9}}],
+Cell["Variable Explanations", "Subsection",
+ CellChangeTimes->{{3.669412536298538*^9, 3.6694125583847466`*^9}, {
+  3.6694198842335796`*^9, 3.669419907172891*^9}}],
 
 Cell[TextData[{
  StyleBox["Age:",
@@ -254,7 +255,7 @@ radius.\n",
   3.6694142827971516`*^9}, {3.669414340466918*^9, 3.6694143494258137`*^9}, {
   3.669415238327626*^9, 3.669415270093095*^9}, {3.669415314629731*^9, 
   3.6694153150496054`*^9}}]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -327,7 +328,7 @@ Cell[BoxData[
  CellChangeTimes->{3.6694170954709578`*^9, 3.6694172157188373`*^9, 
   3.6694172860832076`*^9}]
 }, Open  ]]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -346,24 +347,61 @@ Cell[BoxData[
        RowBox[{"\"\<Age\>\"", "\[Rule]", "0"}], ",", 
        RowBox[{"\"\<Mass\>\"", "\[Rule]", "1"}], ",", 
        RowBox[{"\"\<Radius\>\"", "\[Rule]", 
-        FractionBox["1", "18"]}], ",", 
+        FractionBox["0.75", "18"]}], ",", 
        RowBox[{"\"\<Color\>\"", "\[Rule]", "0.2"}]}], "|>"}], ",", 
      "\[IndentingNewLine]", 
      RowBox[{"<|", 
       RowBox[{
        RowBox[{"\"\<Age\>\"", "\[Rule]", "0.1"}], ",", 
        RowBox[{"\"\<Mass\>\"", "\[Rule]", "1"}], ",", 
-       RowBox[{"\"\<Radius\>\"", "->", "0.6"}], 
-       RowBox[{"(*", 
-        RowBox[{"Not", " ", "real"}], "*)"}], ",", 
-       RowBox[{"\"\<Color\>\"", "->", "0.22"}]}], "|>"}], ","}], "\n", "}"}], 
+       RowBox[{"\"\<Radius\>\"", "\[Rule]", 
+        FractionBox["0.8", "18"]}], ",", 
+       RowBox[{"\"\<Color\>\"", "->", "0.2"}]}], "|>"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"<|", 
+      RowBox[{
+       RowBox[{"\"\<Age\>\"", "\[Rule]", "0.2"}], ",", 
+       RowBox[{"\"\<Mass\>\"", "\[Rule]", "1"}], ",", 
+       RowBox[{"\"\<Radius\>\"", "\[Rule]", 
+        FractionBox["0.82", "18"]}], ",", 
+       RowBox[{"\"\<Color\>\"", "\[Rule]", "0.21"}]}], "|>"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"<|", 
+      RowBox[{
+       RowBox[{"\"\<Age\>\"", "\[Rule]", "0.3"}], ",", 
+       RowBox[{"\"\<Mass\>\"", "\[Rule]", "1"}], ",", 
+       RowBox[{"\"\<Radius\>\"", "\[Rule]", 
+        FractionBox["0.88", "18"]}], ",", 
+       RowBox[{"\"\<Color\>\"", "\[Rule]", "0.22"}]}], "|>"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"<|", 
+      RowBox[{
+       RowBox[{"\"\<Age\>\"", "\[Rule]", "0.4"}], ",", 
+       RowBox[{"\"\<Mass\>\"", "\[Rule]", "1"}], ",", 
+       RowBox[{"\"\<Radius\>\"", "\[Rule]", 
+        FractionBox["0.97", "18"]}], ",", 
+       RowBox[{"\"\<Color\>\"", "\[Rule]", "0.23"}]}], "|>"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"<|", 
+      RowBox[{
+       RowBox[{"\"\<Age\>\"", "\[Rule]", "0.5"}], ",", 
+       RowBox[{"\"\<Mass\>\"", "\[Rule]", "1"}], ",", 
+       RowBox[{"\"\<Radius\>\"", "\[Rule]", 
+        FractionBox["1.32", "18"]}], ",", 
+       RowBox[{"\"\<Color\>\"", "\[Rule]", "0.22"}]}], "|>"}]}], "\n", "}"}], 
    "]"}]}]], "Input",
  CellChangeTimes->{{3.669411554224866*^9, 3.669411655157866*^9}, {
    3.669411689005866*^9, 3.669411723212866*^9}, {3.669411756808866*^9, 
    3.669411796363866*^9}, {3.669411855820866*^9, 3.6694119455390787`*^9}, {
    3.669411985024974*^9, 3.669411987813532*^9}, 3.6694120196709013`*^9, {
    3.6694132620325375`*^9, 3.6694132776646633`*^9}, {3.669417101040512*^9, 
-   3.6694171138994837`*^9}}],
+   3.6694171138994837`*^9}, {3.6694187824785275`*^9, 
+   3.6694188035855722`*^9}, {3.6694190049595137`*^9, 3.669419007569462*^9}, {
+   3.669419037921402*^9, 3.669419042931302*^9}, {3.6694191079275026`*^9, 
+   3.669419112307415*^9}, {3.6694193187542696`*^9, 3.6694194149627523`*^9}, {
+   3.6694194969060726`*^9, 3.669419613735344*^9}, {3.669419655551648*^9, 
+   3.669419655761654*^9}, {3.669419690067703*^9, 3.669419737262491*^9}, {
+   3.66941978750863*^9, 3.669419792978466*^9}}],
 
 Cell[BoxData[
  TagBox[
@@ -380,7 +418,8 @@ Cell[BoxData[
         InterpretationBox["\"0.\"", 0., AutoDelete -> True], 
         NumberForm[#, 4]& ], 1, 
        TagBox[
-        InterpretationBox["\"0.5\"", 0.5, AutoDelete -> True], 
+        InterpretationBox[
+        "\"0.04167\"", 0.041666666666666664`, AutoDelete -> True], 
         NumberForm[#, 4]& ], 
        TagBox[
         InterpretationBox["\"0.2\"", 0.2, AutoDelete -> True], 
@@ -389,7 +428,48 @@ Cell[BoxData[
         InterpretationBox["\"0.1\"", 0.1, AutoDelete -> True], 
         NumberForm[#, 4]& ], 1, 
        TagBox[
-        InterpretationBox["\"0.6\"", 0.6, AutoDelete -> True], 
+        InterpretationBox[
+        "\"0.04444\"", 0.044444444444444446`, AutoDelete -> True], 
+        NumberForm[#, 4]& ], 
+       TagBox[
+        InterpretationBox["\"0.2\"", 0.2, AutoDelete -> True], 
+        NumberForm[#, 4]& ]}, {
+       TagBox[
+        InterpretationBox["\"0.2\"", 0.2, AutoDelete -> True], 
+        NumberForm[#, 4]& ], 1, 
+       TagBox[
+        InterpretationBox[
+        "\"0.04556\"", 0.04555555555555555, AutoDelete -> True], 
+        NumberForm[#, 4]& ], 
+       TagBox[
+        InterpretationBox["\"0.21\"", 0.21, AutoDelete -> True], 
+        NumberForm[#, 4]& ]}, {
+       TagBox[
+        InterpretationBox["\"0.3\"", 0.3, AutoDelete -> True], 
+        NumberForm[#, 4]& ], 1, 
+       TagBox[
+        InterpretationBox[
+        "\"0.04889\"", 0.048888888888888885`, AutoDelete -> True], 
+        NumberForm[#, 4]& ], 
+       TagBox[
+        InterpretationBox["\"0.22\"", 0.22, AutoDelete -> True], 
+        NumberForm[#, 4]& ]}, {
+       TagBox[
+        InterpretationBox["\"0.4\"", 0.4, AutoDelete -> True], 
+        NumberForm[#, 4]& ], 1, 
+       TagBox[
+        InterpretationBox[
+        "\"0.05389\"", 0.05388888888888888, AutoDelete -> True], 
+        NumberForm[#, 4]& ], 
+       TagBox[
+        InterpretationBox["\"0.23\"", 0.23, AutoDelete -> True], 
+        NumberForm[#, 4]& ]}, {
+       TagBox[
+        InterpretationBox["\"0.5\"", 0.5, AutoDelete -> True], 
+        NumberForm[#, 4]& ], 1, 
+       TagBox[
+        InterpretationBox[
+        "\"0.07333\"", 0.07333333333333333, AutoDelete -> True], 
         NumberForm[#, 4]& ], 
        TagBox[
         InterpretationBox["\"0.22\"", 0.22, AutoDelete -> True], 
@@ -397,7 +477,7 @@ Cell[BoxData[
        ItemBox[
         RowBox[{"2 levels", 
           AdjustmentBox[" | ", BoxBaselineShift -> -0.3], 
-          RowBox[{"2", "rows"}]}], 
+          RowBox[{"6", "rows"}]}], 
         BaseStyle -> {
          FontFamily -> "Helvetica", FontSize -> 10, FontColor -> 
           GrayLevel[0.4], Editable -> False, Selectable -> False}, 
@@ -433,9 +513,11 @@ Cell[BoxData[
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
- CellChangeTimes->{3.6694120210641804`*^9}]
-}, Open  ]]
-}, Open  ]],
+ CellChangeTimes->{3.6694120210641804`*^9, 3.669418785068165*^9, 
+  3.6694188486642604`*^9, 3.6694190608909426`*^9, 3.669419237159918*^9, 
+  3.669419417922782*^9, 3.6694195561116877`*^9, 3.6694198008982286`*^9}]
+}, Closed]]
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -451,8 +533,8 @@ complex. We need a better source.\
 \>", "Text",
  CellChangeTimes->{{3.6694133226306553`*^9, 3.669413369926112*^9}, {
   3.669413818543731*^9, 3.669413861598036*^9}}]
-}, Open  ]]
-}, Open  ]]
+}, Closed]]
+}, Closed]]
 },
 WindowToolbars->"EditBar",
 WindowSize->{1366, 686},
@@ -484,28 +566,28 @@ Cell[9835, 206, 419, 10, 52, "Input"]
 Cell[CellGroupData[{
 Cell[10291, 221, 95, 1, 56, "Section"],
 Cell[CellGroupData[{
-Cell[10411, 226, 144, 1, 47, "Subsection"],
-Cell[10558, 229, 978, 26, 125, "Text"]
-}, Open  ]],
+Cell[10411, 226, 162, 2, 49, "Subsection"],
+Cell[10576, 230, 978, 26, 125, "Text"]
+}, Closed]],
 Cell[CellGroupData[{
-Cell[11573, 260, 165, 2, 49, "Subsection"],
+Cell[11591, 261, 165, 2, 41, "Subsection"],
 Cell[CellGroupData[{
-Cell[11763, 266, 647, 12, 72, "Input"],
-Cell[12413, 280, 2154, 47, 126, "Output"]
+Cell[11781, 267, 647, 12, 72, "Input"],
+Cell[12431, 281, 2154, 47, 93, "Output"]
 }, Open  ]]
-}, Open  ]],
+}, Closed]],
 Cell[CellGroupData[{
-Cell[14616, 333, 94, 1, 49, "Subsection"],
+Cell[14634, 334, 94, 1, 41, "Subsection"],
 Cell[CellGroupData[{
-Cell[14735, 338, 1205, 27, 123, "Input"],
-Cell[15943, 367, 2840, 68, 117, "Output"]
-}, Open  ]]
-}, Open  ]],
+Cell[14753, 339, 2945, 64, 283, "Input"],
+Cell[17701, 405, 4522, 112, 213, "Output"]
+}, Closed]]
+}, Closed]],
 Cell[CellGroupData[{
-Cell[18832, 441, 96, 1, 49, "Subsection"],
-Cell[18931, 444, 417, 8, 49, "Text"]
-}, Open  ]]
-}, Open  ]]
+Cell[22272, 523, 96, 1, 41, "Subsection"],
+Cell[22371, 526, 417, 8, 49, "Text"]
+}, Closed]]
+}, Closed]]
 }
 ]
 *)
