@@ -10,16 +10,21 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     24083,        587]
-NotebookOptionsPosition[     22862,        539]
-NotebookOutlinePosition[     23233,        555]
-CellTagsIndexPosition[     23190,        552]
+NotebookDataLength[     24269,        595]
+NotebookOptionsPosition[     22979,        544]
+NotebookOutlinePosition[     23350,        560]
+CellTagsIndexPosition[     23307,        557]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 
 Cell[CellGroupData[{
+Cell["Star Life Emulator", "Title",
+ CellChangeTimes->{{3.669467012284793*^9, 3.6694670226348968`*^9}}],
+
+Cell[CellGroupData[{
+
 Cell["Main", "Section",
  CellChangeTimes->{{3.669411484922866*^9, 3.669411487231866*^9}, {
   3.669424095545468*^9, 3.6694240984817615`*^9}}],
@@ -193,7 +198,7 @@ Cell[BoxData[
 Cell[BoxData[
  DynamicBox[ToBoxes[
    $CellContext`interface[], StandardForm],
-  ImageSizeCache->{411., {236., 243.}}]], "Output",
+  ImageSizeCache->{88., {2., 8.}}]], "Output",
  GeneratedCell->False,
  CellAutoOverwrite->False,
  CellChangeTimes->{
@@ -211,11 +216,10 @@ Cell[BoxData[
    RowBox[{"agePoint_", ",", "column_"}], "]"}], ":=", 
   RowBox[{"Module", "[", 
    RowBox[{
-    RowBox[{"{", "}"}], ",", "\[IndentingNewLine]", 
-    RowBox[{"OpenSQLConnection", "["}]}]}]}]], "Input",
+    RowBox[{"{", "}"}], ","}]}]}]], "Input",
  CellChangeTimes->{{3.6689590588503923`*^9, 3.668959080079379*^9}, {
   3.668959119189617*^9, 3.668959276970663*^9}, {3.6694111768946123`*^9, 
-  3.669411200773*^9}}]
+  3.669411200773*^9}, {3.669466441421161*^9, 3.669466443321104*^9}}]
 }, Closed]],
 
 Cell[CellGroupData[{
@@ -536,6 +540,7 @@ complex. We need a better source.\
   3.669413818543731*^9, 3.669413861598036*^9}}]
 }, Closed]]
 }, Closed]]
+}, Open  ]]
 },
 WindowToolbars->"EditBar",
 WindowSize->{1366, 686},
@@ -555,40 +560,43 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 140, 2, 70, "Section"],
-Cell[723, 26, 474, 11, 52, "Input"],
-Cell[1200, 39, 7655, 141, 403, "Input"],
+Cell[580, 22, 103, 1, 101, "Title"],
 Cell[CellGroupData[{
-Cell[8880, 184, 332, 6, 31, "Input"],
-Cell[9215, 192, 651, 12, 496, "Output"]
+Cell[708, 27, 140, 2, 70, "Section"],
+Cell[851, 31, 474, 11, 52, "Input"],
+Cell[1328, 44, 7655, 141, 403, "Input"],
+Cell[CellGroupData[{
+Cell[9008, 189, 332, 6, 31, "Input"],
+Cell[9343, 197, 646, 12, 31, "Output"]
 }, Open  ]],
-Cell[9881, 207, 419, 10, 52, "Input"]
+Cell[10004, 212, 401, 9, 31, "Input"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[10337, 222, 95, 1, 56, "Section"],
+Cell[10442, 226, 95, 1, 56, "Section"],
 Cell[CellGroupData[{
-Cell[10457, 227, 162, 2, 49, "Subsection"],
-Cell[10622, 231, 978, 26, 125, "Text"]
+Cell[10562, 231, 162, 2, 49, "Subsection"],
+Cell[10727, 235, 978, 26, 125, "Text"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[11637, 262, 165, 2, 41, "Subsection"],
+Cell[11742, 266, 165, 2, 41, "Subsection"],
 Cell[CellGroupData[{
-Cell[11827, 268, 647, 12, 72, "Input"],
-Cell[12477, 282, 2154, 47, 93, "Output"]
+Cell[11932, 272, 647, 12, 72, "Input"],
+Cell[12582, 286, 2154, 47, 93, "Output"]
 }, Closed]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[14680, 335, 94, 1, 41, "Subsection"],
+Cell[14785, 339, 94, 1, 41, "Subsection"],
 Cell[CellGroupData[{
-Cell[14799, 340, 2945, 64, 283, "Input"],
-Cell[17747, 406, 4522, 112, 213, "Output"]
+Cell[14904, 344, 2945, 64, 283, "Input"],
+Cell[17852, 410, 4522, 112, 213, "Output"]
 }, Closed]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[22318, 524, 96, 1, 41, "Subsection"],
-Cell[22417, 527, 417, 8, 49, "Text"]
+Cell[22423, 528, 96, 1, 41, "Subsection"],
+Cell[22522, 531, 417, 8, 49, "Text"]
 }, Closed]]
 }, Closed]]
+}, Open  ]]
 }
 ]
 *)
