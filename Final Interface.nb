@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     19458,        494]
-NotebookOptionsPosition[     18358,        451]
-NotebookOutlinePosition[     18728,        467]
-CellTagsIndexPosition[     18685,        464]
+NotebookDataLength[     19826,        508]
+NotebookOptionsPosition[     18652,        462]
+NotebookOutlinePosition[     19023,        478]
+CellTagsIndexPosition[     18980,        475]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -199,9 +199,20 @@ Cell[BoxData[
    3.669409728446373*^9, 3.6694097410233727`*^9}, {3.6695104233447795`*^9, 
    3.6695104237347794`*^9}}],
 
+Cell[CellGroupData[{
+
 Cell[BoxData[
- RowBox[{"interface", "[", "]"}]], "Input",
- CellChangeTimes->{{3.6695106581691794`*^9, 3.6695106603625793`*^9}}],
+ RowBox[{"Dynamic", "[", 
+  RowBox[{"interface", "[", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.6695106581691794`*^9, 3.6695106603625793`*^9}, {
+  3.669546674836789*^9, 3.6695466794290743`*^9}}],
+
+Cell[BoxData[
+ DynamicBox[ToBoxes[
+   $CellContext`interface[], StandardForm],
+  ImageSizeCache->{411., {223., 230.}}]], "Output",
+ CellChangeTimes->{3.669546682407449*^9}]
+}, Open  ]],
 
 Cell[BoxData[
  RowBox[{
@@ -254,7 +265,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.6695099687026186`*^9, 3.6695100919887686`*^9}, {
   3.669510131857505*^9, 3.6695101321694994`*^9}, {3.669510185196283*^9, 
   3.669510190133288*^9}, {3.6695102291752405`*^9, 3.6695102296432314`*^9}}]
-}, Closed]],
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -446,12 +457,12 @@ complex. We need a better source.",
  CellChangeTimes->{{3.6694133226306553`*^9, 3.669413369926112*^9}, {
   3.669413818543731*^9, 3.669413861598036*^9}}]
 }, Closed]]
-}, Closed]]
-}, Closed]]
+}, Open  ]]
+}, Open  ]]
 },
 WindowToolbars->"EditBar",
-WindowSize->{1350, 686},
-WindowMargins->{{-8, Automatic}, {Automatic, 0}},
+WindowSize->{1366, 686},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
 FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
 StyleDefinitions->"Default.nb"
 ]
@@ -472,30 +483,33 @@ Cell[CellGroupData[{
 Cell[1030, 37, 219, 5, 45, "Chapter"],
 Cell[1252, 44, 474, 11, 52, "Input"],
 Cell[1729, 57, 7709, 142, 403, "Input"],
-Cell[9441, 201, 127, 2, 31, "Input"],
-Cell[9571, 205, 436, 10, 31, "Input"],
-Cell[10010, 217, 1312, 38, 46, "Input"]
+Cell[CellGroupData[{
+Cell[9463, 203, 212, 4, 31, "Input"],
+Cell[9678, 209, 172, 4, 503, "Output"]
+}, Open  ]],
+Cell[9865, 216, 436, 10, 31, "Input"],
+Cell[10304, 228, 1312, 38, 46, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11653, 271, 220, 5, 45, "Chapter"],
+Cell[CellGroupData[{
+Cell[11898, 280, 233, 5, 50, "Section"],
+Cell[12134, 287, 1626, 50, 119, "Text"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[11359, 260, 220, 5, 34, "Chapter"],
-Cell[CellGroupData[{
-Cell[11604, 269, 233, 5, 50, "Section"],
-Cell[11840, 276, 1626, 50, 119, "Text"]
+Cell[13797, 342, 234, 5, 36, "Section"],
+Cell[14034, 349, 647, 12, 72, "Input"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[13503, 331, 234, 5, 36, "Section"],
-Cell[13740, 338, 647, 12, 72, "Input"]
+Cell[14718, 366, 218, 5, 36, "Section"],
+Cell[14939, 373, 2945, 64, 283, "Input"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[14424, 355, 218, 5, 36, "Section"],
-Cell[14645, 362, 2945, 64, 283, "Input"]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[17627, 431, 212, 5, 36, "Section"],
-Cell[17842, 438, 476, 8, 29, "Text"]
+Cell[17921, 442, 212, 5, 36, "Section"],
+Cell[18136, 449, 476, 8, 29, "Text"]
 }, Closed]]
-}, Closed]]
-}, Closed]]
+}, Open  ]]
+}, Open  ]]
 }
 ]
 *)
