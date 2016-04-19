@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     28427,        717]
-NotebookOptionsPosition[     27097,        665]
-NotebookOutlinePosition[     27468,        681]
-CellTagsIndexPosition[     27425,        678]
+NotebookDataLength[     30573,        754]
+NotebookOptionsPosition[     29355,        706]
+NotebookOutlinePosition[     29726,        722]
+CellTagsIndexPosition[     29683,        719]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -83,6 +83,18 @@ Cell[BoxData[
              RowBox[{"All", ",", "\"\<Radius\>\""}], "]"}], "]"}], ",", 
            RowBox[{"age", "*", "10"}]}], "]"}], "]"}]}], ";", 
        "\[IndentingNewLine]", 
+       RowBox[{"(*", 
+        RowBox[{
+         RowBox[{
+         "This", " ", "will", " ", "be", " ", "the", " ", "list", " ", "of", 
+          " ", "changing", " ", "variables", " ", "to", " ", "be", " ", 
+          "used", " ", "below"}], ",", " ", 
+         RowBox[{
+         "because", " ", "if", " ", "we", " ", "just", " ", "slap", " ", 
+          "the", " ", "commands", " ", "in", " ", "themselves", " ", "it", 
+          " ", "will", " ", "get", " ", "really", " ", "cluttered", " ", 
+          "really", " ", 
+          RowBox[{"fast", "."}]}]}], "*)"}], "\[IndentingNewLine]", 
        RowBox[{"GraphicsGrid", "[", 
         RowBox[{
          RowBox[{"{", "\[IndentingNewLine]", 
@@ -103,6 +115,10 @@ Cell[BoxData[
                RowBox[{"Background", "\[Rule]", "Black"}], ",", 
                RowBox[{"Boxed", "\[Rule]", "False"}], ",", 
                RowBox[{"PlotRange", "\[Rule]", "1"}]}], "]"}], ",", 
+             "\[IndentingNewLine]", 
+             RowBox[{"(*", 
+              RowBox[{"The", " ", "Sphere", " ", "Graphic"}], "*)"}], 
+             "\[IndentingNewLine]", 
              RowBox[{"Graphics", "[", 
               RowBox[{
                RowBox[{"{", 
@@ -114,6 +130,9 @@ Cell[BoxData[
                   RowBox[{"{", 
                    RowBox[{"age", ",", "age"}], "}"}], "]"}]}], "}"}], ",", 
                RowBox[{"PlotRange", "\[Rule]", "1"}]}], "]"}]}], "}"}], ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{"(*", 
+            RowBox[{"The", " ", "HR", " ", "Diagram"}], "*)"}], 
            "\[IndentingNewLine]", 
            RowBox[{"{", 
             RowBox[{
@@ -137,6 +156,9 @@ Cell[BoxData[
                     RowBox[{"1", "-", "age"}]}], "]"}], "]"}]}], "}"}], ",", 
                RowBox[{"PlotRange", "\[Rule]", "1"}]}], "]"}], ",", 
              "\[IndentingNewLine]", 
+             RowBox[{"(*", 
+              RowBox[{"The", " ", "Internal", " ", "Diagram"}], "*)"}], 
+             "\[IndentingNewLine]", 
              RowBox[{"Graphics", "[", 
               RowBox[{"{", 
                RowBox[{"Text", "[", 
@@ -153,12 +175,20 @@ Cell[BoxData[
                  "\"\<\\nMagnitude: \>\"", "<>", 
                  RowBox[{"ToString", "[", 
                   RowBox[{"age", "*", "7"}], "]"}]}], "]"}], "}"}], "]"}]}], 
-            "}"}]}], "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
+            "}"}]}], "\[IndentingNewLine]", 
+          RowBox[{"(*", 
+           RowBox[{"The", " ", "Text", " ", "Readouts"}], "*)"}], 
+          "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
          RowBox[{"ContentSelectable", "\[Rule]", "False"}]}], 
-        "\[IndentingNewLine]", "]"}]}], ",", "\[IndentingNewLine]", 
+        "\[IndentingNewLine]", 
+        RowBox[{"(*", 
+         RowBox[{"So", " ", "they", " ", 
+          RowBox[{"don", "'"}], "t", " ", "get", " ", "their", " ", "grubby", 
+          " ", "hands", " ", "on", " ", "our", " ", "nice", " ", 
+          RowBox[{"animation", "."}]}], "*)"}], "\[IndentingNewLine]", 
+        "]"}]}], ",", "\[IndentingNewLine]", 
       RowBox[{"{", 
-       RowBox[{"age", ",", "0", ",", "0.5"}], "}"}], ",", 
-      RowBox[{"ContentSize", "\[Rule]", "Smaller"}]}], "]"}]}], 
+       RowBox[{"age", ",", "0", ",", "0.5"}], "}"}]}], "]"}]}], 
    "\[IndentingNewLine]", "]"}]}]], "Input",
  CellChangeTimes->{{3.6687175198679237`*^9, 3.6687175373508954`*^9}, {
    3.6687178397844467`*^9, 3.6687178407245026`*^9}, {3.668717894457489*^9, 
@@ -219,7 +249,11 @@ Cell[BoxData[
    3.6700152739289465`*^9}, {3.670015306439923*^9, 3.6700153068299346`*^9}, {
    3.670015394479221*^9, 3.6700154109017205`*^9}, {3.67001562672723*^9, 
    3.6700156341773787`*^9}, {3.6700159139087615`*^9, 
-   3.6700160067859764`*^9}, {3.6700160894152026`*^9, 3.670016106483203*^9}}],
+   3.6700160067859764`*^9}, {3.6700160894152026`*^9, 3.670016106483203*^9}, {
+   3.670017393079007*^9, 3.670017448416485*^9}, {3.670017510523744*^9, 
+   3.670017598632527*^9}, {3.670017710435955*^9, 3.6700177316073847`*^9}, {
+   3.670017774857256*^9, 3.6700178490552464`*^9}, {3.670017939396947*^9, 
+   3.670018018694415*^9}}],
 
 Cell[CellGroupData[{
 
@@ -233,7 +267,7 @@ Cell[BoxData[
 Cell[BoxData[
  DynamicBox[ToBoxes[
    $CellContext`interface[], StandardForm],
-  ImageSizeCache->{411., {236., 243.}}]], "Output",
+  ImageSizeCache->{411., {223., 230.}}]], "Output",
  CellChangeTimes->{
   3.669546682407449*^9, {3.669556096576579*^9, 3.6695561109265785`*^9}}]
 }, Open  ]],
@@ -313,8 +347,7 @@ Cell[TextData[StyleBox["Variable Explanations:",
  CellChangeTimes->{{3.6695110152244797`*^9, 3.6695110219661794`*^9}}],
 
 Cell[TextData[{
- "Age",
- StyleBox[":",
+ StyleBox["Age:",
   FontFamily->"Times New Roman",
   FontSize->12,
   FontWeight->"Bold"],
@@ -355,8 +388,14 @@ achieved radius.\n",
   FontFamily->"Times New Roman",
   FontSize->12,
   FontWeight->"Bold"],
- "Age",
- StyleBox[" of the star at death, in years.",
+ StyleBox["Age of the star at death, in years.\n",
+  FontFamily->"Times New Roman",
+  FontSize->12],
+ StyleBox["T:",
+  FontFamily->"Times New Roman",
+  FontSize->12,
+  FontWeight->"Bold"],
+ StyleBox[" Tempurature of the star, in Kelvin",
   FontFamily->"Times New Roman",
   FontSize->12]
 }], "Text",
@@ -365,7 +404,8 @@ achieved radius.\n",
   3.6694142827971516`*^9}, {3.669414340466918*^9, 3.6694143494258137`*^9}, {
   3.669415238327626*^9, 3.669415270093095*^9}, {3.669415314629731*^9, 
   3.6694153150496054`*^9}, {3.6700140370029483`*^9, 3.6700140370679483`*^9}, {
-  3.6700140721079483`*^9, 3.6700140827249484`*^9}}]
+  3.6700140721079483`*^9, 3.6700140827249484`*^9}, {3.6700181659979305`*^9, 
+  3.670018220796837*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -441,7 +481,7 @@ Cell[BoxData[
   Selectable->False]], "Output",
  CellChangeTimes->{3.6695559928142877`*^9}]
 }, Open  ]]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -465,7 +505,8 @@ Cell[BoxData[
        RowBox[{"\"\<Mass\>\"", "\[Rule]", "1"}], ",", 
        RowBox[{"\"\<Radius\>\"", "\[Rule]", 
         FractionBox["0.75", "18"]}], ",", 
-       RowBox[{"\"\<Color\>\"", "\[Rule]", "0.2"}]}], "|>"}], ",", 
+       RowBox[{"\"\<Color\>\"", "\[Rule]", "0.2"}], ",", 
+       RowBox[{"\"\<T\>\"", "\[Rule]", "idk"}]}], "|>"}], ",", 
      "\[IndentingNewLine]", 
      RowBox[{"<|", 
       RowBox[{
@@ -473,7 +514,8 @@ Cell[BoxData[
        RowBox[{"\"\<Mass\>\"", "\[Rule]", "1"}], ",", 
        RowBox[{"\"\<Radius\>\"", "\[Rule]", 
         FractionBox["0.8", "18"]}], ",", 
-       RowBox[{"\"\<Color\>\"", "->", "0.2"}]}], "|>"}], ",", 
+       RowBox[{"\"\<Color\>\"", "->", "0.2"}], ",", 
+       RowBox[{"\"\<T\>\"", "\[Rule]", "idk"}]}], "|>"}], ",", 
      "\[IndentingNewLine]", 
      RowBox[{"<|", 
       RowBox[{
@@ -481,7 +523,8 @@ Cell[BoxData[
        RowBox[{"\"\<Mass\>\"", "\[Rule]", "1"}], ",", 
        RowBox[{"\"\<Radius\>\"", "\[Rule]", 
         FractionBox["0.82", "18"]}], ",", 
-       RowBox[{"\"\<Color\>\"", "\[Rule]", "0.21"}]}], "|>"}], ",", 
+       RowBox[{"\"\<Color\>\"", "\[Rule]", "0.21"}], ",", 
+       RowBox[{"\"\<T\>\"", "\[Rule]", "idk"}]}], "|>"}], ",", 
      "\[IndentingNewLine]", 
      RowBox[{"<|", 
       RowBox[{
@@ -489,7 +532,8 @@ Cell[BoxData[
        RowBox[{"\"\<Mass\>\"", "\[Rule]", "1"}], ",", 
        RowBox[{"\"\<Radius\>\"", "\[Rule]", 
         FractionBox["0.88", "18"]}], ",", 
-       RowBox[{"\"\<Color\>\"", "\[Rule]", "0.22"}]}], "|>"}], ",", 
+       RowBox[{"\"\<Color\>\"", "\[Rule]", "0.22"}], ",", 
+       RowBox[{"\"\<T\>\"", "\[Rule]", "idk"}]}], "|>"}], ",", 
      "\[IndentingNewLine]", 
      RowBox[{"<|", 
       RowBox[{
@@ -497,7 +541,8 @@ Cell[BoxData[
        RowBox[{"\"\<Mass\>\"", "\[Rule]", "1"}], ",", 
        RowBox[{"\"\<Radius\>\"", "\[Rule]", 
         FractionBox["0.97", "18"]}], ",", 
-       RowBox[{"\"\<Color\>\"", "\[Rule]", "0.23"}]}], "|>"}], ",", 
+       RowBox[{"\"\<Color\>\"", "\[Rule]", "0.23"}], ",", 
+       RowBox[{"\"\<T\>\"", "\[Rule]", "idk"}]}], "|>"}], ",", 
      "\[IndentingNewLine]", 
      RowBox[{"<|", 
       RowBox[{
@@ -505,7 +550,8 @@ Cell[BoxData[
        RowBox[{"\"\<Mass\>\"", "\[Rule]", "1"}], ",", 
        RowBox[{"\"\<Radius\>\"", "\[Rule]", 
         FractionBox["1.32", "18"]}], ",", 
-       RowBox[{"\"\<Color\>\"", "\[Rule]", "0.22"}]}], "|>"}]}], "\n", "}"}], 
+       RowBox[{"\"\<Color\>\"", "\[Rule]", "0.22"}], ",", 
+       RowBox[{"\"\<T\>\"", "\[Rule]", "idk"}]}], "|>"}]}], "\n", "}"}], 
    "]"}]}]], "Input",
  CellChangeTimes->{{3.669411554224866*^9, 3.669411655157866*^9}, {
    3.669411689005866*^9, 3.669411723212866*^9}, {3.669411756808866*^9, 
@@ -520,7 +566,9 @@ Cell[BoxData[
    3.669419655761654*^9}, {3.669419690067703*^9, 3.669419737262491*^9}, {
    3.66941978750863*^9, 3.669419792978466*^9}, {3.6700140370809484`*^9, 
    3.6700140370879483`*^9}, {3.6700140844859486`*^9, 
-   3.6700140881579485`*^9}, {3.670015841568931*^9, 3.6700158593963966`*^9}}],
+   3.6700140881579485`*^9}, {3.670015841568931*^9, 3.6700158593963966`*^9}, {
+   3.6700170661825194`*^9, 3.6700172310690064`*^9}, {3.670017278650764*^9, 
+   3.67001729531143*^9}, {3.6700173319326916`*^9, 3.670017361289314*^9}}],
 
 Cell[BoxData[
  TagBox[
@@ -532,6 +580,8 @@ Cell[BoxData[
        StyleBox["\"Radius\"", 
         GrayLevel[0.3]], 
        StyleBox["\"Color\"", 
+        GrayLevel[0.3]], 
+       StyleBox["\"T\"", 
         GrayLevel[0.3]]}, {
        TagBox[
         InterpretationBox["\"0.\"", 0., AutoDelete -> True], 
@@ -542,7 +592,9 @@ Cell[BoxData[
         NumberForm[#, 4]& ], 
        TagBox[
         InterpretationBox["\"0.2\"", 0.2, AutoDelete -> True], 
-        NumberForm[#, 4]& ]}, {
+        NumberForm[#, 4]& ], 
+       InterpretationBox[
+        TagBox["idk", Short[#, 5]& ], $CellContext`idk]}, {
        TagBox[
         InterpretationBox["\"0.1\"", 0.1, AutoDelete -> True], 
         NumberForm[#, 4]& ], 1, 
@@ -552,7 +604,9 @@ Cell[BoxData[
         NumberForm[#, 4]& ], 
        TagBox[
         InterpretationBox["\"0.2\"", 0.2, AutoDelete -> True], 
-        NumberForm[#, 4]& ]}, {
+        NumberForm[#, 4]& ], 
+       InterpretationBox[
+        TagBox["idk", Short[#, 5]& ], $CellContext`idk]}, {
        TagBox[
         InterpretationBox["\"0.2\"", 0.2, AutoDelete -> True], 
         NumberForm[#, 4]& ], 1, 
@@ -562,7 +616,9 @@ Cell[BoxData[
         NumberForm[#, 4]& ], 
        TagBox[
         InterpretationBox["\"0.21\"", 0.21, AutoDelete -> True], 
-        NumberForm[#, 4]& ]}, {
+        NumberForm[#, 4]& ], 
+       InterpretationBox[
+        TagBox["idk", Short[#, 5]& ], $CellContext`idk]}, {
        TagBox[
         InterpretationBox["\"0.3\"", 0.3, AutoDelete -> True], 
         NumberForm[#, 4]& ], 1, 
@@ -572,7 +628,9 @@ Cell[BoxData[
         NumberForm[#, 4]& ], 
        TagBox[
         InterpretationBox["\"0.22\"", 0.22, AutoDelete -> True], 
-        NumberForm[#, 4]& ]}, {
+        NumberForm[#, 4]& ], 
+       InterpretationBox[
+        TagBox["idk", Short[#, 5]& ], $CellContext`idk]}, {
        TagBox[
         InterpretationBox["\"0.4\"", 0.4, AutoDelete -> True], 
         NumberForm[#, 4]& ], 1, 
@@ -582,7 +640,9 @@ Cell[BoxData[
         NumberForm[#, 4]& ], 
        TagBox[
         InterpretationBox["\"0.23\"", 0.23, AutoDelete -> True], 
-        NumberForm[#, 4]& ]}, {
+        NumberForm[#, 4]& ], 
+       InterpretationBox[
+        TagBox["idk", Short[#, 5]& ], $CellContext`idk]}, {
        TagBox[
         InterpretationBox["\"0.5\"", 0.5, AutoDelete -> True], 
         NumberForm[#, 4]& ], 1, 
@@ -592,7 +652,9 @@ Cell[BoxData[
         NumberForm[#, 4]& ], 
        TagBox[
         InterpretationBox["\"0.22\"", 0.22, AutoDelete -> True], 
-        NumberForm[#, 4]& ]}, {
+        NumberForm[#, 4]& ], 
+       InterpretationBox[
+        TagBox["idk", Short[#, 5]& ], $CellContext`idk]}, {
        ItemBox[
         RowBox[{"2 levels", 
           AdjustmentBox[" | ", BoxBaselineShift -> -0.3], 
@@ -602,7 +664,7 @@ Cell[BoxData[
           GrayLevel[0.4], Editable -> False, Selectable -> False}, 
         ItemSize -> {Automatic, Automatic}, Alignment -> {Left, Center}, 
         Background -> RGBColor[0.92, 0.92, 0.9]], "\[SpanFromLeft]", 
-       "\[SpanFromLeft]", "\[SpanFromLeft]"}}, 
+       "\[SpanFromLeft]", "\[SpanFromLeft]", "\[SpanFromLeft]"}}, 
      GridBoxFrame -> {"ColumnsIndexed" -> {{{1, -1}, {1, -1}} -> True}}, 
      FrameStyle -> RGBColor[0, 0, 0, 0.4], GridBoxDividers -> {"Columns" -> {
          RGBColor[0, 0, 0, 0.4], {
@@ -632,34 +694,13 @@ Cell[BoxData[
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
- CellChangeTimes->{3.6695559898143773`*^9, 3.6700142333059483`*^9}]
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellChangeTimes->{3.6695559898143773`*^9, 3.6700142333059483`*^9, 
+  3.670017059878889*^9, 3.670017096800581*^9, 3.6700171900699067`*^9, 
+  3.6700173633093543`*^9, 3.670018110029046*^9}]
 }, Open  ]]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[TextData[StyleBox["Caveat:",
- FontFamily->"Times New Roman",
- FontSize->16,
- FontWeight->"Bold",
- FontColor->RGBColor[0., 0., 0.]]], "Section",
- CellChangeTimes->{{3.669511267874487*^9, 3.6695112698401*^9}}],
-
-Cell[TextData[{
- StyleBox["Currently I use \
-\[OpenCurlyDoubleQuote]http://spiff.rit.edu/classes/phys230/lectures/star_",
-  FontFamily->"Times New Roman",
-  FontSize->12],
- "age",
- StyleBox["/evol_hr.swf\[CloseCurlyDoubleQuote] as the source for this \
-database. It\[CloseCurlyQuote]s a flash program very similar to our own, but \
-less complex. We need a better source.",
-  FontFamily->"Times New Roman",
-  FontSize->12]
-}], "Text",
- CellChangeTimes->{{3.6694133226306553`*^9, 3.669413369926112*^9}, {
-   3.669413818543731*^9, 3.669413861598036*^9}, 3.6700140371769485`*^9}]
-}, Closed]]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
@@ -685,38 +726,34 @@ Cell[580, 22, 425, 11, 112, "Title"],
 Cell[CellGroupData[{
 Cell[1030, 37, 219, 5, 45, "Chapter"],
 Cell[1252, 44, 474, 11, 52, "Input"],
-Cell[1729, 57, 8905, 164, 449, "Input"],
+Cell[1729, 57, 10540, 198, 557, "Input"],
 Cell[CellGroupData[{
-Cell[10659, 225, 265, 5, 31, "Input"],
-Cell[10927, 232, 223, 5, 496, "Output"]
+Cell[12294, 259, 265, 5, 31, "Input"],
+Cell[12562, 266, 223, 5, 470, "Output"]
 }, Open  ]],
-Cell[11165, 240, 607, 12, 31, "Input"],
-Cell[11775, 254, 1363, 39, 46, "Input"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[13175, 298, 220, 5, 45, "Chapter"],
-Cell[CellGroupData[{
-Cell[13420, 307, 233, 5, 50, "Section"],
-Cell[13656, 314, 1739, 53, 121, "Text"]
+Cell[12800, 274, 607, 12, 31, "Input"],
+Cell[13410, 288, 1363, 39, 46, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[15432, 372, 234, 5, 50, "Section"],
+Cell[14810, 332, 220, 5, 45, "Chapter"],
 Cell[CellGroupData[{
-Cell[15691, 381, 647, 12, 72, "Input"],
-Cell[16341, 395, 2103, 46, 93, "Output"]
+Cell[15055, 341, 233, 5, 50, "Section"],
+Cell[15291, 348, 1969, 59, 137, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17297, 412, 234, 5, 50, "Section"],
+Cell[CellGroupData[{
+Cell[17556, 421, 647, 12, 72, "Input"],
+Cell[18206, 435, 2103, 46, 93, "Output"]
 }, Open  ]]
-}, Open  ]],
+}, Closed]],
 Cell[CellGroupData[{
-Cell[18493, 447, 218, 5, 50, "Section"],
+Cell[20358, 487, 218, 5, 36, "Section"],
 Cell[CellGroupData[{
-Cell[18736, 456, 3101, 66, 283, "Input"],
-Cell[21840, 524, 4378, 110, 213, "Output"]
+Cell[20601, 496, 3576, 74, 283, "Input"],
+Cell[24180, 572, 5123, 128, 213, "Output"]
 }, Open  ]]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[26267, 640, 212, 5, 50, "Section"],
-Cell[26482, 647, 575, 13, 29, "Text"]
-}, Closed]]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }
