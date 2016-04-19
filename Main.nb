@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     30729,        760]
-NotebookOptionsPosition[     29431,        709]
-NotebookOutlinePosition[     29802,        725]
-CellTagsIndexPosition[     29759,        722]
+NotebookDataLength[     22325,        550]
+NotebookOptionsPosition[     21004,        498]
+NotebookOutlinePosition[     21406,        515]
+CellTagsIndexPosition[     21363,        512]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -268,66 +268,11 @@ Cell[BoxData[
 Cell[BoxData[
  DynamicBox[ToBoxes[
    $CellContext`interface[], StandardForm],
-  ImageSizeCache->{88., {2., 8.}}]], "Output",
+  ImageSizeCache->{351., {203., 208.}}]], "Output",
  CellChangeTimes->{
   3.669546682407449*^9, {3.669556096576579*^9, 3.6695561109265785`*^9}}]
+}, Open  ]]
 }, Open  ]],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"dataSetConsult", "[", 
-   RowBox[{"set_", ",", "pos_", ",", "category_"}], "]"}], ":=", 
-  RowBox[{"Module", "[", 
-   RowBox[{
-    RowBox[{"{", "}"}], ",", "hi"}], "]"}]}]], "Input",
- CellChangeTimes->{{3.6689590588503923`*^9, 3.668959080079379*^9}, {
-   3.668959119189617*^9, 3.668959276970663*^9}, {3.6694111768946123`*^9, 
-   3.669411200773*^9}, {3.669466441421161*^9, 3.669466443321104*^9}, 
-   3.6695104493066797`*^9, {3.669835019391252*^9, 3.669835028895796*^9}, {
-   3.66983514349135*^9, 3.6698351597092776`*^9}, {3.6698352233429174`*^9, 
-   3.669835238441781*^9}}],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"interpol", "[", 
-   RowBox[{"p1_", ",", "p2_", ",", "num_"}], "]"}], ":=", 
-  RowBox[{"Table", "[", 
-   RowBox[{
-    RowBox[{"N", "[", 
-     RowBox[{"{", 
-      RowBox[{
-       RowBox[{
-        RowBox[{"p1", "[", 
-         RowBox[{"[", "1", "]"}], "]"}], "+", 
-        FractionBox[
-         RowBox[{
-          RowBox[{"(", 
-           RowBox[{
-            RowBox[{"p2", "[", 
-             RowBox[{"[", "1", "]"}], "]"}], "-", 
-            RowBox[{"p1", "[", 
-             RowBox[{"[", "1", "]"}], "]"}]}], ")"}], "*", "y"}], "num"]}], 
-       ",", 
-       RowBox[{
-        RowBox[{"p1", "[", 
-         RowBox[{"[", "2", "]"}], "]"}], "+", 
-        FractionBox[
-         RowBox[{
-          RowBox[{"(", 
-           RowBox[{
-            RowBox[{"p2", "[", 
-             RowBox[{"[", "2", "]"}], "]"}], "-", 
-            RowBox[{"p1", "[", 
-             RowBox[{"[", "2", "]"}], "]"}]}], ")"}], "*", "y"}], "num"]}]}], 
-      "}"}], "]"}], ",", 
-    RowBox[{"{", 
-     RowBox[{"y", ",", "1", ",", 
-      RowBox[{"num", "-", "1"}]}], "}"}]}], "]"}]}]], "Input",
- CellChangeTimes->{{3.6695099687026186`*^9, 3.6695100919887686`*^9}, {
-  3.669510131857505*^9, 3.6695101321694994`*^9}, {3.669510185196283*^9, 
-  3.669510190133288*^9}, {3.6695102291752405`*^9, 3.6695102296432314`*^9}, {
-  3.6698349789209375`*^9, 3.669835008539631*^9}}]
-}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -407,7 +352,7 @@ achieved radius.\n",
   3.6694153150496054`*^9}, {3.6700140370029483`*^9, 3.6700140370679483`*^9}, {
   3.6700140721079483`*^9, 3.6700140827249484`*^9}, {3.6700181659979305`*^9, 
   3.670018220796837*^9}}]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -418,72 +363,35 @@ Cell[TextData[StyleBox["Star Type General Data:",
  FontColor->RGBColor[0., 0., 0.]]], "Section",
  CellChangeTimes->{{3.6695111031071796`*^9, 3.6695111286146774`*^9}}],
 
-Cell[CellGroupData[{
-
 Cell[BoxData[
- RowBox[{"uselessbutfuntolookat", "=", 
-  RowBox[{"Dataset", "[", 
-   RowBox[{"{", "\[IndentingNewLine]", 
-    RowBox[{"<|", 
-     RowBox[{
-      RowBox[{"\"\<Star Type\>\"", "\[Rule]", "\"\<1 Msun\>\""}], ",", 
-      RowBox[{"\"\<Lifespan\>\"", "\[Rule]", "11000000000"}]}], "|>"}], 
-    "\[IndentingNewLine]", "}"}], "]"}]}]], "Input",
+ RowBox[{
+  RowBox[{"uselessbutfuntolookat", "=", 
+   RowBox[{"Dataset", "[", 
+    RowBox[{"{", "\[IndentingNewLine]", 
+     RowBox[{"<|", 
+      RowBox[{
+       RowBox[{"\"\<Star Type\>\"", "\[Rule]", "\"\<1 Msun\>\""}], ",", 
+       RowBox[{"\"\<Lifespan\>\"", "\[Rule]", "11000000000"}]}], "|>"}], 
+     "\[IndentingNewLine]", "}"}], "]"}]}], ";"}]], "Input",
  InitializationCell->True,
  CellChangeTimes->{{3.6694151806824207`*^9, 3.669415232459387*^9}, {
    3.669415275151577*^9, 3.669415327383405*^9}, {3.669415564888974*^9, 
    3.6694155882821026`*^9}, {3.6694170922712135`*^9, 3.6694171088598866`*^9}, 
-   3.6694172149988947`*^9, {3.669417280773632*^9, 3.6694172854332595`*^9}}],
+   3.6694172149988947`*^9, {3.669417280773632*^9, 3.6694172854332595`*^9}, 
+   3.670073727407608*^9}],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[
- TagBox[
-  TemplateBox[{GridBox[{{
-       StyleBox["\"Star Type\"", 
-        GrayLevel[0.3]], 
-       StyleBox["\"Lifespan\"", 
-        GrayLevel[0.3]]}, {
-       StyleBox["\"1 Msun\"", FontColor -> GrayLevel[0.4]], 11000000000}, {
-       ItemBox[
-        RowBox[{"2 levels", 
-          AdjustmentBox[" | ", BoxBaselineShift -> -0.3], 
-          RowBox[{"1", "rows"}]}], 
-        BaseStyle -> {
-         FontFamily -> "Helvetica", FontSize -> 10, FontColor -> 
-          GrayLevel[0.4], Editable -> False, Selectable -> False}, 
-        ItemSize -> {Automatic, Automatic}, Alignment -> {Left, Center}, 
-        Background -> RGBColor[0.92, 0.92, 0.9]], "\[SpanFromLeft]"}}, 
-     GridBoxFrame -> {"ColumnsIndexed" -> {{{1, -1}, {1, -1}} -> True}}, 
-     FrameStyle -> RGBColor[0, 0, 0, 0.4], GridBoxDividers -> {"Columns" -> {
-         RGBColor[0, 0, 0, 0.4], {
-          RGBColor[0, 0, 0, 0.09]}, 
-         RGBColor[0, 0, 0, 0.4]}, "Rows" -> {
-         RGBColor[0, 0, 0, 0.4], 
-         RGBColor[0, 0, 0, 0.3], {
-          RGBColor[0, 0, 0, 0.08]}, 
-         RGBColor[0, 0, 0, 0.4]}}, RowSpacings -> {1.5, 1.2}, 
-     GridBoxBackground -> {"Columns" -> {}, "Rows" -> {
-         RGBColor[0.92, 0.92, 0.9]}}, 
-     GridBoxAlignment -> {"Columns" -> {{Left}}}, ColumnSpacings -> 2.5, 
-     GridFrameMargins -> {{2, 3}, {1, 3}}, 
-     GridBoxItemSize -> {"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
-      RowMinHeight -> 1.3],"Dataset[{__Association}]"},
-   "Dataset",
-   DisplayFunction->(TagBox[
-     StyleBox[#, {
-      ShowAutoStyles -> False, LineBreakWithin -> False, FontWeight -> 
-       "Light", FontFamily -> "Helvetica Neue", NumberMarks -> False, 
-       SpanMaxSize -> 3, SpanMinSize -> 1., Editable -> False, Selectable -> 
-       True, Background -> RGBColor[0.985, 0.98, 0.973], 
-       LinebreakAdjustments -> {0.4, 5, 100, 0, 0.5}, LineIndent -> 0, 
-       LineSpacing -> {1.1, 5}}], Deploy]& ),
-   InterpretationFunction->(#2& )],
-  False,
-  Editable->False,
-  SelectWithContents->True,
-  Selectable->False]], "Output",
- CellChangeTimes->{3.6695559928142877`*^9}]
-}, Open  ]]
-}, Closed]],
+ RowBox[{"Dynamic", "[", "uselessbutfuntolookat", "]"}]], "Input",
+ CellChangeTimes->{{3.670073731488608*^9, 3.670073748398608*^9}}],
+
+Cell[BoxData[
+ DynamicBox[ToBoxes[$CellContext`uselessbutfuntolookat, StandardForm],
+  ImageSizeCache->{162., {28.5, 33.5}}]], "Output",
+ CellChangeTimes->{3.670073749188608*^9}]
+}, Closed]]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -494,67 +402,66 @@ Cell[TextData[StyleBox["1 Msun:",
  FontColor->RGBColor[0., 0., 0.]]], "Section",
  CellChangeTimes->{{3.6695112063353834`*^9, 3.6695112201446733`*^9}}],
 
-Cell[CellGroupData[{
-
 Cell[BoxData[
- RowBox[{"one", "=", 
-  RowBox[{"Dataset", "[", 
-   RowBox[{"{", "\[IndentingNewLine]", 
-    RowBox[{
-     RowBox[{"<|", 
-      RowBox[{
-       RowBox[{"\"\<Age\>\"", "\[Rule]", "0"}], ",", 
-       RowBox[{"\"\<Mass\>\"", "\[Rule]", "1"}], ",", 
-       RowBox[{"\"\<Radius\>\"", "\[Rule]", 
-        FractionBox["0.75", "18"]}], ",", 
-       RowBox[{"\"\<Color\>\"", "\[Rule]", "0.2"}], ",", 
-       RowBox[{"\"\<T\>\"", "\[Rule]", "idk"}]}], "|>"}], ",", 
-     "\[IndentingNewLine]", 
-     RowBox[{"<|", 
-      RowBox[{
-       RowBox[{"\"\<Age\>\"", "\[Rule]", "0.1"}], ",", 
-       RowBox[{"\"\<Mass\>\"", "\[Rule]", "1"}], ",", 
-       RowBox[{"\"\<Radius\>\"", "\[Rule]", 
-        FractionBox["0.8", "18"]}], ",", 
-       RowBox[{"\"\<Color\>\"", "->", "0.2"}], ",", 
-       RowBox[{"\"\<T\>\"", "\[Rule]", "idk"}]}], "|>"}], ",", 
-     "\[IndentingNewLine]", 
-     RowBox[{"<|", 
-      RowBox[{
-       RowBox[{"\"\<Age\>\"", "\[Rule]", "0.2"}], ",", 
-       RowBox[{"\"\<Mass\>\"", "\[Rule]", "1"}], ",", 
-       RowBox[{"\"\<Radius\>\"", "\[Rule]", 
-        FractionBox["0.82", "18"]}], ",", 
-       RowBox[{"\"\<Color\>\"", "\[Rule]", "0.21"}], ",", 
-       RowBox[{"\"\<T\>\"", "\[Rule]", "idk"}]}], "|>"}], ",", 
-     "\[IndentingNewLine]", 
-     RowBox[{"<|", 
-      RowBox[{
-       RowBox[{"\"\<Age\>\"", "\[Rule]", "0.3"}], ",", 
-       RowBox[{"\"\<Mass\>\"", "\[Rule]", "1"}], ",", 
-       RowBox[{"\"\<Radius\>\"", "\[Rule]", 
-        FractionBox["0.88", "18"]}], ",", 
-       RowBox[{"\"\<Color\>\"", "\[Rule]", "0.22"}], ",", 
-       RowBox[{"\"\<T\>\"", "\[Rule]", "idk"}]}], "|>"}], ",", 
-     "\[IndentingNewLine]", 
-     RowBox[{"<|", 
-      RowBox[{
-       RowBox[{"\"\<Age\>\"", "\[Rule]", "0.4"}], ",", 
-       RowBox[{"\"\<Mass\>\"", "\[Rule]", "1"}], ",", 
-       RowBox[{"\"\<Radius\>\"", "\[Rule]", 
-        FractionBox["0.97", "18"]}], ",", 
-       RowBox[{"\"\<Color\>\"", "\[Rule]", "0.23"}], ",", 
-       RowBox[{"\"\<T\>\"", "\[Rule]", "idk"}]}], "|>"}], ",", 
-     "\[IndentingNewLine]", 
-     RowBox[{"<|", 
-      RowBox[{
-       RowBox[{"\"\<Age\>\"", "\[Rule]", "0.5"}], ",", 
-       RowBox[{"\"\<Mass\>\"", "\[Rule]", "1"}], ",", 
-       RowBox[{"\"\<Radius\>\"", "\[Rule]", 
-        FractionBox["1.32", "18"]}], ",", 
-       RowBox[{"\"\<Color\>\"", "\[Rule]", "0.22"}], ",", 
-       RowBox[{"\"\<T\>\"", "\[Rule]", "idk"}]}], "|>"}]}], "\n", "}"}], 
-   "]"}]}]], "Input",
+ RowBox[{
+  RowBox[{"one", "=", 
+   RowBox[{"Dataset", "[", 
+    RowBox[{"{", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"<|", 
+       RowBox[{
+        RowBox[{"\"\<Age\>\"", "\[Rule]", "0"}], ",", 
+        RowBox[{"\"\<Mass\>\"", "\[Rule]", "1"}], ",", 
+        RowBox[{"\"\<Radius\>\"", "\[Rule]", 
+         FractionBox["0.75", "18"]}], ",", 
+        RowBox[{"\"\<Color\>\"", "\[Rule]", "0.2"}], ",", 
+        RowBox[{"\"\<T\>\"", "\[Rule]", "idk"}]}], "|>"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"<|", 
+       RowBox[{
+        RowBox[{"\"\<Age\>\"", "\[Rule]", "0.1"}], ",", 
+        RowBox[{"\"\<Mass\>\"", "\[Rule]", "1"}], ",", 
+        RowBox[{"\"\<Radius\>\"", "\[Rule]", 
+         FractionBox["0.8", "18"]}], ",", 
+        RowBox[{"\"\<Color\>\"", "->", "0.2"}], ",", 
+        RowBox[{"\"\<T\>\"", "\[Rule]", "idk"}]}], "|>"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"<|", 
+       RowBox[{
+        RowBox[{"\"\<Age\>\"", "\[Rule]", "0.2"}], ",", 
+        RowBox[{"\"\<Mass\>\"", "\[Rule]", "1"}], ",", 
+        RowBox[{"\"\<Radius\>\"", "\[Rule]", 
+         FractionBox["0.82", "18"]}], ",", 
+        RowBox[{"\"\<Color\>\"", "\[Rule]", "0.21"}], ",", 
+        RowBox[{"\"\<T\>\"", "\[Rule]", "idk"}]}], "|>"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"<|", 
+       RowBox[{
+        RowBox[{"\"\<Age\>\"", "\[Rule]", "0.3"}], ",", 
+        RowBox[{"\"\<Mass\>\"", "\[Rule]", "1"}], ",", 
+        RowBox[{"\"\<Radius\>\"", "\[Rule]", 
+         FractionBox["0.88", "18"]}], ",", 
+        RowBox[{"\"\<Color\>\"", "\[Rule]", "0.22"}], ",", 
+        RowBox[{"\"\<T\>\"", "\[Rule]", "idk"}]}], "|>"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"<|", 
+       RowBox[{
+        RowBox[{"\"\<Age\>\"", "\[Rule]", "0.4"}], ",", 
+        RowBox[{"\"\<Mass\>\"", "\[Rule]", "1"}], ",", 
+        RowBox[{"\"\<Radius\>\"", "\[Rule]", 
+         FractionBox["0.97", "18"]}], ",", 
+        RowBox[{"\"\<Color\>\"", "\[Rule]", "0.23"}], ",", 
+        RowBox[{"\"\<T\>\"", "\[Rule]", "idk"}]}], "|>"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"<|", 
+       RowBox[{
+        RowBox[{"\"\<Age\>\"", "\[Rule]", "0.5"}], ",", 
+        RowBox[{"\"\<Mass\>\"", "\[Rule]", "1"}], ",", 
+        RowBox[{"\"\<Radius\>\"", "\[Rule]", 
+         FractionBox["1.32", "18"]}], ",", 
+        RowBox[{"\"\<Color\>\"", "\[Rule]", "0.22"}], ",", 
+        RowBox[{"\"\<T\>\"", "\[Rule]", "idk"}]}], "|>"}]}], "\n", "}"}], 
+    "]"}]}], ";"}]], "Input",
  InitializationCell->True,
  CellChangeTimes->{{3.669411554224866*^9, 3.669411655157866*^9}, {
    3.669411689005866*^9, 3.669411723212866*^9}, {3.669411756808866*^9, 
@@ -571,145 +478,28 @@ Cell[BoxData[
    3.6700140370879483`*^9}, {3.6700140844859486`*^9, 
    3.6700140881579485`*^9}, {3.670015841568931*^9, 3.6700158593963966`*^9}, {
    3.6700170661825194`*^9, 3.6700172310690064`*^9}, {3.670017278650764*^9, 
-   3.67001729531143*^9}, {3.6700173319326916`*^9, 3.670017361289314*^9}}],
+   3.67001729531143*^9}, {3.6700173319326916`*^9, 3.670017361289314*^9}, 
+   3.670073682638608*^9}],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[
- TagBox[
-  TemplateBox[{GridBox[{{
-       StyleBox["\"Age\"", 
-        GrayLevel[0.3]], 
-       StyleBox["\"Mass\"", 
-        GrayLevel[0.3]], 
-       StyleBox["\"Radius\"", 
-        GrayLevel[0.3]], 
-       StyleBox["\"Color\"", 
-        GrayLevel[0.3]], 
-       StyleBox["\"T\"", 
-        GrayLevel[0.3]]}, {
-       TagBox[
-        InterpretationBox["\"0.\"", 0., AutoDelete -> True], 
-        NumberForm[#, 4]& ], 1, 
-       TagBox[
-        InterpretationBox[
-        "\"0.04167\"", 0.041666666666666664`, AutoDelete -> True], 
-        NumberForm[#, 4]& ], 
-       TagBox[
-        InterpretationBox["\"0.2\"", 0.2, AutoDelete -> True], 
-        NumberForm[#, 4]& ], 
-       InterpretationBox[
-        TagBox["idk", Short[#, 5]& ], $CellContext`idk]}, {
-       TagBox[
-        InterpretationBox["\"0.1\"", 0.1, AutoDelete -> True], 
-        NumberForm[#, 4]& ], 1, 
-       TagBox[
-        InterpretationBox[
-        "\"0.04444\"", 0.044444444444444446`, AutoDelete -> True], 
-        NumberForm[#, 4]& ], 
-       TagBox[
-        InterpretationBox["\"0.2\"", 0.2, AutoDelete -> True], 
-        NumberForm[#, 4]& ], 
-       InterpretationBox[
-        TagBox["idk", Short[#, 5]& ], $CellContext`idk]}, {
-       TagBox[
-        InterpretationBox["\"0.2\"", 0.2, AutoDelete -> True], 
-        NumberForm[#, 4]& ], 1, 
-       TagBox[
-        InterpretationBox[
-        "\"0.04556\"", 0.04555555555555555, AutoDelete -> True], 
-        NumberForm[#, 4]& ], 
-       TagBox[
-        InterpretationBox["\"0.21\"", 0.21, AutoDelete -> True], 
-        NumberForm[#, 4]& ], 
-       InterpretationBox[
-        TagBox["idk", Short[#, 5]& ], $CellContext`idk]}, {
-       TagBox[
-        InterpretationBox["\"0.3\"", 0.3, AutoDelete -> True], 
-        NumberForm[#, 4]& ], 1, 
-       TagBox[
-        InterpretationBox[
-        "\"0.04889\"", 0.048888888888888885`, AutoDelete -> True], 
-        NumberForm[#, 4]& ], 
-       TagBox[
-        InterpretationBox["\"0.22\"", 0.22, AutoDelete -> True], 
-        NumberForm[#, 4]& ], 
-       InterpretationBox[
-        TagBox["idk", Short[#, 5]& ], $CellContext`idk]}, {
-       TagBox[
-        InterpretationBox["\"0.4\"", 0.4, AutoDelete -> True], 
-        NumberForm[#, 4]& ], 1, 
-       TagBox[
-        InterpretationBox[
-        "\"0.05389\"", 0.05388888888888888, AutoDelete -> True], 
-        NumberForm[#, 4]& ], 
-       TagBox[
-        InterpretationBox["\"0.23\"", 0.23, AutoDelete -> True], 
-        NumberForm[#, 4]& ], 
-       InterpretationBox[
-        TagBox["idk", Short[#, 5]& ], $CellContext`idk]}, {
-       TagBox[
-        InterpretationBox["\"0.5\"", 0.5, AutoDelete -> True], 
-        NumberForm[#, 4]& ], 1, 
-       TagBox[
-        InterpretationBox[
-        "\"0.07333\"", 0.07333333333333333, AutoDelete -> True], 
-        NumberForm[#, 4]& ], 
-       TagBox[
-        InterpretationBox["\"0.22\"", 0.22, AutoDelete -> True], 
-        NumberForm[#, 4]& ], 
-       InterpretationBox[
-        TagBox["idk", Short[#, 5]& ], $CellContext`idk]}, {
-       ItemBox[
-        RowBox[{"2 levels", 
-          AdjustmentBox[" | ", BoxBaselineShift -> -0.3], 
-          RowBox[{"6", "rows"}]}], 
-        BaseStyle -> {
-         FontFamily -> "Helvetica", FontSize -> 10, FontColor -> 
-          GrayLevel[0.4], Editable -> False, Selectable -> False}, 
-        ItemSize -> {Automatic, Automatic}, Alignment -> {Left, Center}, 
-        Background -> RGBColor[0.92, 0.92, 0.9]], "\[SpanFromLeft]", 
-       "\[SpanFromLeft]", "\[SpanFromLeft]", "\[SpanFromLeft]"}}, 
-     GridBoxFrame -> {"ColumnsIndexed" -> {{{1, -1}, {1, -1}} -> True}}, 
-     FrameStyle -> RGBColor[0, 0, 0, 0.4], GridBoxDividers -> {"Columns" -> {
-         RGBColor[0, 0, 0, 0.4], {
-          RGBColor[0, 0, 0, 0.09]}, 
-         RGBColor[0, 0, 0, 0.4]}, "Rows" -> {
-         RGBColor[0, 0, 0, 0.4], 
-         RGBColor[0, 0, 0, 0.3], {
-          RGBColor[0, 0, 0, 0.08]}, 
-         RGBColor[0, 0, 0, 0.4]}}, RowSpacings -> {1.5, 1.2}, 
-     GridBoxBackground -> {"Columns" -> {}, "Rows" -> {
-         RGBColor[0.92, 0.92, 0.9]}}, 
-     GridBoxAlignment -> {"Columns" -> {{Left}}}, ColumnSpacings -> 2.5, 
-     GridFrameMargins -> {{2, 3}, {1, 3}}, 
-     GridBoxItemSize -> {"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
-      RowMinHeight -> 1.3],"Dataset[{__Association}]"},
-   "Dataset",
-   DisplayFunction->(TagBox[
-     StyleBox[#, {
-      ShowAutoStyles -> False, LineBreakWithin -> False, FontWeight -> 
-       "Light", FontFamily -> "Helvetica Neue", NumberMarks -> False, 
-       SpanMaxSize -> 3, SpanMinSize -> 1., Editable -> False, Selectable -> 
-       True, Background -> RGBColor[0.985, 0.98, 0.973], 
-       LinebreakAdjustments -> {0.4, 5, 100, 0, 0.5}, LineIndent -> 0, 
-       LineSpacing -> {1.1, 5}}], Deploy]& ),
-   InterpretationFunction->(#2& )],
-  False,
-  Editable->False,
-  SelectWithContents->True,
-  Selectable->False]], "Output",
- GeneratedCell->False,
- CellAutoOverwrite->False,
- CellChangeTimes->{3.6695559898143773`*^9, 3.6700142333059483`*^9, 
-  3.670017059878889*^9, 3.670017096800581*^9, 3.6700171900699067`*^9, 
-  3.6700173633093543`*^9, 3.670018110029046*^9}]
+ RowBox[{"Dynamic", "[", "one", "]"}]], "Input",
+ CellChangeTimes->{{3.6700737018776083`*^9, 3.670073706717608*^9}}],
+
+Cell[BoxData[
+ DynamicBox[ToBoxes[$CellContext`one, StandardForm],
+  ImageSizeCache->{227., {76., 81.}}]], "Output",
+ CellChangeTimes->{3.670073709757608*^9}]
+}, Closed]]
 }, Open  ]]
-}, Closed]]
-}, Closed]]
+}, Open  ]]
 }, Open  ]]
 },
 WindowToolbars->"EditBar",
 WindowSize->{1366, 686},
 WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+Magnification:>0.85 Inherited,
 FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
 StyleDefinitions->"Default.nb"
 ]
@@ -725,42 +515,42 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 425, 11, 112, "Title"],
+Cell[580, 22, 425, 11, 95, "Title"],
 Cell[CellGroupData[{
-Cell[1030, 37, 219, 5, 45, "Chapter"],
-Cell[1252, 44, 501, 12, 52, "Input",
+Cell[1030, 37, 219, 5, 38, "Chapter"],
+Cell[1252, 44, 501, 12, 45, "Input",
  InitializationCell->True],
-Cell[1756, 58, 10540, 198, 557, "Input"],
+Cell[1756, 58, 10540, 198, 451, "Input"],
 Cell[CellGroupData[{
-Cell[12321, 260, 265, 5, 31, "Input"],
-Cell[12589, 267, 218, 5, 31, "Output"]
-}, Open  ]],
-Cell[12822, 275, 607, 12, 31, "Input"],
-Cell[13432, 289, 1363, 39, 46, "Input"]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[14832, 333, 220, 5, 34, "Chapter"],
-Cell[CellGroupData[{
-Cell[15077, 342, 233, 5, 50, "Section"],
-Cell[15313, 349, 1969, 59, 137, "Text"]
+Cell[12321, 260, 265, 5, 26, "Input"],
+Cell[12589, 267, 223, 5, 425, "Output"]
+}, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[17319, 413, 234, 5, 50, "Section"],
+Cell[12861, 278, 220, 5, 38, "Chapter"],
 Cell[CellGroupData[{
-Cell[17578, 422, 674, 13, 72, "Input",
- InitializationCell->True],
-Cell[18255, 437, 2103, 46, 93, "Output"]
-}, Open  ]]
+Cell[13106, 287, 233, 5, 43, "Section"],
+Cell[13342, 294, 1969, 59, 111, "Text"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[20407, 489, 218, 5, 36, "Section"],
-Cell[CellGroupData[{
-Cell[20650, 498, 3603, 75, 283, "Input",
+Cell[15348, 358, 234, 5, 32, "Section"],
+Cell[15585, 365, 725, 15, 63, "Input",
  InitializationCell->True],
-Cell[24256, 575, 5123, 128, 213, "Output"]
+Cell[CellGroupData[{
+Cell[16335, 384, 146, 2, 26, "Input"],
+Cell[16484, 388, 178, 3, 92, "Output"]
+}, Closed]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16711, 397, 218, 5, 43, "Section"],
+Cell[16932, 404, 3704, 77, 250, "Input",
+ InitializationCell->True],
+Cell[CellGroupData[{
+Cell[20661, 485, 130, 2, 26, "Input"],
+Cell[20794, 489, 158, 3, 145, "Output"]
+}, Closed]]
 }, Open  ]]
-}, Closed]]
-}, Closed]]
+}, Open  ]]
 }, Open  ]]
 }
 ]
