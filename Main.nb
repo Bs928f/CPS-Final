@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     26859,        685]
-NotebookOptionsPosition[     25533,        633]
-NotebookOutlinePosition[     25904,        649]
-CellTagsIndexPosition[     25861,        646]
+NotebookDataLength[     28427,        717]
+NotebookOptionsPosition[     27097,        665]
+NotebookOutlinePosition[     27468,        681]
+CellTagsIndexPosition[     27425,        678]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -60,88 +60,104 @@ Cell[BoxData[
   RowBox[{"interface", "[", "]"}], ":=", "\[IndentingNewLine]", 
   RowBox[{"DynamicModule", "[", 
    RowBox[{
-    RowBox[{"{", "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"color", ",", "radius"}], "}"}], ",", "\[IndentingNewLine]", 
     RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
      RowBox[{
-      RowBox[{"GraphicsGrid", "[", 
-       RowBox[{
-        RowBox[{"{", "\[IndentingNewLine]", 
-         RowBox[{
-          RowBox[{"{", 
-           RowBox[{
-            RowBox[{"Graphics3D", "[", 
-             RowBox[{
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"Hue", "[", 
-                 FractionBox["agePoint", "5"], "]"}], ",", 
-                RowBox[{"Tooltip", "[", 
-                 RowBox[{"Sphere", "[", 
-                  RowBox[{
-                   RowBox[{"{", 
+      RowBox[{
+       RowBox[{"color", "=", 
+        RowBox[{"Quiet", "[", 
+         RowBox[{"Interpolation", "[", 
+          RowBox[{
+           RowBox[{"Normal", "[", 
+            RowBox[{"one", "[", 
+             RowBox[{"All", ",", "\"\<Color\>\""}], "]"}], "]"}], ",", 
+           RowBox[{"age", "*", "10"}]}], "]"}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"radius", "=", 
+        RowBox[{"Quiet", "[", 
+         RowBox[{"Interpolation", "[", 
+          RowBox[{
+           RowBox[{"Normal", "[", 
+            RowBox[{"one", "[", 
+             RowBox[{"All", ",", "\"\<Radius\>\""}], "]"}], "]"}], ",", 
+           RowBox[{"age", "*", "10"}]}], "]"}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"GraphicsGrid", "[", 
+        RowBox[{
+         RowBox[{"{", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Graphics3D", "[", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"Hue", "[", "color", "]"}], ",", 
+                 RowBox[{"Tooltip", "[", 
+                  RowBox[{"Sphere", "[", 
+                   RowBox[{
+                    RowBox[{"{", 
                     RowBox[{"0", ",", "0", ",", "0"}], "}"}], " ", ",", 
-                   "agePoint"}], "]"}], "]"}]}], "}"}], ",", 
-              RowBox[{"Background", "\[Rule]", "Black"}], ",", 
-              RowBox[{"Boxed", "\[Rule]", "False"}], ",", 
-              RowBox[{"PlotRange", "\[Rule]", "1"}]}], "]"}], ",", 
-            RowBox[{"Graphics", "[", 
-             RowBox[{
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"Inset", "[", "hrDiagram", "]"}], ",", 
-                RowBox[{"Hue", "[", "0.7", "]"}], ",", 
-                RowBox[{"PointSize", "\[Rule]", "Large"}], ",", 
-                RowBox[{"Point", "[", 
-                 RowBox[{"{", 
-                  RowBox[{"agePoint", ",", "agePoint"}], "}"}], "]"}]}], 
-               "}"}], ",", 
-              RowBox[{"PlotRange", "\[Rule]", "1"}]}], "]"}]}], "}"}], ",", 
-          "\[IndentingNewLine]", 
-          RowBox[{"{", 
-           RowBox[{
-            RowBox[{"Graphics", "[", 
-             RowBox[{
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"Hue", "[", "0.02", "]"}], ",", 
-                RowBox[{"Tooltip", "[", 
-                 RowBox[{"Disk", "[", 
-                  RowBox[{
-                   RowBox[{"{", 
-                    RowBox[{"0", ",", "0"}], "}"}], ",", "agePoint"}], "]"}], 
-                 "]"}], ",", 
-                RowBox[{"Hue", "[", "0.15", "]"}], ",", 
-                RowBox[{"Tooltip", "[", 
-                 RowBox[{"Disk", "[", 
-                  RowBox[{
-                   RowBox[{"{", 
+                    "radius"}], "]"}], "]"}]}], "}"}], ",", 
+               RowBox[{"Background", "\[Rule]", "Black"}], ",", 
+               RowBox[{"Boxed", "\[Rule]", "False"}], ",", 
+               RowBox[{"PlotRange", "\[Rule]", "1"}]}], "]"}], ",", 
+             RowBox[{"Graphics", "[", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"Inset", "[", "hrDiagram", "]"}], ",", 
+                 RowBox[{"Hue", "[", "0.7", "]"}], ",", 
+                 RowBox[{"PointSize", "\[Rule]", "Large"}], ",", 
+                 RowBox[{"Point", "[", 
+                  RowBox[{"{", 
+                   RowBox[{"age", ",", "age"}], "}"}], "]"}]}], "}"}], ",", 
+               RowBox[{"PlotRange", "\[Rule]", "1"}]}], "]"}]}], "}"}], ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Graphics", "[", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"Hue", "[", "0.02", "]"}], ",", 
+                 RowBox[{"Tooltip", "[", 
+                  RowBox[{"Disk", "[", 
+                   RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "0"}], "}"}], ",", "age"}], "]"}], 
+                  "]"}], ",", 
+                 RowBox[{"Hue", "[", "0.15", "]"}], ",", 
+                 RowBox[{"Tooltip", "[", 
+                  RowBox[{"Disk", "[", 
+                   RowBox[{
+                    RowBox[{"{", 
                     RowBox[{"0", ",", "0"}], "}"}], ",", 
-                   RowBox[{"1", "-", "agePoint"}]}], "]"}], "]"}]}], "}"}], 
-              ",", 
-              RowBox[{"PlotRange", "\[Rule]", "1"}]}], "]"}], ",", 
-            "\[IndentingNewLine]", 
-            RowBox[{"Graphics", "[", 
-             RowBox[{"{", 
-              RowBox[{"Text", "[", 
-               RowBox[{"\"\<Temperature: \>\"", "<>", 
-                RowBox[{"ToString", "[", 
-                 RowBox[{"agePoint", "*", 
-                  SuperscriptBox["10", "6"]}], "]"}], "<>", 
-                "\"\<\\nRadius: \>\"", "<>", 
-                RowBox[{"ToString", "[", 
-                 FractionBox["agePoint", "2"], "]"}], "<>", 
-                "\"\<\\nLuminosity: \>\"", "<>", 
-                RowBox[{"ToString", "[", 
-                 RowBox[{"agePoint", "*", "10"}], "]"}], "<>", 
-                "\"\<\\nMagnitude: \>\"", "<>", 
-                RowBox[{"ToString", "[", 
-                 RowBox[{"agePoint", "*", "7"}], "]"}]}], "]"}], "}"}], 
-             "]"}]}], "}"}]}], "\[IndentingNewLine]", "}"}], ",", 
-        "\[IndentingNewLine]", 
-        RowBox[{"ContentSelectable", "\[Rule]", "False"}]}], 
-       "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+                    RowBox[{"1", "-", "age"}]}], "]"}], "]"}]}], "}"}], ",", 
+               RowBox[{"PlotRange", "\[Rule]", "1"}]}], "]"}], ",", 
+             "\[IndentingNewLine]", 
+             RowBox[{"Graphics", "[", 
+              RowBox[{"{", 
+               RowBox[{"Text", "[", 
+                RowBox[{"\"\<Temperature: \>\"", "<>", 
+                 RowBox[{"ToString", "[", 
+                  RowBox[{"age", "*", 
+                   SuperscriptBox["10", "6"]}], "]"}], "<>", 
+                 "\"\<\\nRadius: \>\"", "<>", 
+                 RowBox[{"ToString", "[", 
+                  FractionBox["age", "2"], "]"}], "<>", 
+                 "\"\<\\nLuminosity: \>\"", "<>", 
+                 RowBox[{"ToString", "[", 
+                  RowBox[{"age", "*", "10"}], "]"}], "<>", 
+                 "\"\<\\nMagnitude: \>\"", "<>", 
+                 RowBox[{"ToString", "[", 
+                  RowBox[{"age", "*", "7"}], "]"}]}], "]"}], "}"}], "]"}]}], 
+            "}"}]}], "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"ContentSelectable", "\[Rule]", "False"}]}], 
+        "\[IndentingNewLine]", "]"}]}], ",", "\[IndentingNewLine]", 
       RowBox[{"{", 
-       RowBox[{"agePoint", ",", "0", ",", "1"}], "}"}], ",", 
+       RowBox[{"age", ",", "0", ",", "0.5"}], "}"}], ",", 
       RowBox[{"ContentSize", "\[Rule]", "Smaller"}]}], "]"}]}], 
    "\[IndentingNewLine]", "]"}]}]], "Input",
  CellChangeTimes->{{3.6687175198679237`*^9, 3.6687175373508954`*^9}, {
@@ -197,7 +213,13 @@ Cell[BoxData[
    3.6690659996729507`*^9, 3.6690660129724183`*^9}, {3.669066115135832*^9, 
    3.6690661559316144`*^9}, {3.669066196688707*^9, 3.669066218545988*^9}, {
    3.669409728446373*^9, 3.6694097410233727`*^9}, {3.6695104233447795`*^9, 
-   3.6695104237347794`*^9}, 3.6695569712479887`*^9}],
+   3.6695104237347794`*^9}, 3.6695569712479887`*^9, {3.6700140209059486`*^9, 
+   3.670014036958948*^9}, {3.6700141111229486`*^9, 3.6700141293769484`*^9}, {
+   3.670014222142948*^9, 3.6700143311789484`*^9}, {3.6700152576294575`*^9, 
+   3.6700152739289465`*^9}, {3.670015306439923*^9, 3.6700153068299346`*^9}, {
+   3.670015394479221*^9, 3.6700154109017205`*^9}, {3.67001562672723*^9, 
+   3.6700156341773787`*^9}, {3.6700159139087615`*^9, 
+   3.6700160067859764`*^9}, {3.6700160894152026`*^9, 3.670016106483203*^9}}],
 
 Cell[CellGroupData[{
 
@@ -211,7 +233,7 @@ Cell[BoxData[
 Cell[BoxData[
  DynamicBox[ToBoxes[
    $CellContext`interface[], StandardForm],
-  ImageSizeCache->{411., {223., 230.}}]], "Output",
+  ImageSizeCache->{411., {236., 243.}}]], "Output",
  CellChangeTimes->{
   3.669546682407449*^9, {3.669556096576579*^9, 3.6695561109265785`*^9}}]
 }, Open  ]],
@@ -291,7 +313,8 @@ Cell[TextData[StyleBox["Variable Explanations:",
  CellChangeTimes->{{3.6695110152244797`*^9, 3.6695110219661794`*^9}}],
 
 Cell[TextData[{
- StyleBox["Age:",
+ "Age",
+ StyleBox[":",
   FontFamily->"Times New Roman",
   FontSize->12,
   FontWeight->"Bold"],
@@ -332,7 +355,8 @@ achieved radius.\n",
   FontFamily->"Times New Roman",
   FontSize->12,
   FontWeight->"Bold"],
- StyleBox["Age of the star at death, in years.",
+ "Age",
+ StyleBox[" of the star at death, in years.",
   FontFamily->"Times New Roman",
   FontSize->12]
 }], "Text",
@@ -340,7 +364,8 @@ achieved radius.\n",
   3.669412892726177*^9, 3.6694129243324037`*^9}, {3.669414237994672*^9, 
   3.6694142827971516`*^9}, {3.669414340466918*^9, 3.6694143494258137`*^9}, {
   3.669415238327626*^9, 3.669415270093095*^9}, {3.669415314629731*^9, 
-  3.6694153150496054`*^9}}]
+  3.6694153150496054`*^9}, {3.6700140370029483`*^9, 3.6700140370679483`*^9}, {
+  3.6700140721079483`*^9, 3.6700140827249484`*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -493,7 +518,9 @@ Cell[BoxData[
    3.669419112307415*^9}, {3.6694193187542696`*^9, 3.6694194149627523`*^9}, {
    3.6694194969060726`*^9, 3.669419613735344*^9}, {3.669419655551648*^9, 
    3.669419655761654*^9}, {3.669419690067703*^9, 3.669419737262491*^9}, {
-   3.66941978750863*^9, 3.669419792978466*^9}}],
+   3.66941978750863*^9, 3.669419792978466*^9}, {3.6700140370809484`*^9, 
+   3.6700140370879483`*^9}, {3.6700140844859486`*^9, 
+   3.6700140881579485`*^9}, {3.670015841568931*^9, 3.6700158593963966`*^9}}],
 
 Cell[BoxData[
  TagBox[
@@ -605,7 +632,7 @@ Cell[BoxData[
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
- CellChangeTimes->{3.6695559898143773`*^9}]
+ CellChangeTimes->{3.6695559898143773`*^9, 3.6700142333059483`*^9}]
 }, Open  ]]
 }, Open  ]],
 
@@ -618,15 +645,20 @@ Cell[TextData[StyleBox["Caveat:",
  FontColor->RGBColor[0., 0., 0.]]], "Section",
  CellChangeTimes->{{3.669511267874487*^9, 3.6695112698401*^9}}],
 
-Cell[TextData[StyleBox["Currently I use \
-\[OpenCurlyDoubleQuote]http://spiff.rit.edu/classes/phys230/lectures/star_age/\
-evol_hr.swf\[CloseCurlyDoubleQuote] as the source for this database. It\
-\[CloseCurlyQuote]s a flash program very similar to our own, but less \
-complex. We need a better source.",
- FontFamily->"Times New Roman",
- FontSize->12]], "Text",
+Cell[TextData[{
+ StyleBox["Currently I use \
+\[OpenCurlyDoubleQuote]http://spiff.rit.edu/classes/phys230/lectures/star_",
+  FontFamily->"Times New Roman",
+  FontSize->12],
+ "age",
+ StyleBox["/evol_hr.swf\[CloseCurlyDoubleQuote] as the source for this \
+database. It\[CloseCurlyQuote]s a flash program very similar to our own, but \
+less complex. We need a better source.",
+  FontFamily->"Times New Roman",
+  FontSize->12]
+}], "Text",
  CellChangeTimes->{{3.6694133226306553`*^9, 3.669413369926112*^9}, {
-  3.669413818543731*^9, 3.669413861598036*^9}}]
+   3.669413818543731*^9, 3.669413861598036*^9}, 3.6700140371769485`*^9}]
 }, Closed]]
 }, Open  ]]
 }, Open  ]]
@@ -653,37 +685,37 @@ Cell[580, 22, 425, 11, 112, "Title"],
 Cell[CellGroupData[{
 Cell[1030, 37, 219, 5, 45, "Chapter"],
 Cell[1252, 44, 474, 11, 52, "Input"],
-Cell[1729, 57, 7733, 142, 403, "Input"],
+Cell[1729, 57, 8905, 164, 449, "Input"],
 Cell[CellGroupData[{
-Cell[9487, 203, 265, 5, 31, "Input"],
-Cell[9755, 210, 223, 5, 470, "Output"]
+Cell[10659, 225, 265, 5, 31, "Input"],
+Cell[10927, 232, 223, 5, 496, "Output"]
 }, Open  ]],
-Cell[9993, 218, 607, 12, 31, "Input"],
-Cell[10603, 232, 1363, 39, 46, "Input"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[12003, 276, 220, 5, 45, "Chapter"],
-Cell[CellGroupData[{
-Cell[12248, 285, 233, 5, 50, "Section"],
-Cell[12484, 292, 1626, 50, 119, "Text"]
+Cell[11165, 240, 607, 12, 31, "Input"],
+Cell[11775, 254, 1363, 39, 46, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[14147, 347, 234, 5, 50, "Section"],
+Cell[13175, 298, 220, 5, 45, "Chapter"],
 Cell[CellGroupData[{
-Cell[14406, 356, 647, 12, 72, "Input"],
-Cell[15056, 370, 2103, 46, 93, "Output"]
+Cell[13420, 307, 233, 5, 50, "Section"],
+Cell[13656, 314, 1739, 53, 121, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15432, 372, 234, 5, 50, "Section"],
+Cell[CellGroupData[{
+Cell[15691, 381, 647, 12, 72, "Input"],
+Cell[16341, 395, 2103, 46, 93, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[17208, 422, 218, 5, 50, "Section"],
+Cell[18493, 447, 218, 5, 50, "Section"],
 Cell[CellGroupData[{
-Cell[17451, 431, 2945, 64, 283, "Input"],
-Cell[20399, 497, 4354, 110, 213, "Output"]
+Cell[18736, 456, 3101, 66, 283, "Input"],
+Cell[21840, 524, 4378, 110, 213, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[24802, 613, 212, 5, 50, "Section"],
-Cell[25017, 620, 476, 8, 29, "Text"]
+Cell[26267, 640, 212, 5, 50, "Section"],
+Cell[26482, 647, 575, 13, 29, "Text"]
 }, Closed]]
 }, Open  ]]
 }, Open  ]]
