@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     30573,        754]
-NotebookOptionsPosition[     29355,        706]
-NotebookOutlinePosition[     29726,        722]
-CellTagsIndexPosition[     29683,        719]
+NotebookDataLength[     30729,        760]
+NotebookOptionsPosition[     29431,        709]
+NotebookOutlinePosition[     29802,        725]
+CellTagsIndexPosition[     29759,        722]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -51,6 +51,7 @@ Cell[BoxData[{
   RowBox[{"hrDiagram", "=", 
    RowBox[{"Import", "[", "\"\<Evolution_of_a_Sun-like_star.jpg\>\"", "]"}]}],
    ";"}]}], "Input",
+ InitializationCell->True,
  CellChangeTimes->{{3.6687208251809793`*^9, 3.6687208473706455`*^9}, {
    3.668944854191222*^9, 3.6689448550313144`*^9}, 3.668961533681717*^9, {
    3.668962048841717*^9, 3.668962051666717*^9}}],
@@ -267,7 +268,7 @@ Cell[BoxData[
 Cell[BoxData[
  DynamicBox[ToBoxes[
    $CellContext`interface[], StandardForm],
-  ImageSizeCache->{411., {223., 230.}}]], "Output",
+  ImageSizeCache->{88., {2., 8.}}]], "Output",
  CellChangeTimes->{
   3.669546682407449*^9, {3.669556096576579*^9, 3.6695561109265785`*^9}}]
 }, Open  ]],
@@ -326,7 +327,7 @@ Cell[BoxData[
   3.669510131857505*^9, 3.6695101321694994`*^9}, {3.669510185196283*^9, 
   3.669510190133288*^9}, {3.6695102291752405`*^9, 3.6695102296432314`*^9}, {
   3.6698349789209375`*^9, 3.669835008539631*^9}}]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -428,6 +429,7 @@ Cell[BoxData[
       RowBox[{"\"\<Star Type\>\"", "\[Rule]", "\"\<1 Msun\>\""}], ",", 
       RowBox[{"\"\<Lifespan\>\"", "\[Rule]", "11000000000"}]}], "|>"}], 
     "\[IndentingNewLine]", "}"}], "]"}]}]], "Input",
+ InitializationCell->True,
  CellChangeTimes->{{3.6694151806824207`*^9, 3.669415232459387*^9}, {
    3.669415275151577*^9, 3.669415327383405*^9}, {3.669415564888974*^9, 
    3.6694155882821026`*^9}, {3.6694170922712135`*^9, 3.6694171088598866`*^9}, 
@@ -553,6 +555,7 @@ Cell[BoxData[
        RowBox[{"\"\<Color\>\"", "\[Rule]", "0.22"}], ",", 
        RowBox[{"\"\<T\>\"", "\[Rule]", "idk"}]}], "|>"}]}], "\n", "}"}], 
    "]"}]}]], "Input",
+ InitializationCell->True,
  CellChangeTimes->{{3.669411554224866*^9, 3.669411655157866*^9}, {
    3.669411689005866*^9, 3.669411723212866*^9}, {3.669411756808866*^9, 
    3.669411796363866*^9}, {3.669411855820866*^9, 3.6694119455390787`*^9}, {
@@ -700,8 +703,8 @@ Cell[BoxData[
   3.670017059878889*^9, 3.670017096800581*^9, 3.6700171900699067`*^9, 
   3.6700173633093543`*^9, 3.670018110029046*^9}]
 }, Open  ]]
-}, Open  ]]
-}, Open  ]]
+}, Closed]]
+}, Closed]]
 }, Open  ]]
 },
 WindowToolbars->"EditBar",
@@ -725,36 +728,39 @@ Cell[CellGroupData[{
 Cell[580, 22, 425, 11, 112, "Title"],
 Cell[CellGroupData[{
 Cell[1030, 37, 219, 5, 45, "Chapter"],
-Cell[1252, 44, 474, 11, 52, "Input"],
-Cell[1729, 57, 10540, 198, 557, "Input"],
+Cell[1252, 44, 501, 12, 52, "Input",
+ InitializationCell->True],
+Cell[1756, 58, 10540, 198, 557, "Input"],
 Cell[CellGroupData[{
-Cell[12294, 259, 265, 5, 31, "Input"],
-Cell[12562, 266, 223, 5, 470, "Output"]
+Cell[12321, 260, 265, 5, 31, "Input"],
+Cell[12589, 267, 218, 5, 31, "Output"]
 }, Open  ]],
-Cell[12800, 274, 607, 12, 31, "Input"],
-Cell[13410, 288, 1363, 39, 46, "Input"]
+Cell[12822, 275, 607, 12, 31, "Input"],
+Cell[13432, 289, 1363, 39, 46, "Input"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[14832, 333, 220, 5, 34, "Chapter"],
+Cell[CellGroupData[{
+Cell[15077, 342, 233, 5, 50, "Section"],
+Cell[15313, 349, 1969, 59, 137, "Text"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[14810, 332, 220, 5, 45, "Chapter"],
+Cell[17319, 413, 234, 5, 50, "Section"],
 Cell[CellGroupData[{
-Cell[15055, 341, 233, 5, 50, "Section"],
-Cell[15291, 348, 1969, 59, 137, "Text"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[17297, 412, 234, 5, 50, "Section"],
-Cell[CellGroupData[{
-Cell[17556, 421, 647, 12, 72, "Input"],
-Cell[18206, 435, 2103, 46, 93, "Output"]
+Cell[17578, 422, 674, 13, 72, "Input",
+ InitializationCell->True],
+Cell[18255, 437, 2103, 46, 93, "Output"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[20358, 487, 218, 5, 36, "Section"],
+Cell[20407, 489, 218, 5, 36, "Section"],
 Cell[CellGroupData[{
-Cell[20601, 496, 3576, 74, 283, "Input"],
-Cell[24180, 572, 5123, 128, 213, "Output"]
+Cell[20650, 498, 3603, 75, 283, "Input",
+ InitializationCell->True],
+Cell[24256, 575, 5123, 128, 213, "Output"]
 }, Open  ]]
-}, Open  ]]
-}, Open  ]]
+}, Closed]]
+}, Closed]]
 }, Open  ]]
 }
 ]
