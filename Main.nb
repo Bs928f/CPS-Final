@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     25524,        624]
-NotebookOptionsPosition[     24069,        567]
-NotebookOutlinePosition[     24471,        584]
-CellTagsIndexPosition[     24428,        581]
+NotebookDataLength[     25578,        625]
+NotebookOptionsPosition[     24123,        568]
+NotebookOutlinePosition[     24525,        585]
+CellTagsIndexPosition[     24482,        582]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -493,7 +493,7 @@ Cell[BoxData[
         RowBox[{"\"\<Mass\>\"", "\[Rule]", "0.999999996"}], ",", 
         RowBox[{"\"\<Radius\>\"", "\[Rule]", 
          FractionBox["0.82", "18"]}], ",", 
-        RowBox[{"\"\<Color\>\"", "\[Rule]", "0.21"}], ",", 
+        RowBox[{"\"\<Color\>\"", "\[Rule]", "0.19"}], ",", 
         RowBox[{"\"\<T\>\"", "\[Rule]", "idk"}], ",", " ", 
         RowBox[{"\"\<HRX\>\"", "\[Rule]", "idk"}], ",", " ", 
         RowBox[{"\"\<HRY\>\"", "\[Rule]", "idk"}]}], "|>"}], ",", 
@@ -504,7 +504,7 @@ Cell[BoxData[
         RowBox[{"\"\<Mass\>\"", "\[Rule]", "0.999999992"}], ",", 
         RowBox[{"\"\<Radius\>\"", "\[Rule]", 
          FractionBox["0.88", "18"]}], ",", 
-        RowBox[{"\"\<Color\>\"", "\[Rule]", "0.22"}], ",", 
+        RowBox[{"\"\<Color\>\"", "\[Rule]", "0.19"}], ",", 
         RowBox[{"\"\<T\>\"", "\[Rule]", "idk"}], ",", " ", 
         RowBox[{"\"\<HRX\>\"", "\[Rule]", "idk"}], ",", " ", 
         RowBox[{"\"\<HRY\>\"", "\[Rule]", "idk"}]}], "|>"}], ",", 
@@ -515,7 +515,7 @@ Cell[BoxData[
         RowBox[{"\"\<Mass\>\"", "\[Rule]", "0.999999987"}], ",", 
         RowBox[{"\"\<Radius\>\"", "\[Rule]", 
          FractionBox["0.97", "18"]}], ",", 
-        RowBox[{"\"\<Color\>\"", "\[Rule]", "0.23"}], ",", 
+        RowBox[{"\"\<Color\>\"", "\[Rule]", "0.18"}], ",", 
         RowBox[{"\"\<T\>\"", "\[Rule]", "idk"}], ",", " ", 
         RowBox[{"\"\<HRX\>\"", "\[Rule]", "idk"}], ",", " ", 
         RowBox[{"\"\<HRY\>\"", "\[Rule]", "idk"}]}], "|>"}], ",", 
@@ -526,7 +526,7 @@ Cell[BoxData[
         RowBox[{"\"\<Mass\>\"", "\[Rule]", "0.99999998"}], ",", 
         RowBox[{"\"\<Radius\>\"", "\[Rule]", 
          FractionBox["1.32", "18"]}], ",", 
-        RowBox[{"\"\<Color\>\"", "\[Rule]", "0.22"}], ",", 
+        RowBox[{"\"\<Color\>\"", "\[Rule]", "0.17"}], ",", 
         RowBox[{"\"\<T\>\"", "\[Rule]", "idk"}], ",", " ", 
         RowBox[{"\"\<HRX\>\"", "\[Rule]", "idk"}], ",", " ", 
         RowBox[{"\"\<HRY\>\"", "\[Rule]", "idk"}]}], "|>"}]}], "\n", "}"}], 
@@ -548,7 +548,8 @@ Cell[BoxData[
    3.6700140881579485`*^9}, {3.670015841568931*^9, 3.6700158593963966`*^9}, {
    3.6700170661825194`*^9, 3.6700172310690064`*^9}, {3.670017278650764*^9, 
    3.67001729531143*^9}, {3.6700173319326916`*^9, 3.670017361289314*^9}, 
-   3.670073682638608*^9, 3.6701558269720745`*^9}],
+   3.670073682638608*^9, 3.6701558269720745`*^9, {3.6701607748406773`*^9, 
+   3.6701607957016773`*^9}}],
 
 Cell[CellGroupData[{
 
@@ -604,7 +605,7 @@ Cell[CellGroupData[{
 Cell[15097, 335, 220, 5, 38, "Chapter"],
 Cell[CellGroupData[{
 Cell[15342, 344, 233, 5, 43, "Section"],
-Cell[15578, 351, 1969, 59, 67, "Text"]
+Cell[15578, 351, 1969, 59, 56, "Text"]
 }, Closed]],
 Cell[CellGroupData[{
 Cell[17584, 415, 234, 5, 32, "Section"],
@@ -612,16 +613,16 @@ Cell[17821, 422, 725, 15, 63, "Input",
  InitializationCell->True],
 Cell[CellGroupData[{
 Cell[18571, 441, 146, 2, 26, "Input"],
-Cell[18720, 445, 178, 3, 56, "Output"]
+Cell[18720, 445, 178, 3, 47, "Output"]
 }, Closed]]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[18947, 454, 218, 5, 43, "Section"],
-Cell[19168, 461, 4533, 89, 250, "Input",
+Cell[19168, 461, 4587, 90, 283, "Input",
  InitializationCell->True],
 Cell[CellGroupData[{
-Cell[23726, 554, 130, 2, 26, "Input"],
-Cell[23859, 558, 158, 3, 88, "Output"]
+Cell[23780, 555, 130, 2, 26, "Input"],
+Cell[23913, 559, 158, 3, 74, "Output"]
 }, Closed]]
 }, Open  ]]
 }, Open  ]]
