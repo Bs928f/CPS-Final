@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     35785,        820]
-NotebookOptionsPosition[     34282,        762]
-NotebookOutlinePosition[     34684,        779]
-CellTagsIndexPosition[     34641,        776]
+NotebookDataLength[     34081,        790]
+NotebookOptionsPosition[     32621,        733]
+NotebookOutlinePosition[     33023,        750]
+CellTagsIndexPosition[     32980,        747]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -55,49 +55,11 @@ Cell[BoxData[
 Cell[BoxData[
  DynamicBox[ToBoxes[
    $CellContext`interface[], StandardForm],
-  ImageSizeCache->{571., {305., 310.}}]], "Output",
+  ImageSizeCache->{528., {284., 289.}}]], "Output",
  CellChangeTimes->{
   3.669546682407449*^9, {3.669556096576579*^9, 3.6695561109265785`*^9}, 
    3.6701689113545227`*^9, 3.6701834900588446`*^9, 3.6701838718992853`*^9, 
-   3.6701839959226913`*^9, 3.6701843096591797`*^9}],
-
-Cell[BoxData[
- RowBox[{
-  StyleBox[
-   RowBox[{"GraphicsGrid", "::", "nonopt"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"Options expected (instead of \[NoBreak]\\!\\(Null\\)\
-\[NoBreak]) beyond position \[NoBreak]\\!\\(1\\)\[NoBreak] in \
-\[NoBreak]\\!\\(GraphicsGrid[\\(\\(\\(\\({\\(\\({\\*Graphics3DBox[List[Hue[0.\
-16999999999999998`], TagBox[TooltipBox[SphereBox[List[0, 0, 0], \
-0.35064893964814486`], RowBox[List[\\\"Sphere\\\", \\\"[\\\", \
-RowBox[List[RowBox[List[\\\"{\\\", RowBox[List[\\\"0\\\", \\\",\\\", \
-\\\"0\\\", \\\",\\\", \\\"0\\\"]], \\\"}\\\"]], \\\",\\\", \
-\\\"0.35064893964814486`\\\"]], \\\"]\\\"]]], Function[Annotation[Slot[1], \
-Sphere[List[0, 0, 0], 0.35064893964814486`], \\\"Tooltip\\\"]]]], \
-Rule[Background, GrayLevel[0]], Rule[Boxed, False], Rule[PlotRange, 1]], \
-\\*GraphicsBox[List[Hue[0.7`], Rule[PointSize, Large], PointBox[List[0, 0]]], \
-Rule[PlotRange, 1]]}\\)\\), \\(\\({\\*GraphicsBox[List[Hue[0.02`], \
-TagBox[TooltipBox[DiskBox[List[0, 0], 0], RowBox[List[\\\"Disk\\\", \
-\\\"[\\\", RowBox[List[RowBox[List[\\\"{\\\", RowBox[List[\\\"0\\\", \
-\\\",\\\", \\\"0\\\"]], \\\"}\\\"]], \\\",\\\", \\\"0\\\"]], \\\"]\\\"]]], \
-Function[Annotation[Slot[1], Disk[List[0, 0], 0], \\\"Tooltip\\\"]]], \
-Hue[0.15`], TagBox[TooltipBox[DiskBox[List[0, 0], 1], \
-RowBox[List[\\\"Disk\\\", \\\"[\\\", RowBox[List[RowBox[List[\\\"{\\\", \
-RowBox[List[\\\"0\\\", \\\",\\\", \\\"0\\\"]], \\\"}\\\"]], \\\",\\\", \
-\\\"1\\\"]], \\\"]\\\"]]], Function[Annotation[Slot[1], Disk[List[0, 0], 1], \
-\\\"Tooltip\\\"]]]], Rule[PlotRange, 1]], \
-\\*GraphicsBox[List[InsetBox[FormBox[\\\"\\\\\\\"Surface Temperature: 5,658\\\
-\\[Degree]K\\\\\\\\nCenter Tempurature: \
-13,295,701\\\\[Degree]K\\\\\\\\nRadius: -0.067,606 \
-R\\\\[CircleDot]\\\\\\\\nLuminosity: 0.674,062 \
-L\\\\[CircleDot]\\\\\\\\nMagnitude: 0\\\\\\\"\\\", TraditionalForm], List[0, \
-0]]]]}\\)\\)}\\)\\), \\(\\(ContentSelectable \[Rule] False\\)\\), Null\\)\\)]\
-\\)\[NoBreak]. An option must be a rule or a list of rules. \
-\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
-ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/nonopt\\\", \
-ButtonNote -> \\\"GraphicsGrid::nonopt\\\"]\\)\"\>"}]], "Message", "MSG",
- CellChangeTimes->{3.670184442458889*^9}]
+   3.6701839959226913`*^9, 3.6701843096591797`*^9}]
 }, Open  ]]
 }, Open  ]],
 
@@ -291,41 +253,44 @@ Cell[BoxData[
              "\[IndentingNewLine]", 
              RowBox[{"Graphics", "[", 
               RowBox[{"{", 
-               RowBox[{"Text", "[", 
-                RowBox[{"\"\<Surface Temperature: \>\"", "<>", 
-                 RowBox[{"ToString", "[", 
-                  RowBox[{"NumberForm", "[", 
-                   RowBox[{
+               RowBox[{
+                RowBox[{"FontSize", "\[Rule]", "16"}], ",", " ", 
+                RowBox[{"Text", "[", 
+                 RowBox[{"\"\<Surface Temperature: \>\"", "<>", 
+                  RowBox[{"ToString", "[", 
+                   RowBox[{"NumberForm", "[", 
+                    RowBox[{
                     RowBox[{"Round", "[", 
                     SuperscriptBox["10", "surfaceTemp"], "]"}], ",", 
                     RowBox[{"DigitBlock", "\[Rule]", "3"}]}], "]"}], "]"}], 
-                 "<>", "\"\<\[Degree]K\>\"", "<>", 
-                 "\"\<\\nCenter Tempurature: \>\"", "<>", 
-                 RowBox[{"ToString", "[", 
-                  RowBox[{"NumberForm", "[", 
-                   RowBox[{
+                  "<>", "\"\<\[Degree]K\>\"", "<>", 
+                  "\"\<\\nCenter Tempurature: \>\"", "<>", 
+                  RowBox[{"ToString", "[", 
+                   RowBox[{"NumberForm", "[", 
+                    RowBox[{
                     RowBox[{"Round", "[", 
                     SuperscriptBox["10", "centerTemp"], "]"}], ",", 
                     RowBox[{"DigitBlock", "\[Rule]", "3"}]}], "]"}], "]"}], 
-                 "<>", "\"\<\[Degree]K\>\"", "<>", "\"\<\\nRadius: \>\"", "<>", 
-                 RowBox[{"ToString", "[", 
-                  RowBox[{"NumberForm", "[", 
-                   RowBox[{"radius", ",", 
+                  "<>", "\"\<\[Degree]K\>\"", "<>", "\"\<\\nRadius: \>\"", "<>", 
+                  RowBox[{"ToString", "[", 
+                   RowBox[{"NumberForm", "[", 
+                    RowBox[{
+                    SuperscriptBox["10", "radius"], ",", 
                     RowBox[{"DigitBlock", "\[Rule]", "3"}], ",", 
                     RowBox[{"NumberSeparator", "\[Rule]", "\"\<,\>\""}]}], 
-                   "]"}], "]"}], "<>", "\"\< R\[CircleDot]\>\"", "<>", 
-                 "\"\<\\nLuminosity: \>\"", "<>", 
-                 RowBox[{"ToString", "[", 
-                  RowBox[{"NumberForm", "[", 
-                   RowBox[{
+                    "]"}], "]"}], "<>", "\"\< R\[CircleDot]\>\"", "<>", 
+                  "\"\<\\nLuminosity: \>\"", "<>", 
+                  RowBox[{"ToString", "[", 
+                   RowBox[{"NumberForm", "[", 
+                    RowBox[{
                     SuperscriptBox["10", "luminosity"], ",", 
                     RowBox[{"DigitBlock", "\[Rule]", "3"}], ",", 
                     RowBox[{"NumberSeparator", "\[Rule]", "\"\<,\>\""}]}], 
-                   "]"}], "]"}], "<>", "\"\< L\[CircleDot]\>\"", "<>", 
-                 "\"\<\\nMagnitude: \>\"", "<>", 
-                 RowBox[{"ToString", "[", 
-                  RowBox[{"age", "*", "7"}], "]"}]}], "]"}], "}"}], "]"}]}], 
-            "}"}]}], "\[IndentingNewLine]", 
+                    "]"}], "]"}], "<>", "\"\< L\[CircleDot]\>\"", "<>", 
+                  "\"\<\\nMagnitude: \>\"", "<>", 
+                  RowBox[{"ToString", "[", 
+                   RowBox[{"age", "*", "7"}], "]"}]}], "]"}]}], "}"}], 
+              "]"}]}], "}"}]}], "\[IndentingNewLine]", 
           RowBox[{"(*", 
            RowBox[{"The", " ", "Text", " ", "Readouts"}], "*)"}], 
           "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
@@ -339,10 +304,10 @@ Cell[BoxData[
          RowBox[{"ImageSize", "\[Rule]", "Full"}]}], "\[IndentingNewLine]", 
         "]"}]}], ",", "\[IndentingNewLine]", 
       RowBox[{"{", 
-       RowBox[{"age", ",", "0", ",", "1"}], "}"}], ",", 
+       RowBox[{"age", ",", "0", ",", "0.5"}], "}"}], ",", 
       RowBox[{"ContentSize", "\[Rule]", 
        RowBox[{"{", 
-        RowBox[{"650", ",", "650"}], "}"}]}]}], "]"}]}], 
+        RowBox[{"600", ",", "600"}], "}"}]}]}], "]"}]}], 
    "\[IndentingNewLine]", "]"}]}]], "Input",
  CellChangeTimes->{{3.6687175198679237`*^9, 3.6687175373508954`*^9}, {
    3.6687178397844467`*^9, 3.6687178407245026`*^9}, {3.668717894457489*^9, 
@@ -432,7 +397,13 @@ Cell[BoxData[
    3.6701839796986914`*^9, 3.670183985065091*^9}, {3.670184019681491*^9, 
    3.670184050153291*^9}, {3.670184087322491*^9, 3.670184128929591*^9}, {
    3.6701842037457914`*^9, 3.670184295213394*^9}, {3.670184433800974*^9, 
-   3.670184451366603*^9}}],
+   3.670184451366603*^9}, {3.670241103261507*^9, 3.6702411044776125`*^9}, {
+   3.670241174013919*^9, 3.6702412101696796`*^9}, {3.670241528341466*^9, 
+   3.670241553889188*^9}, {3.6702416665144033`*^9, 3.6702416703200464`*^9}, {
+   3.6702417099854937`*^9, 3.670241775033324*^9}, {3.6702418444340067`*^9, 
+   3.6702418800474367`*^9}, {3.6702419328670053`*^9, 
+   3.6702419419614553`*^9}, {3.670241998290889*^9, 3.6702420010363827`*^9}, {
+   3.6702421192331653`*^9, 3.670242194315965*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -784,40 +755,39 @@ Cell[CellGroupData[{
 Cell[1030, 37, 267, 6, 38, "Chapter"],
 Cell[CellGroupData[{
 Cell[1322, 47, 265, 5, 26, "Input"],
-Cell[1590, 54, 351, 7, 629, "Output"],
-Cell[1944, 63, 2280, 36, 91, "Message"]
+Cell[1590, 54, 351, 7, 587, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4273, 105, 219, 5, 38, "Chapter"],
-Cell[4495, 112, 1082, 24, 45, "Input",
+Cell[1990, 67, 219, 5, 38, "Chapter"],
+Cell[2212, 74, 1082, 24, 45, "Input",
  InitializationCell->True],
-Cell[5580, 138, 15887, 296, 625, "Input"],
-Cell[21470, 436, 1929, 44, 99, "Input",
+Cell[3297, 100, 16509, 305, 625, "Input"],
+Cell[19809, 407, 1929, 44, 99, "Input",
  InitializationCell->True]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[23436, 485, 220, 5, 38, "Chapter"],
+Cell[21775, 456, 220, 5, 38, "Chapter"],
 Cell[CellGroupData[{
-Cell[23681, 494, 233, 5, 43, "Section"],
-Cell[23917, 501, 2939, 91, 152, "Text"]
+Cell[22020, 465, 233, 5, 43, "Section"],
+Cell[22256, 472, 2939, 91, 152, "Text"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[26893, 597, 234, 5, 43, "Section"],
-Cell[27130, 604, 725, 15, 63, "Input",
+Cell[25232, 568, 234, 5, 43, "Section"],
+Cell[25469, 575, 725, 15, 63, "Input",
  InitializationCell->True],
 Cell[CellGroupData[{
-Cell[27880, 623, 146, 2, 26, "Input"],
-Cell[28029, 627, 178, 3, 76, "Output"]
+Cell[26219, 594, 146, 2, 26, "Input"],
+Cell[26368, 598, 178, 3, 64, "Output"]
 }, Closed]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[28256, 636, 218, 5, 43, "Section"],
-Cell[28477, 643, 5437, 102, 153, "Input",
+Cell[26595, 607, 218, 5, 43, "Section"],
+Cell[26816, 614, 5437, 102, 153, "Input",
  InitializationCell->True],
 Cell[CellGroupData[{
-Cell[33939, 749, 130, 2, 26, "Input"],
-Cell[34072, 753, 158, 3, 171, "Output"]
+Cell[32278, 720, 130, 2, 26, "Input"],
+Cell[32411, 724, 158, 3, 171, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
