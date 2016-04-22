@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     34081,        790]
-NotebookOptionsPosition[     32621,        733]
-NotebookOutlinePosition[     33023,        750]
-CellTagsIndexPosition[     32980,        747]
+NotebookDataLength[     28362,        646]
+NotebookOptionsPosition[     27300,        603]
+NotebookOutlinePosition[     27702,        620]
+CellTagsIndexPosition[     27659,        617]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -21,7 +21,7 @@ Notebook[{
 
 Cell[CellGroupData[{
 Cell[TextData[{
- StyleBox["Star Life Emulator\n",
+ StyleBox["Stellar Evolution Simulator\n",
   FontFamily->"Times New Roman",
   FontSize->36,
   FontColor->RGBColor[0., 0., 0.]],
@@ -31,7 +31,8 @@ Cell[TextData[{
   FontColor->RGBColor[0., 0., 0.]]
 }], "Title",
  CellChangeTimes->{{3.669467012284793*^9, 3.6694670226348968`*^9}, 
-   3.669510752273879*^9, {3.6695107883605795`*^9, 3.6695107963752794`*^9}}],
+   3.669510752273879*^9, {3.6695107883605795`*^9, 3.6695107963752794`*^9}, {
+   3.670332572051155*^9, 3.6703325851994696`*^9}}],
 
 Cell[CellGroupData[{
 
@@ -55,7 +56,7 @@ Cell[BoxData[
 Cell[BoxData[
  DynamicBox[ToBoxes[
    $CellContext`interface[], StandardForm],
-  ImageSizeCache->{528., {284., 289.}}]], "Output",
+  ImageSizeCache->{77., {2., 7.}}]], "Output",
  CellChangeTimes->{
   3.669546682407449*^9, {3.669556096576579*^9, 3.6695561109265785`*^9}, 
    3.6701689113545227`*^9, 3.6701834900588446`*^9, 3.6701838718992853`*^9, 
@@ -78,15 +79,76 @@ Cell[BoxData[{
    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"data", "=", 
-   RowBox[{"connect", "[", 
-    RowBox[{
-     RowBox[{"Delete", "[", 
-      RowBox[{
-       RowBox[{"Import", "[", "\"\<Star Data.xlsx\>\"", "]"}], ",", 
-       RowBox[{"{", 
-        RowBox[{"1", ",", "1"}], "}"}]}], "]"}], "[", 
-     RowBox[{"[", "1", "]"}], "]"}], "]"}]}], ";"}]}], "Input",
+  RowBox[{"oneMSunData", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{"\"\<One Solar Mass.txt\>\"", ",", "\"\<Table\>\""}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"oneMSun", "=", 
+   RowBox[{"Dataset", "[", 
+    RowBox[{"Table", "[", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"<|", 
+       RowBox[{
+        RowBox[{"\"\<Step\>\"", "\[Rule]", 
+         RowBox[{"oneMSunData", "[", 
+          RowBox[{"[", 
+           RowBox[{"i", ",", "1"}], "]"}], "]"}]}], ",", 
+        RowBox[{"\"\<Age\>\"", "\[Rule]", 
+         RowBox[{"oneMSunData", "[", 
+          RowBox[{"[", 
+           RowBox[{"i", ",", "2"}], "]"}], "]"}]}], ",", 
+        RowBox[{"\"\<Mass\>\"", "\[Rule]", 
+         RowBox[{"oneMSunData", "[", 
+          RowBox[{"[", 
+           RowBox[{"i", ",", "3"}], "]"}], "]"}]}], ",", 
+        RowBox[{"\"\<Luminosity\>\"", "\[Rule]", 
+         SuperscriptBox["10", 
+          RowBox[{"oneMSunData", "[", 
+           RowBox[{"[", 
+            RowBox[{"i", ",", "4"}], "]"}], "]"}]]}], ",", 
+        RowBox[{"\"\<Radius\>\"", "\[Rule]", 
+         SuperscriptBox["10", 
+          RowBox[{"oneMSunData", "[", 
+           RowBox[{"[", 
+            RowBox[{"i", ",", "5"}], "]"}], "]"}]]}], ",", 
+        RowBox[{"\"\<\!\(\*SubscriptBox[\(T\), \(s\)]\)\>\"", "\[Rule]", 
+         SuperscriptBox["10", 
+          RowBox[{"oneMSunData", "[", 
+           RowBox[{"[", 
+            RowBox[{"i", ",", "6"}], "]"}], "]"}]]}], ",", 
+        RowBox[{"\"\<\!\(\*SubscriptBox[\(T\), \(c\)]\)\>\"", "\[Rule]", 
+         SuperscriptBox["10", 
+          RowBox[{"oneMSunData", "[", 
+           RowBox[{"[", 
+            RowBox[{"i", ",", "7"}], "]"}], "]"}]]}], ",", 
+        RowBox[{"\"\<\!\(\*SubscriptBox[\(\[Rho]\), \(c\)]\)\>\"", "\[Rule]", 
+         SuperscriptBox["10", 
+          RowBox[{"oneMSunData", "[", 
+           RowBox[{"[", 
+            RowBox[{"i", ",", "8"}], "]"}], "]"}]]}], ",", 
+        RowBox[{"\"\<\!\(\*SubscriptBox[\(P\), \(c\)]\)\>\"", "\[Rule]", 
+         SuperscriptBox["10", 
+          RowBox[{"oneMSunData", "[", 
+           RowBox[{"[", 
+            RowBox[{"i", ",", "9"}], "]"}], "]"}]]}], ",", 
+        RowBox[{"\"\<\!\(\*SubscriptBox[\(R\), \(He\)]\)\>\"", "\[Rule]", 
+         RowBox[{"oneMSunData", "[", 
+          RowBox[{"[", 
+           RowBox[{"i", ",", "27"}], "]"}], "]"}]}], ",", 
+        RowBox[{"\"\<\!\(\*SubscriptBox[\(R\), \(C\)]\)\>\"", "\[Rule]", 
+         RowBox[{"oneMSunData", "[", 
+          RowBox[{"[", 
+           RowBox[{"i", ",", "28"}], "]"}], "]"}]}], ",", 
+        RowBox[{"\"\<\!\(\*SubscriptBox[\(R\), \(O\)]\)\>\"", "\[Rule]", 
+         RowBox[{"oneMSunData", "[", 
+          RowBox[{"[", 
+           RowBox[{"i", ",", "29"}], "]"}], "]"}]}]}], "|>"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{"i", ",", 
+        RowBox[{"Length", "[", "oneMSunData", "]"}]}], "}"}]}], "]"}], 
+    "\[IndentingNewLine]", "]"}]}], ";"}]}], "Input",
  InitializationCell->True,
  CellChangeTimes->{{3.6687208251809793`*^9, 3.6687208473706455`*^9}, {
    3.668944854191222*^9, 3.6689448550313144`*^9}, 3.668961533681717*^9, {
@@ -96,7 +158,9 @@ Cell[BoxData[{
    3.6701649128683014`*^9}, {3.6701651294444647`*^9, 
    3.6701651545259647`*^9}, {3.6701655828024645`*^9, 
    3.6701655875524645`*^9}, {3.6701656241599646`*^9, 3.670165641707464*^9}, 
-   3.670168785131339*^9, {3.670168975055152*^9, 3.6701689985698004`*^9}}],
+   3.670168785131339*^9, {3.670168975055152*^9, 3.6701689985698004`*^9}, {
+   3.6703249155936317`*^9, 3.6703249885105724`*^9}, {3.670331892054162*^9, 
+   3.670331918689825*^9}, {3.6703320446844234`*^9, 3.6703321035613103`*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -168,7 +232,10 @@ Cell[BoxData[
           " ", "will", " ", "get", " ", "really", " ", "cluttered", " ", 
           "really", " ", 
           RowBox[{"fast", "."}]}]}], "*)"}], "\[IndentingNewLine]", 
-       RowBox[{"maxRadius", "=", "2.44073960"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"maxRadius", "=", 
+        RowBox[{"oneMSun", "[", 
+         RowBox[{"Max", ",", "\"\<Radius\>\""}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
        RowBox[{"(*", 
         RowBox[{
          RowBox[{
@@ -202,9 +269,8 @@ Cell[BoxData[
                    RowBox[{
                     RowBox[{"{", 
                     RowBox[{"0", ",", "0", ",", "0"}], "}"}], " ", ",", 
-                    FractionBox[
-                    SuperscriptBox["10", "radius"], "maxRadius"]}], "]"}], 
-                  "]"}]}], "}"}], ",", 
+                    FractionBox["radius", "maxRadius"]}], "]"}], "]"}]}], 
+                "}"}], ",", 
                RowBox[{"Background", "\[Rule]", "Black"}], ",", 
                RowBox[{"Boxed", "\[Rule]", "False"}], ",", 
                RowBox[{"PlotRange", "\[Rule]", "1"}]}], "]"}], ",", 
@@ -260,30 +326,26 @@ Cell[BoxData[
                   RowBox[{"ToString", "[", 
                    RowBox[{"NumberForm", "[", 
                     RowBox[{
-                    RowBox[{"Round", "[", 
-                    SuperscriptBox["10", "surfaceTemp"], "]"}], ",", 
+                    RowBox[{"Round", "[", "surfaceTemp", "]"}], ",", 
                     RowBox[{"DigitBlock", "\[Rule]", "3"}]}], "]"}], "]"}], 
                   "<>", "\"\<\[Degree]K\>\"", "<>", 
                   "\"\<\\nCenter Tempurature: \>\"", "<>", 
                   RowBox[{"ToString", "[", 
                    RowBox[{"NumberForm", "[", 
                     RowBox[{
-                    RowBox[{"Round", "[", 
-                    SuperscriptBox["10", "centerTemp"], "]"}], ",", 
+                    RowBox[{"Round", "[", "centerTemp", "]"}], ",", 
                     RowBox[{"DigitBlock", "\[Rule]", "3"}]}], "]"}], "]"}], 
                   "<>", "\"\<\[Degree]K\>\"", "<>", "\"\<\\nRadius: \>\"", "<>", 
                   RowBox[{"ToString", "[", 
                    RowBox[{"NumberForm", "[", 
-                    RowBox[{
-                    SuperscriptBox["10", "radius"], ",", 
+                    RowBox[{"radius", ",", 
                     RowBox[{"DigitBlock", "\[Rule]", "3"}], ",", 
                     RowBox[{"NumberSeparator", "\[Rule]", "\"\<,\>\""}]}], 
                     "]"}], "]"}], "<>", "\"\< R\[CircleDot]\>\"", "<>", 
                   "\"\<\\nLuminosity: \>\"", "<>", 
                   RowBox[{"ToString", "[", 
                    RowBox[{"NumberForm", "[", 
-                    RowBox[{
-                    SuperscriptBox["10", "luminosity"], ",", 
+                    RowBox[{"luminosity", ",", 
                     RowBox[{"DigitBlock", "\[Rule]", "3"}], ",", 
                     RowBox[{"NumberSeparator", "\[Rule]", "\"\<,\>\""}]}], 
                     "]"}], "]"}], "<>", "\"\< L\[CircleDot]\>\"", "<>", 
@@ -403,7 +465,9 @@ Cell[BoxData[
    3.6702417099854937`*^9, 3.670241775033324*^9}, {3.6702418444340067`*^9, 
    3.6702418800474367`*^9}, {3.6702419328670053`*^9, 
    3.6702419419614553`*^9}, {3.670241998290889*^9, 3.6702420010363827`*^9}, {
-   3.6702421192331653`*^9, 3.670242194315965*^9}}],
+   3.6702421192331653`*^9, 3.670242194315965*^9}, {3.670332362244176*^9, 
+   3.670332374742426*^9}, {3.6703324295429053`*^9, 3.6703324843733883`*^9}, {
+   3.670332517858736*^9, 3.6703325532312727`*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -463,6 +527,18 @@ Cell[TextData[StyleBox["Datasets:",
 
 Cell[CellGroupData[{
 
+Cell[BoxData[
+ RowBox[{"Dynamic", "[", "oneMSun", "]"}]], "Input",
+ CellChangeTimes->{{3.670332245412494*^9, 3.670332253078261*^9}}],
+
+Cell[BoxData[
+ DynamicBox[ToBoxes[$CellContext`oneMSun, StandardForm],
+  ImageSizeCache->{641., {192., 197.}}]], "Output",
+ CellChangeTimes->{3.6703322539893517`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
 Cell[TextData[StyleBox["Variable Explanations:",
  FontFamily->"Times New Roman",
  FontSize->16,
@@ -490,11 +566,11 @@ represents in the star\[CloseCurlyQuote]s life.\n",
  StyleBox[".\n",
   FontFamily->"Times New Roman",
   FontSize->12],
- StyleBox["Radius:",
+ StyleBox["Radius: ",
   FontFamily->"Times New Roman",
   FontSize->12,
   FontWeight->"Bold"],
- StyleBox[" Log10 of the radius of the star, in R",
+ StyleBox["Radius of the star, in R",
   FontFamily->"Times New Roman",
   FontSize->12],
  "\[CircleDot]",
@@ -505,52 +581,10 @@ represents in the star\[CloseCurlyQuote]s life.\n",
   FontFamily->"Times New Roman",
   FontSize->12,
   FontWeight->"Bold"],
- StyleBox[" Log10 of the luminosity of the star, in L",
+ StyleBox[" Luminosity of the star, in L",
   FontFamily->"Times New Roman",
   FontSize->12],
- "\[CircleDot].",
- StyleBox["\n",
-  FontFamily->"Times New Roman",
-  FontSize->12],
- StyleBox["Color: ",
-  FontFamily->"Times New Roman",
-  FontSize->12,
-  FontWeight->"Bold"],
- StyleBox["Color of the exterior of the star (we are making this up).\n",
-  FontFamily->"Times New Roman",
-  FontSize->12],
- StyleBox["Star Type:",
-  FontFamily->"Times New Roman",
-  FontSize->12,
-  FontWeight->"Bold"],
- StyleBox[" Mass classification of star, in M",
-  FontFamily->"Times New Roman",
-  FontSize->12],
- "\[CircleDot]",
- StyleBox[".\n",
-  FontFamily->"Times New Roman",
-  FontSize->12],
- StyleBox["Lifespan: ",
-  FontFamily->"Times New Roman",
-  FontSize->12,
-  FontWeight->"Bold"],
- StyleBox["Age of the star at death, in years.\n",
-  FontFamily->"Times New Roman",
-  FontSize->12],
- StyleBox["T-Outer:",
-  FontFamily->"Times New Roman",
-  FontSize->12,
-  FontWeight->"Bold"],
- StyleBox[" Tempurature of the chromosphere, in Kelvin.\n",
-  FontFamily->"Times New Roman",
-  FontSize->12],
- StyleBox["T-Inner:",
-  FontFamily->"Times New Roman",
-  FontSize->12,
-  FontWeight->"Bold"],
- StyleBox[" Tempurature of the center, in Kelvin.",
-  FontFamily->"Times New Roman",
-  FontSize->12]
+ "\[CircleDot]."
 }], "Text",
  CellChangeTimes->{{3.6694125660625143`*^9, 3.6694128566635714`*^9}, {
   3.669412892726177*^9, 3.6694129243324037`*^9}, {3.669414237994672*^9, 
@@ -561,172 +595,8 @@ represents in the star\[CloseCurlyQuote]s life.\n",
   3.670018220796837*^9}, {3.6701823120542374`*^9, 3.670182400928007*^9}, {
   3.6701824389298506`*^9, 3.6701824841389403`*^9}, {3.6701825511883974`*^9, 
   3.670182612200779*^9}, {3.670182644399414*^9, 3.6701826621049604`*^9}, {
-  3.670182741397727*^9, 3.670182838630034*^9}}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[TextData[StyleBox["Star Type General Data:",
- FontFamily->"Times New Roman",
- FontSize->16,
- FontWeight->"Bold",
- FontColor->RGBColor[0., 0., 0.]]], "Section",
- CellChangeTimes->{{3.6695111031071796`*^9, 3.6695111286146774`*^9}}],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"uselessbutfuntolookat", "=", 
-   RowBox[{"Dataset", "[", 
-    RowBox[{"{", "\[IndentingNewLine]", 
-     RowBox[{"<|", 
-      RowBox[{
-       RowBox[{"\"\<Star Type\>\"", "\[Rule]", "\"\<1 Msun\>\""}], ",", 
-       RowBox[{"\"\<Lifespan\>\"", "\[Rule]", "11000000000"}]}], "|>"}], 
-     "\[IndentingNewLine]", "}"}], "]"}]}], ";"}]], "Input",
- InitializationCell->True,
- CellChangeTimes->{{3.6694151806824207`*^9, 3.669415232459387*^9}, {
-   3.669415275151577*^9, 3.669415327383405*^9}, {3.669415564888974*^9, 
-   3.6694155882821026`*^9}, {3.6694170922712135`*^9, 3.6694171088598866`*^9}, 
-   3.6694172149988947`*^9, {3.669417280773632*^9, 3.6694172854332595`*^9}, 
-   3.670073727407608*^9}],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"Dynamic", "[", "uselessbutfuntolookat", "]"}]], "Input",
- CellChangeTimes->{{3.670073731488608*^9, 3.670073748398608*^9}}],
-
-Cell[BoxData[
- DynamicBox[ToBoxes[$CellContext`uselessbutfuntolookat, StandardForm],
-  ImageSizeCache->{162., {28.5, 33.5}}]], "Output",
- CellChangeTimes->{3.670073749188608*^9}]
-}, Closed]]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[TextData[StyleBox["1 Msun:",
- FontFamily->"Times New Roman",
- FontSize->16,
- FontWeight->"Bold",
- FontColor->RGBColor[0., 0., 0.]]], "Section",
- CellChangeTimes->{{3.6695112063353834`*^9, 3.6695112201446733`*^9}}],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"one", "=", 
-   RowBox[{"Dataset", "[", 
-    RowBox[{"{", "\[IndentingNewLine]", 
-     RowBox[{
-      RowBox[{"<|", 
-       RowBox[{
-        RowBox[{"\"\<Age\>\"", "\[Rule]", "0"}], ",", 
-        RowBox[{"\"\<Mass\>\"", "\[Rule]", "1"}], ",", 
-        RowBox[{"\"\<Radius\>\"", "\[Rule]", 
-         RowBox[{"-", "0.0527369747"}]}], ",", 
-        RowBox[{"\"\<Luminosity\>\"", "\[Rule]", " ", 
-         RowBox[{"-", "0.154655885"}]}], ",", 
-        RowBox[{"\"\<Color\>\"", "\[Rule]", "0.2"}], ",", 
-        RowBox[{"\"\<T-Outer\>\"", "\[Rule]", "3.74939401"}], ",", 
-        RowBox[{"\"\<T-Inner\>\"", "\[Rule]", "7.12628079"}]}], "|>"}], ",", 
-      "\[IndentingNewLine]", 
-      RowBox[{"<|", 
-       RowBox[{
-        RowBox[{"\"\<Age\>\"", "\[Rule]", "50000"}], ",", 
-        RowBox[{"\"\<Mass\>\"", "\[Rule]", "1"}], ",", 
-        RowBox[{"\"\<Radius\>\"", "\[Rule]", 
-         RowBox[{"-", "0.0477909424"}]}], ",", 
-        RowBox[{"\"\<Luminosity\>\"", "\[Rule]", " ", 
-         RowBox[{"-", "0.149121205"}]}], ",", 
-        RowBox[{"\"\<Color\>\"", "->", "0.2"}], ",", 
-        RowBox[{"\"\<T-Outer\>\"", "\[Rule]", "3.74830467"}], ",", 
-        RowBox[{"\"\<T-Inner\>\"", "\[Rule]", "7.12713578"}]}], "|>"}], ",", 
-      "\[IndentingNewLine]", 
-      RowBox[{"<|", 
-       RowBox[{
-        RowBox[{"\"\<Age\>\"", "\[Rule]", "100000"}], ",", 
-        RowBox[{"\"\<Mass\>\"", "\[Rule]", "0.999999996"}], ",", 
-        RowBox[{"\"\<Radius\>\"", "\[Rule]", 
-         RowBox[{"-", "0.0478003103"}]}], ",", 
-        RowBox[{"\"\<Luminosity\>\"", "\[Rule]", " ", 
-         RowBox[{"-", "0.149129835"}]}], ",", 
-        RowBox[{"\"\<Color\>\"", "\[Rule]", "0.19"}], ",", 
-        RowBox[{"\"\<T-Outer\>\"", "\[Rule]", "3.74830719"}], ",", 
-        RowBox[{"\"\<T-Inner\>\"", "\[Rule]", "7.12713433"}]}], "|>"}], ",", 
-      "\[IndentingNewLine]", 
-      RowBox[{"<|", 
-       RowBox[{
-        RowBox[{"\"\<Age\>\"", "\[Rule]", "160000"}], ",", 
-        RowBox[{"\"\<Mass\>\"", "\[Rule]", "0.999999992"}], ",", 
-        RowBox[{"\"\<Radius\>\"", "\[Rule]", 
-         RowBox[{"-", "0.047797463"}]}], ",", 
-        RowBox[{"\"\<Luminosity\>\"", "\[Rule]", " ", 
-         RowBox[{"-", "0.149115563"}]}], ",", 
-        RowBox[{"\"\<Color\>\"", "\[Rule]", "0.19"}], ",", 
-        RowBox[{"\"\<T-Outer\>\"", "\[Rule]", "3.74830934"}], ",", 
-        RowBox[{"\"\<T-Inner\>\"", "\[Rule]", "7.12713455"}]}], "|>"}], ",", 
-      "\[IndentingNewLine]", 
-      RowBox[{"<|", 
-       RowBox[{
-        RowBox[{"\"\<Age\>\"", "\[Rule]", "232000"}], ",", 
-        RowBox[{"\"\<Mass\>\"", "\[Rule]", "0.999999987"}], ",", 
-        RowBox[{"\"\<Radius\>\"", "\[Rule]", 
-         RowBox[{"-", "0.0477960777"}]}], ",", 
-        RowBox[{"\"\<Luminosity\>\"", "\[Rule]", " ", 
-         RowBox[{"-", "0.149108015"}]}], ",", 
-        RowBox[{"\"\<Color\>\"", "\[Rule]", "0.18"}], ",", 
-        RowBox[{"\"\<T-Outer\>\"", "\[Rule]", "3.74831053"}], ",", 
-        RowBox[{"\"\<T-Inner\>\"", "\[Rule]", "7.12713430"}]}], "|>"}], ",", 
-      "\[IndentingNewLine]", 
-      RowBox[{"<|", 
-       RowBox[{
-        RowBox[{"\"\<Age\>\"", "\[Rule]", "318400"}], ",", 
-        RowBox[{"\"\<Mass\>\"", "\[Rule]", "0.99999998"}], ",", 
-        RowBox[{"\"\<Radius\>\"", "\[Rule]", 
-         RowBox[{"-", "0.0477955217"}]}], ",", 
-        RowBox[{"\"\<Luminosity\>\"", "\[Rule]", " ", 
-         RowBox[{"-", "0.149104283"}]}], ",", 
-        RowBox[{"\"\<Color\>\"", "\[Rule]", "0.17"}], ",", 
-        RowBox[{"\"\<T-Outer\>\"", "\[Rule]", "3.74831119"}], ",", 
-        RowBox[{"\"\<T-Inner\>\"", "\[Rule]", "7.12713339"}]}], "|>"}]}], 
-     "\n", "}"}], "]"}]}], ";"}]], "Input",
- InitializationCell->True,
- CellChangeTimes->{{3.669411554224866*^9, 3.669411655157866*^9}, {
-   3.669411689005866*^9, 3.669411723212866*^9}, {3.669411756808866*^9, 
-   3.669411796363866*^9}, {3.669411855820866*^9, 3.6694119455390787`*^9}, {
-   3.669411985024974*^9, 3.669411987813532*^9}, 3.6694120196709013`*^9, {
-   3.6694132620325375`*^9, 3.6694132776646633`*^9}, {3.669417101040512*^9, 
-   3.6694171138994837`*^9}, {3.6694187824785275`*^9, 
-   3.6694188035855722`*^9}, {3.6694190049595137`*^9, 3.669419007569462*^9}, {
-   3.669419037921402*^9, 3.669419042931302*^9}, {3.6694191079275026`*^9, 
-   3.669419112307415*^9}, {3.6694193187542696`*^9, 3.6694194149627523`*^9}, {
-   3.6694194969060726`*^9, 3.669419613735344*^9}, {3.669419655551648*^9, 
-   3.669419655761654*^9}, {3.669419690067703*^9, 3.669419737262491*^9}, {
-   3.66941978750863*^9, 3.669419792978466*^9}, {3.6700140370809484`*^9, 
-   3.6700140370879483`*^9}, {3.6700140844859486`*^9, 
-   3.6700140881579485`*^9}, {3.670015841568931*^9, 3.6700158593963966`*^9}, {
-   3.6700170661825194`*^9, 3.6700172310690064`*^9}, {3.670017278650764*^9, 
-   3.67001729531143*^9}, {3.6700173319326916`*^9, 3.670017361289314*^9}, 
-   3.670073682638608*^9, 3.6701558269720745`*^9, {3.6701607748406773`*^9, 
-   3.6701607957016773`*^9}, {3.6701697639582825`*^9, 3.670169764553342*^9}, {
-   3.670169801767063*^9, 3.670169959472251*^9}, 3.6701703697487507`*^9, {
-   3.6701704055977507`*^9, 3.6701704415267506`*^9}, {3.670170494436751*^9, 
-   3.670170587624751*^9}, {3.670171451341189*^9, 3.6701714817552705`*^9}, {
-   3.670171549462309*^9, 3.6701715514397044`*^9}, {3.670171634590331*^9, 
-   3.6701716912507043`*^9}, {3.6701817618947563`*^9, 
-   3.6701818230767794`*^9}, {3.6701828588471155`*^9, 3.67018300551624*^9}}],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"Dynamic", "[", "one", "]"}]], "Input",
- CellChangeTimes->{{3.6700737018776083`*^9, 3.670073706717608*^9}}],
-
-Cell[BoxData[
- DynamicBox[ToBoxes[$CellContext`one, StandardForm],
-  ImageSizeCache->{409., {76., 81.}}]], "Output",
- CellChangeTimes->{3.670073709757608*^9}]
-}, Open  ]]
+  3.670182741397727*^9, 3.670182838630034*^9}, {3.6703321735553093`*^9, 
+  3.670332239924946*^9}}]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -750,45 +620,31 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 425, 11, 95, "Title"],
+Cell[580, 22, 486, 12, 95, "Title"],
 Cell[CellGroupData[{
-Cell[1030, 37, 267, 6, 38, "Chapter"],
+Cell[1091, 38, 267, 6, 38, "Chapter"],
 Cell[CellGroupData[{
-Cell[1322, 47, 265, 5, 26, "Input"],
-Cell[1590, 54, 351, 7, 587, "Output"]
+Cell[1383, 48, 265, 5, 26, "Input"],
+Cell[1651, 55, 346, 7, 26, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1990, 67, 219, 5, 38, "Chapter"],
-Cell[2212, 74, 1082, 24, 45, "Input",
+Cell[2046, 68, 219, 5, 38, "Chapter"],
+Cell[2268, 75, 3867, 87, 159, "Input",
  InitializationCell->True],
-Cell[3297, 100, 16509, 305, 625, "Input"],
-Cell[19809, 407, 1929, 44, 99, "Input",
+Cell[6138, 164, 16528, 305, 615, "Input"],
+Cell[22669, 471, 1929, 44, 99, "Input",
  InitializationCell->True]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[21775, 456, 220, 5, 38, "Chapter"],
+Cell[24635, 520, 220, 5, 38, "Chapter"],
 Cell[CellGroupData[{
-Cell[22020, 465, 233, 5, 43, "Section"],
-Cell[22256, 472, 2939, 91, 152, "Text"]
+Cell[24880, 529, 132, 2, 26, "Input"],
+Cell[25015, 533, 166, 3, 403, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[25232, 568, 234, 5, 43, "Section"],
-Cell[25469, 575, 725, 15, 63, "Input",
- InitializationCell->True],
-Cell[CellGroupData[{
-Cell[26219, 594, 146, 2, 26, "Input"],
-Cell[26368, 598, 178, 3, 64, "Output"]
-}, Closed]]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[26595, 607, 218, 5, 43, "Section"],
-Cell[26816, 614, 5437, 102, 153, "Input",
- InitializationCell->True],
-Cell[CellGroupData[{
-Cell[32278, 720, 130, 2, 26, "Input"],
-Cell[32411, 724, 158, 3, 171, "Output"]
-}, Open  ]]
+Cell[25218, 541, 233, 5, 43, "Section"],
+Cell[25454, 548, 1806, 50, 76, "Text"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
