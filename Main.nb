@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    209233,       3826]
-NotebookOptionsPosition[    206661,       3730]
-NotebookOutlinePosition[    207063,       3747]
-CellTagsIndexPosition[    207020,       3744]
+NotebookDataLength[    209489,       3829]
+NotebookOptionsPosition[    206917,       3733]
+NotebookOutlinePosition[    207319,       3750]
+CellTagsIndexPosition[    207276,       3747]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -184,17 +184,16 @@ Cell[BoxData[
        RowBox[{"oneMSun", "[", 
         RowBox[{"Max", ",", "\"\<\!\(\*SubscriptBox[\(T\), \(s\)]\)\>\""}], 
         "]"}]}], ",", "\[IndentingNewLine]", "color", ",", "radius", ",", 
-      "surfaceTemp", ",", "centerTemp", ",", "luminosity"}], "}"}], ",", 
-    "\[IndentingNewLine]", 
+      "surfaceTemp", ",", "centerTemp", ",", "luminosity"}], 
+     "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
     RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
-     RowBox[{"(*", 
-      RowBox[{
-       RowBox[{"color", "=", 
-        RowBox[{"fancyInterpolate", "[", 
-         RowBox[{"age", ",", "\"\<Color\>\""}], "]"}]}], ";"}], "*)"}], 
-     "\[IndentingNewLine]", 
      RowBox[{
       RowBox[{
+       RowBox[{"color", "=", 
+        SuperscriptBox[
+         RowBox[{"fancyInterpolate", "[", 
+          RowBox[{"step", ",", "\"\<Radius\>\""}], "]"}], 
+         RowBox[{"-", "1"}]]}], ";", "\[IndentingNewLine]", 
        RowBox[{"radius", "=", 
         RowBox[{"fancyInterpolate", "[", 
          RowBox[{"step", ",", "\"\<Radius\>\""}], "]"}]}], ";", 
@@ -223,7 +222,6 @@ Cell[BoxData[
           " ", "will", " ", "get", " ", "really", " ", "cluttered", " ", 
           "really", " ", 
           RowBox[{"fast", "."}]}]}], "*)"}], "\[IndentingNewLine]", 
-       "\[IndentingNewLine]", 
        RowBox[{"GraphicsGrid", "[", 
         RowBox[{
          RowBox[{"{", "\[IndentingNewLine]", 
@@ -262,10 +260,12 @@ Cell[BoxData[
                 RowBox[{"{", 
                  RowBox[{
                   RowBox[{"{", 
-                   RowBox[{"0", ",", "maxTSurface"}], "}"}], ",", 
+                   RowBox[{"maxTSurface", ",", "0"}], "}"}], ",", 
                   RowBox[{"{", 
-                   RowBox[{"0", ",", "maxLuminosity"}], "}"}]}], "}"}]}]}], 
-              "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+                   RowBox[{"0", ",", "maxLuminosity"}], "}"}]}], "}"}]}], ",", 
+               RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+               RowBox[{"GridLines", "\[Rule]", "Automatic"}]}], "]"}]}], 
+            "}"}], ",", "\[IndentingNewLine]", 
            RowBox[{"(*", 
             RowBox[{"The", " ", "HR", " ", "Diagram"}], "*)"}], 
            "\[IndentingNewLine]", 
@@ -473,7 +473,9 @@ Cell[BoxData[
    3.6705138997465706`*^9}, {3.670514241965171*^9, 3.670514248388671*^9}, {
    3.670514279716071*^9, 3.6705143102023706`*^9}, 3.670514343481671*^9, {
    3.6705144116958995`*^9, 3.6705144398282194`*^9}, {3.670514488830106*^9, 
-   3.6705146320222907`*^9}, {3.670514683886552*^9, 3.670514717670552*^9}}],
+   3.6705146320222907`*^9}, {3.670514683886552*^9, 3.670514717670552*^9}, {
+   3.670516523226085*^9, 3.6705167304767485`*^9}, {3.670516955708931*^9, 
+   3.6705170197617097`*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -2128,7 +2130,8 @@ lYW7/aKduAhyrnmvzTvXyjAbn3HhIq9kTgqLF+9/QZZ3jQ==
   Ticks->{Automatic, Automatic}]], "Output",
  CellChangeTimes->{{3.670492752723156*^9, 3.670492791957225*^9}, 
    3.6704928816417823`*^9, {3.670492921999053*^9, 3.670492965351529*^9}, 
-   3.6705115666271777`*^9, 3.670513257585971*^9, 3.670513793738371*^9}]
+   3.6705115666271777`*^9, 3.670513257585971*^9, 3.670513793738371*^9, 
+   3.670516241300561*^9}]
 }, Open  ]]
 }, Closed]],
 
@@ -3759,70 +3762,70 @@ Cell[CellGroupData[{
 Cell[2051, 68, 219, 5, 42, "Chapter"],
 Cell[2273, 75, 3867, 87, 178, "Input",
  InitializationCell->True],
-Cell[6143, 164, 17676, 311, 785, "Input"],
-Cell[23822, 477, 2801, 57, 191, "Input",
+Cell[6143, 164, 17906, 313, 785, "Input"],
+Cell[24052, 479, 2801, 57, 191, "Input",
  InitializationCell->True],
-Cell[26626, 536, 1929, 44, 111, "Input",
+Cell[26856, 538, 1929, 44, 111, "Input",
  InitializationCell->True],
-Cell[28558, 582, 2386, 55, 136, "Input",
+Cell[28788, 584, 2386, 55, 136, "Input",
  InitializationCell->True]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[30981, 642, 220, 5, 42, "Chapter"],
+Cell[31211, 644, 220, 5, 42, "Chapter"],
 Cell[CellGroupData[{
-Cell[31226, 651, 132, 2, 30, "Input"],
-Cell[31361, 655, 168, 3, 460, "Output"]
+Cell[31456, 653, 132, 2, 30, "Input"],
+Cell[31591, 657, 168, 3, 460, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[31566, 663, 233, 5, 46, "Section"],
-Cell[31802, 670, 1806, 50, 98, "Text"]
+Cell[31796, 665, 233, 5, 46, "Section"],
+Cell[32032, 672, 1806, 50, 93, "Text"]
 }, Closed]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[33657, 726, 271, 6, 42, "Chapter"],
+Cell[33887, 728, 271, 6, 42, "Chapter"],
 Cell[CellGroupData[{
-Cell[33953, 736, 270, 6, 46, "Section"],
+Cell[34183, 738, 270, 6, 46, "Section"],
 Cell[CellGroupData[{
-Cell[34248, 746, 94, 1, 38, "Subsubsection"],
+Cell[34478, 748, 94, 1, 38, "Subsubsection"],
 Cell[CellGroupData[{
-Cell[34367, 751, 503, 13, 32, "Input"],
-Cell[34873, 766, 24600, 414, 245, "Output"]
+Cell[34597, 753, 503, 13, 30, "Input"],
+Cell[35103, 768, 24600, 414, 232, "Output"]
 }, {2}]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[59519, 1186, 146, 2, 32, "Subsubsection"],
+Cell[59749, 1188, 146, 2, 32, "Subsubsection"],
 Cell[CellGroupData[{
-Cell[59690, 1192, 557, 14, 32, "Input"],
-Cell[60250, 1208, 24555, 414, 277, "Output"]
+Cell[59920, 1194, 557, 14, 30, "Input"],
+Cell[60480, 1210, 24555, 414, 263, "Output"]
 }, {2}]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[84851, 1628, 99, 1, 32, "Subsubsection"],
+Cell[85081, 1630, 99, 1, 32, "Subsubsection"],
 Cell[CellGroupData[{
-Cell[84975, 1633, 577, 15, 32, "Input",
+Cell[85205, 1635, 577, 15, 30, "Input",
  InitializationCell->True],
-Cell[85555, 1650, 28640, 480, 70, "Output"]
+Cell[85785, 1652, 28666, 481, 70, "Output"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[114244, 2136, 150, 2, 32, "Subsubsection"],
+Cell[114500, 2139, 150, 2, 32, "Subsubsection"],
 Cell[CellGroupData[{
-Cell[114419, 2142, 561, 14, 32, "Input"],
-Cell[114983, 2158, 32974, 552, 258, "Output"]
+Cell[114675, 2145, 561, 14, 30, "Input"],
+Cell[115239, 2161, 32974, 552, 245, "Output"]
 }, {2}]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[148003, 2716, 161, 2, 32, "Subsubsection"],
+Cell[148259, 2719, 161, 2, 32, "Subsubsection"],
 Cell[CellGroupData[{
-Cell[148189, 2722, 586, 14, 32, "Input"],
-Cell[148778, 2738, 29812, 500, 267, "Output"]
+Cell[148445, 2725, 586, 14, 30, "Input"],
+Cell[149034, 2741, 29812, 500, 253, "Output"]
 }, {2}]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[178636, 3244, 160, 2, 32, "Subsubsection"],
+Cell[178892, 3247, 160, 2, 32, "Subsubsection"],
 Cell[CellGroupData[{
-Cell[178821, 3250, 590, 14, 32, "Input"],
-Cell[179414, 3266, 27186, 457, 211, "Output"]
+Cell[179077, 3253, 590, 14, 30, "Input"],
+Cell[179670, 3269, 27186, 457, 211, "Output"]
 }, {2}]]
 }, Open  ]]
 }, Open  ]]
