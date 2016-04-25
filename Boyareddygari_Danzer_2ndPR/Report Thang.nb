@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     36790,        716]
-NotebookOptionsPosition[     35438,        662]
-NotebookOutlinePosition[     35806,        678]
-CellTagsIndexPosition[     35763,        675]
+NotebookDataLength[     37661,        729]
+NotebookOptionsPosition[     36311,        675]
+NotebookOutlinePosition[     36679,        691]
+CellTagsIndexPosition[     36636,        688]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -25,8 +25,7 @@ Cell[TextData[{
  Cell[BoxData[
   FormBox[
    SuperscriptBox[
-    RowBox[{"Report", ")"}], "2"], TraditionalForm]],
-  FormatType->"TraditionalForm"]
+    RowBox[{"Report", ")"}], "2"], TraditionalForm]]]
 }], "Title",
  CellChangeTimes->{{3.670534082606391*^9, 3.6705341194298906`*^9}}],
 
@@ -44,14 +43,16 @@ Cell["\<\
 Step 1: Open \[OpenCurlyDoubleQuote]Main.nb\[CloseCurlyDoubleQuote]
 Step 2: Scroll down to and evaluate the \[OpenCurlyDoubleQuote]interface[]\
 \[CloseCurlyDoubleQuote] cell--as well as the initilization cells.
-Step 3: Program is functional and interactive.\
+Step 3: Run the examples demonstrating the uses of the helper functions
+Step 4: Program is to be functional and interacitve when complete\
 \>", "Text",
  CellChangeTimes->{{3.6705348321915092`*^9, 3.6705348639997053`*^9}, {
   3.6705349971304455`*^9, 3.6705350075357122`*^9}, {3.6705351698079524`*^9, 
   3.670535319429251*^9}, {3.6705354533881683`*^9, 3.6705354603458576`*^9}, {
   3.6705354905166445`*^9, 3.670535547410574*^9}, {3.6705355821522193`*^9, 
-  3.6705356458778896`*^9}}]
-}, Closed]],
+  3.6705356458778896`*^9}, {3.670557560549992*^9, 3.6705575752449923`*^9}, {
+  3.670557638519992*^9, 3.670557672250992*^9}}]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -535,7 +536,7 @@ be more efficient."
    3.670547569279256*^9, 3.6705475919797096`*^9}, {3.670547658431039*^9, 
    3.670547722182314*^9}, {3.6705477716828303`*^9, 3.6705478552436657`*^9}}]
 }, Open  ]]
-}, Closed]],
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -568,7 +569,7 @@ project file for ease of access.\
   3.670548707479694*^9, 3.670548711379694*^9}, {3.670548785389694*^9, 
   3.670548936172194*^9}}]
 }, Open  ]]
-}, Closed]],
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -587,18 +588,21 @@ Cell["Datasets vs. Associations", "Subsection",
 
 Cell["\<\
 We started the project with the intent to use datasets to store our data and \
-have built our program to that intent. However, its becoming more and more \
-apparent that it may be easier to just use associations and lists, because \
-where the syntax of calling dataset values is dataset[row,\
-\[CloseCurlyDoubleQuote]qty\[CloseCurlyDoubleQuote]], the syntax for a simple \
-association with a list is qty[[row]], and that saves us some time and cpu \
-power. So after this report, we\[CloseCurlyQuote]re going to switch to that.\
+have built our program to that intent. However, it\[CloseCurlyQuote]s \
+becoming more and more apparent that it may be easier to just use \
+associations and lists, because datasets are inconvenient for display and use \
+and introduce unnecessary conversions. Associations have the added benefit of \
+a key that could be as string that would allow us (humans) to better keep \
+track of what lists hold what data. So after this report, \
+we\[CloseCurlyQuote]re going to switch to that.\
 \>", "Text",
  CellChangeTimes->{{3.670548999032194*^9, 3.670549065632194*^9}, {
   3.6705491109121943`*^9, 3.670549129462194*^9}, {3.670549201732194*^9, 
-  3.6705493947621937`*^9}, {3.670549653022194*^9, 3.670549655052194*^9}}]
+  3.6705493947621937`*^9}, {3.670549653022194*^9, 3.670549655052194*^9}, {
+  3.670557501347992*^9, 3.6705575193049917`*^9}, {3.6705576901570144`*^9, 
+  3.6705578172491307`*^9}}]
 }, Open  ]]
-}, Closed]],
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -608,10 +612,15 @@ Cell["VII - Overview", "Section",
   3.6705384219556575`*^9}}],
 
 Cell[TextData[{
- "Our code will create interactive diagrams of  astar using real data and \
+ "Our code will create interactive diagrams of a star using real data and \
 databases as if the item shown were a real star. It will do this by \
 interpolating data to create a continuous animation of the star\
-\[CloseCurlyQuote]s life. \n\n",
+\[CloseCurlyQuote]s life. The approach that the code will take is to import \
+the data, transform it into a useful format, create InterpolatingFunctions \
+from this data that is dependent on time, and allow the interface to take \
+values from the InterpolatingFunction based on the time specified by the time \
+slider controlled by the user. Before this the user will choose what initial \
+conditions they want from a selection of presets.\n\n",
  StyleBox["Functions:",
   FontWeight->"Bold"],
  "\n",
@@ -619,7 +628,7 @@ interpolating data to create a continuous animation of the star\
   FontWeight->"Bold"],
  " - The main function that brings the dataset interpolation together with \
 the graphics to be put onscreen. Still in progress.\n",
- StyleBox["fancyInterpolation",
+ StyleBox["fancyInterpolate",
   FontWeight->"Bold"],
  " - A function that returns the value of a specified quantity, based on an \
 intput age. Still in progress, and possibly due to be phased out.\n",
@@ -636,8 +645,10 @@ table. Finished"
   3.670549772112194*^9, 3.6705498131821938`*^9}, {3.670549859572194*^9, 
   3.670549955402194*^9}, {3.670549987172194*^9, 3.670550130049694*^9}, {
   3.670550173652194*^9, 3.6705503959701977`*^9}, {3.6705504324739046`*^9, 
-  3.6705504785134444`*^9}, {3.670550906735766*^9, 3.670550987085766*^9}}]
-}, Closed]],
+  3.6705504785134444`*^9}, {3.670550906735766*^9, 3.670550987085766*^9}, {
+  3.670557151056992*^9, 3.6705571526129923`*^9}, {3.670557246198992*^9, 
+  3.670557380952992*^9}}]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -647,17 +658,19 @@ Cell["VIII - Accomplishments", "Section",
   3.670538425496903*^9}, {3.6705386827910013`*^9, 3.670538688828279*^9}}],
 
 Cell["\<\
-Since last report weve added to our interface, developed multiple methods for \
-reading database information, and started connecting that data to our \
-interface, primarily focusing on the sphere graphic and text readouts, since \
-they are the simplest parts of our interface and thus apt for bug-testing the \
-actual connections between the interface and the database. Getting the \
-interface to work as a function of row number is fairly simple, but we need \
-it working as a function of time, and thats proven to be more difficult.\
+Since the last report we have added to our interface, developed multiple \
+methods for reading database information, and started connecting that data to \
+our interface, primarily focusing on the sphere graphic and text readouts, \
+because they are the simplest parts of our interface and are thus apt for \
+bug-testing the actual connections between the interface and the database. \
+Getting the interface to work as a function of row number is fairly simple, \
+but we need it working as a function of time, and that has proven to be more \
+difficult.\
 \>", "Text",
  CellChangeTimes->{{3.670550505403266*^9, 3.670550614015766*^9}, {
-  3.6705506559557657`*^9, 3.670550885095766*^9}}]
-}, Closed]]
+  3.6705506559557657`*^9, 3.670550885095766*^9}, {3.670557415248992*^9, 
+  3.670557450482992*^9}}]
+}, Open  ]]
 }, Open  ]]
 },
 WindowToolbars->"EditBar",
@@ -678,45 +691,45 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 243, 8, 101, "Title"],
-Cell[826, 32, 181, 2, 56, "Subtitle"],
+Cell[580, 22, 210, 7, 101, "Title"],
+Cell[793, 31, 181, 2, 56, "Subtitle"],
 Cell[CellGroupData[{
-Cell[1032, 38, 155, 2, 70, "Section"],
-Cell[1190, 42, 609, 10, 68, "Text"]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[1836, 57, 95, 1, 56, "Section"],
-Cell[1934, 60, 278, 5, 68, "Text"]
+Cell[999, 37, 155, 2, 70, "Section"],
+Cell[1157, 41, 797, 12, 87, "Text"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2249, 70, 254, 3, 70, "Section"],
+Cell[1991, 58, 95, 1, 70, "Section"],
+Cell[2089, 61, 278, 5, 68, "Text"]
+}, Open  ]],
 Cell[CellGroupData[{
-Cell[2528, 77, 217, 3, 49, "Subsection"],
-Cell[2748, 82, 27292, 453, 422, "Text"]
+Cell[2404, 71, 254, 3, 70, "Section"],
+Cell[CellGroupData[{
+Cell[2683, 78, 217, 3, 49, "Subsection"],
+Cell[2903, 83, 27292, 453, 574, "Text"]
 }, Open  ]]
-}, Closed]],
+}, Open  ]],
 Cell[CellGroupData[{
-Cell[30089, 541, 200, 3, 56, "Section"],
+Cell[30244, 542, 200, 3, 70, "Section"],
 Cell[CellGroupData[{
-Cell[30314, 548, 148, 2, 49, "Subsection"],
-Cell[30465, 552, 1025, 16, 144, "Text"]
+Cell[30469, 549, 148, 2, 70, "Subsection"],
+Cell[30620, 553, 1025, 16, 70, "Text"]
 }, Open  ]]
-}, Closed]],
+}, Open  ]],
 Cell[CellGroupData[{
-Cell[31539, 574, 290, 4, 56, "Section"],
+Cell[31694, 575, 290, 4, 70, "Section"],
 Cell[CellGroupData[{
-Cell[31854, 582, 215, 3, 49, "Subsection"],
-Cell[32072, 587, 764, 11, 125, "Text"]
+Cell[32009, 583, 215, 3, 49, "Subsection"],
+Cell[32227, 588, 904, 14, 144, "Text"]
 }, Open  ]]
-}, Closed]],
+}, Open  ]],
 Cell[CellGroupData[{
-Cell[32885, 604, 207, 3, 56, "Section"],
-Cell[33095, 609, 1341, 29, 239, "Text"]
-}, Closed]],
+Cell[33180, 608, 207, 3, 70, "Section"],
+Cell[33390, 613, 1852, 36, 334, "Text"]
+}, Open  ]],
 Cell[CellGroupData[{
-Cell[34473, 643, 259, 3, 56, "Section"],
-Cell[34735, 648, 675, 10, 144, "Text"]
-}, Closed]]
+Cell[35279, 654, 259, 3, 70, "Section"],
+Cell[35541, 659, 742, 12, 144, "Text"]
+}, Open  ]]
 }, Open  ]]
 }
 ]
