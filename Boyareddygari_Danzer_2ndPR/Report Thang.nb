@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     31201,        592]
-NotebookOptionsPosition[     30211,        553]
-NotebookOutlinePosition[     30582,        569]
-CellTagsIndexPosition[     30539,        566]
+NotebookDataLength[     32044,        603]
+NotebookOptionsPosition[     31053,        564]
+NotebookOutlinePosition[     31424,        580]
+CellTagsIndexPosition[     31381,        577]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -500,9 +500,14 @@ manipulate. This does pose somewhat of a problem, as row numbers are one of \
 the key ways two dimensional data stores are organized, and are kind of a \
 baseline necessity for most data functions. Add that to the fact that we\
 \[CloseCurlyQuote]re attempting to create a continuous timeline and have to \
-interpolate a lot, and we have a fairly major challenge.\n\n",
- StyleBox["need more stuff write lel",
-  FontSlant->"Italic"]
+interpolate a lot, and we have a fairly major challenge.\n\nTo fix this we\
+\[CloseCurlyQuote]ve written a function that will, once we finish it up, take \
+the parameters of age, a quantity, and a function (generally intended to be \
+the inverse of the function of row number vs age graphed above) and use the \
+input age to determine the approprate row value and then interpolate the \
+specified quantity from said row value. It is however, a work in progress, \
+and we are considering alternative methods of solving this problem that may \
+be more efficient."
 }], "Text",
  CellChangeTimes->{{3.6705398752644854`*^9, 3.6705399153562293`*^9}, {
    3.670539976933185*^9, 3.6705400405533485`*^9}, {3.670541197825635*^9, 
@@ -513,7 +518,12 @@ interpolate a lot, and we have a fairly major challenge.\n\n",
    3.67054236881877*^9, 3.6705424988932376`*^9}, {3.6705426895267763`*^9, 
    3.6705427020999737`*^9}, {3.670542918309044*^9, 3.6705429798806076`*^9}, {
    3.670543308887361*^9, 3.6705433525676413`*^9}, {3.6705435415784526`*^9, 
-   3.6705435580989585`*^9}, {3.6705442150618267`*^9, 3.6705442934058533`*^9}}]
+   3.6705435580989585`*^9}, {3.6705442150618267`*^9, 
+   3.6705442934058533`*^9}, {3.6705470263902164`*^9, 3.670547033320216*^9}, {
+   3.6705470727502165`*^9, 3.670547123110216*^9}, {3.670547225334256*^9, 
+   3.6705472273343363`*^9}, {3.670547400525404*^9, 3.670547477947429*^9}, {
+   3.670547569279256*^9, 3.6705475919797096`*^9}, {3.670547658431039*^9, 
+   3.670547722182314*^9}, {3.6705477716828303`*^9, 3.6705478552436657`*^9}}]
 }, Open  ]]
 }, Open  ]],
 
@@ -525,7 +535,8 @@ Cell["V - Files", "Section",
    3.670538186219034*^9}],
 
 Cell["Star Data", "Subsection",
- CellChangeTimes->{{3.670537383751096*^9, 3.670537387105117*^9}}]
+ CellChangeTimes->{{3.670537383751096*^9, 3.670537387105117*^9}, {
+  3.6705478654837685`*^9, 3.670547867843792*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -580,19 +591,19 @@ Cell[CellGroupData[{
 Cell[1934, 60, 254, 3, 56, "Section"],
 Cell[CellGroupData[{
 Cell[2213, 67, 217, 3, 49, "Subsection"],
-Cell[2433, 72, 26501, 443, 384, "Text"]
+Cell[2433, 72, 27292, 453, 422, "Text"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[28983, 521, 200, 3, 70, "Section"],
-Cell[29186, 526, 97, 1, 49, "Subsection"]
+Cell[29774, 531, 200, 3, 70, "Section"],
+Cell[29977, 536, 148, 2, 49, "Subsection"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[29320, 532, 290, 4, 70, "Section"],
-Cell[29613, 538, 98, 1, 49, "Subsection"]
+Cell[30162, 543, 290, 4, 70, "Section"],
+Cell[30455, 549, 98, 1, 49, "Subsection"]
 }, Open  ]],
-Cell[29726, 542, 207, 3, 70, "Section"],
-Cell[29936, 547, 259, 3, 56, "Section"]
+Cell[30568, 553, 207, 3, 70, "Section"],
+Cell[30778, 558, 259, 3, 56, "Section"]
 }, Open  ]]
 }
 ]
