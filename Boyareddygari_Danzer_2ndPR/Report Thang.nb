@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      4484,        140]
-NotebookOptionsPosition[      3580,        104]
-NotebookOutlinePosition[      3951,        120]
-CellTagsIndexPosition[      3908,        117]
+NotebookDataLength[      5012,        155]
+NotebookOptionsPosition[      4036,        116]
+NotebookOutlinePosition[      4407,        132]
+CellTagsIndexPosition[      4364,        129]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -58,14 +58,26 @@ Cell["II and III", "Section",
 
 Cell[CellGroupData[{
 
-Cell["IV - Formulas and Shit", "Section",
+Cell["IV - Formulas", "Section",
  CellChangeTimes->{{3.6705363289488854`*^9, 3.6705363313825006`*^9}, {
   3.6705365366824493`*^9, 3.6705365376652617`*^9}, {3.6705366388793592`*^9, 
-  3.670536675960728*^9}}],
+  3.670536675960728*^9}, {3.670539781732877*^9, 3.6705397838376884`*^9}}],
 
-Cell["Interpolation and Datasets", "Subsection",
+Cell[CellGroupData[{
+
+Cell["Interpolation Across Datasets", "Subsection",
  CellChangeTimes->{{3.670536686381528*^9, 3.670536702340328*^9}, {
-  3.670537116708584*^9, 3.670537152807215*^9}}]
+  3.670537116708584*^9, 3.670537152807215*^9}, {3.6705397892010612`*^9, 
+  3.670539798119228*^9}}],
+
+Cell["\<\
+Our goal is to create a display that shows a star as a function of time. Our \
+data sets possess a column with the age of the star ,\
+\>", "Text",
+ CellChangeTimes->{{3.6705398752644854`*^9, 3.6705399153562293`*^9}, {
+  3.670539976933185*^9, 3.6705400405533485`*^9}, {3.670541197825635*^9, 
+  3.670541229650194*^9}}]
+}, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -128,19 +140,22 @@ Cell[1190, 42, 609, 10, 68, "Text"]
 }, Open  ]],
 Cell[1814, 55, 95, 1, 70, "Section"],
 Cell[CellGroupData[{
-Cell[1934, 60, 215, 3, 56, "Section"],
-Cell[2152, 65, 163, 2, 49, "Subsection"]
+Cell[1934, 60, 254, 3, 56, "Section"],
+Cell[CellGroupData[{
+Cell[2213, 67, 217, 3, 49, "Subsection"],
+Cell[2433, 72, 326, 6, 30, "Text"]
+}, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2352, 72, 200, 3, 70, "Section"],
-Cell[2555, 77, 97, 1, 49, "Subsection"]
+Cell[2808, 84, 200, 3, 70, "Section"],
+Cell[3011, 89, 97, 1, 49, "Subsection"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2689, 83, 290, 4, 70, "Section"],
-Cell[2982, 89, 98, 1, 49, "Subsection"]
+Cell[3145, 95, 290, 4, 70, "Section"],
+Cell[3438, 101, 98, 1, 49, "Subsection"]
 }, Open  ]],
-Cell[3095, 93, 207, 3, 70, "Section"],
-Cell[3305, 98, 259, 3, 56, "Section"]
+Cell[3551, 105, 207, 3, 70, "Section"],
+Cell[3761, 110, 259, 3, 56, "Section"]
 }, Open  ]]
 }
 ]
