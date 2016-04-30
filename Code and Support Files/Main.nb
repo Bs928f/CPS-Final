@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     68930,       1451]
-NotebookOptionsPosition[     67340,       1390]
-NotebookOutlinePosition[     67742,       1407]
-CellTagsIndexPosition[     67699,       1404]
+NotebookDataLength[     68337,       1441]
+NotebookOptionsPosition[     66817,       1382]
+NotebookOutlinePosition[     67219,       1399]
+CellTagsIndexPosition[     67176,       1396]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -67,15 +67,15 @@ Cell[BoxData[
 
 Cell[BoxData[
  DynamicModuleBox[{$CellContext`color$$ = 
-  0.564759126109657, $CellContext`radius$$ = 
-  1.770666384602759, $CellContext`surfaceTemp$$ = 
-  5310.588836844604, $CellContext`centerTemp$$ = 
-  2.2014679400500134`*^7, $CellContext`luminosity$$ = 
-  2.2391595854412514`, $CellContext`stepFunction$$}, 
+  0.015101396483126663`, $CellContext`radius$$ = 
+  66.21904147191528, $CellContext`surfaceTemp$$ = 
+  6724.869329368285, $CellContext`centerTemp$$ = 
+  8.393085166150856*^7, $CellContext`luminosity$$ = 
+  8052.7307810672955`, $CellContext`stepFunction$$}, 
   TagBox[
    StyleBox[
     DynamicModuleBox[{$CellContext`age$$ = 
-     1.1022146508904001`*^10, $CellContext`min$$ = 1, Typeset`show$$ = True, 
+     1.23015028*^10, $CellContext`min$$ = 1, Typeset`show$$ = True, 
      Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
      Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
      "\"untitled\"", Typeset`specs$$ = {{{
@@ -83,12 +83,12 @@ Cell[BoxData[
        Dynamic[$CellContext`min$$], 1.23015028*^10}, {{
         Hold[$CellContext`min$$], 1, "Minimum Age"}, 1}}, Typeset`size$$ = {
      550., {273., 277.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-     Typeset`skipInitDone$$ = True, $CellContext`age$22402$$ = 0}, 
+     Typeset`skipInitDone$$ = True, $CellContext`age$64085$$ = 0}, 
      DynamicBox[Manipulate`ManipulateBoxes[
       1, StandardForm, 
        "Variables" :> {$CellContext`age$$ = 1, $CellContext`min$$ = 1}, 
        "ControllerVariables" :> {
-         Hold[$CellContext`age$$, $CellContext`age$22402$$, 0]}, 
+         Hold[$CellContext`age$$, $CellContext`age$64085$$, 0]}, 
        "OtherVariables" :> {
         Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
          Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -110,15 +110,16 @@ $CellContext`centerTempFunction[$CellContext`age$$]; GraphicsGrid[{{
              PlotRange -> $CellContext`sphereRange[$CellContext`radius$$], 
              Axes -> True, ImageSize -> Large], 
             Panel[
-             
-             ListPlot[{{$CellContext`surfaceTemp$$, \
-$CellContext`luminosity$$}}, PlotRange -> {{0, $CellContext`maxTSurface}, {0, 
-                 $CellContext`yHRDRange[$CellContext`luminosity$$]}}, 
-              ScalingFunctions -> {"Reverse", Identity}, Axes -> True, 
-              GridLines -> Automatic, Background -> Black, AxesStyle -> 
-              Directive[Red], PlotStyle -> PointSize[Large], 
-              AxesLabel -> {
-               "\!\(\*SubscriptBox[\(T\), \(s\)]\)", "L\[CircleDot]"}], 
+             Quiet[
+              
+              ListPlot[{{$CellContext`surfaceTemp$$, \
+$CellContext`luminosity$$}}, 
+               PlotRange -> {{0, $CellContext`maxTSurface}, {
+                 0, $CellContext`maxLuminosity}}, Axes -> True, GridLines -> 
+               Automatic, Background -> Black, AxesStyle -> Directive[Red], 
+               PlotStyle -> PointSize[Large], 
+               AxesLabel -> {
+                "\!\(\*SubscriptBox[\(T\), \(s\)]\)", "L\[CircleDot]"}]], 
              Background -> Black]}, {
             Graphics[{
               Hue[0.02], 
@@ -180,8 +181,7 @@ $CellContext`luminosity$$}}, PlotRange -> {{0, $CellContext`maxTSurface}, {0,
    3.6710281352651095`*^9, {3.671028441675762*^9, 3.671028491905833*^9}, {
    3.6710285234458776`*^9, 3.6710285253758802`*^9}, 3.671028700973628*^9, {
    3.6710288235838017`*^9, 3.671028863058858*^9}, 3.671029054254128*^9, 
-   3.6710291603617787`*^9, 3.671034688924054*^9, 3.671034826264388*^9, {
-   3.6710349346945477`*^9, 3.671034959247084*^9}}]
+   3.6710291603617787`*^9}]
 }, Open  ]]
 }, Open  ]],
 
@@ -428,36 +428,33 @@ Cell[BoxData[
              "\[IndentingNewLine]", 
              RowBox[{"Panel", "[", 
               RowBox[{
-               RowBox[{"ListPlot", "[", 
-                RowBox[{
-                 RowBox[{"{", 
+               RowBox[{"Quiet", "[", 
+                RowBox[{"ListPlot", "[", 
+                 RowBox[{
                   RowBox[{"{", 
-                   RowBox[{"surfaceTemp", ",", "luminosity"}], "}"}], "}"}], 
-                 ",", 
-                 RowBox[{"PlotRange", "\[Rule]", 
-                  RowBox[{"{", 
-                   RowBox[{
+                   RowBox[{"{", 
+                    RowBox[{"surfaceTemp", ",", "luminosity"}], "}"}], "}"}], 
+                  ",", 
+                  RowBox[{"PlotRange", "\[Rule]", 
+                   RowBox[{"{", 
+                    RowBox[{
                     RowBox[{"{", 
                     RowBox[{"0", ",", "maxTSurface"}], "}"}], ",", 
                     RowBox[{"{", 
-                    RowBox[{"0", ",", 
-                    RowBox[{"yHRDRange", "[", "luminosity", "]"}]}], "}"}]}], 
-                   "}"}]}], ",", 
-                 RowBox[{"ScalingFunctions", "\[Rule]", 
-                  RowBox[{"{", 
-                   RowBox[{"\"\<Reverse\>\"", ",", "Identity"}], "}"}]}], ",", 
-                 RowBox[{"Axes", "\[Rule]", "True"}], ",", 
-                 RowBox[{"GridLines", "\[Rule]", "Automatic"}], ",", 
-                 RowBox[{"Background", "\[Rule]", "Black"}], ",", 
-                 RowBox[{"AxesStyle", "\[Rule]", 
-                  RowBox[{"Directive", "[", "Red", "]"}]}], ",", 
-                 RowBox[{"PlotStyle", "\[Rule]", 
-                  RowBox[{"PointSize", "[", "Large", "]"}]}], ",", 
-                 RowBox[{"AxesLabel", "\[Rule]", 
-                  RowBox[{"{", 
-                   RowBox[{
-                   "\"\<\!\(\*SubscriptBox[\(T\), \(s\)]\)\>\"", ",", 
-                    "\"\<L\[CircleDot]\>\""}], "}"}]}]}], "]"}], ",", 
+                    RowBox[{"0", ",", "maxLuminosity"}], "}"}]}], "}"}]}], 
+                  ",", 
+                  RowBox[{"Axes", "\[Rule]", "True"}], ",", 
+                  RowBox[{"GridLines", "\[Rule]", "Automatic"}], ",", 
+                  RowBox[{"Background", "\[Rule]", "Black"}], ",", 
+                  RowBox[{"AxesStyle", "\[Rule]", 
+                   RowBox[{"Directive", "[", "Red", "]"}]}], ",", 
+                  RowBox[{"PlotStyle", "\[Rule]", 
+                   RowBox[{"PointSize", "[", "Large", "]"}]}], ",", 
+                  RowBox[{"AxesLabel", "\[Rule]", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    "\"\<\!\(\*SubscriptBox[\(T\), \(s\)]\)\>\"", ",", 
+                    "\"\<L\[CircleDot]\>\""}], "}"}]}]}], "]"}], "]"}], ",", 
                RowBox[{"Background", "\[Rule]", "Black"}]}], "]"}]}], "}"}], 
            ",", "\[IndentingNewLine]", 
            RowBox[{"(*", 
@@ -783,9 +780,7 @@ Cell[BoxData[
    3.6710281718627434`*^9, 3.6710281807877755`*^9}, {3.671028247520486*^9, 
    3.671028253640495*^9}, {3.671028477605813*^9, 3.6710284886458282`*^9}, {
    3.6710288126462865`*^9, 3.6710288593988523`*^9}, {3.6710288980889072`*^9, 
-   3.671028904286416*^9}, {3.671029150836765*^9, 3.6710291567417736`*^9}, {
-   3.6710347762143145`*^9, 3.6710347803193207`*^9}, {3.671034811924367*^9, 
-   3.6710348219668818`*^9}, {3.671034893946988*^9, 3.671034955537079*^9}}]
+   3.671028904286416*^9}, {3.671029150836765*^9, 3.6710291567417736`*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -977,7 +972,7 @@ Cell[TextData[StyleBox["Plot Scaling Functions (SphereRange and yHRDRange):",
   3.6705114859285517`*^9, 3.67051149050111*^9}, {3.671020930167638*^9, 
   3.6710209511776676`*^9}, {3.671028263723009*^9, 3.6710282863655415`*^9}}],
 
-Cell[BoxData[
+Cell[BoxData[{
  RowBox[{
   RowBox[{
    RowBox[{"sphereRange", "[", "radius_", "]"}], ":=", "\[IndentingNewLine]", 
@@ -1008,19 +1003,7 @@ Cell[BoxData[
      RowBox[{"Return", "[", 
       FractionBox["maxRadius", "100"], "]"}], ",", "\[IndentingNewLine]", 
      RowBox[{"Return", "[", "maxRadius", "]"}]}], "\[IndentingNewLine]", 
-    "]"}]}], ";"}]], "Input",
- InitializationCell->True,
- CellChangeTimes->{{3.671028291678049*^9, 3.671028412995721*^9}, {
-  3.671028573125948*^9, 3.671028580465958*^9}, {3.6710286953636208`*^9, 
-  3.6710287148961477`*^9}, {3.671028762183715*^9, 3.6710287647237186`*^9}, {
-  3.67102887896638*^9, 3.6710288914088974`*^9}, {3.6710290910641804`*^9, 
-  3.6710290930041833`*^9}, {3.6710291772643023`*^9, 3.6710292422493944`*^9}, {
-  3.671029289379461*^9, 3.67102948687224*^9}, {3.671029523142291*^9, 
-  3.6710295301473017`*^9}, {3.6710295624998474`*^9, 3.671029799870184*^9}, {
-  3.671029911110341*^9, 3.671029911530342*^9}, {3.671029985172946*^9, 
-  3.6710301531831837`*^9}, {3.67103474598927*^9, 3.6710347471967716`*^9}}],
-
-Cell[BoxData[
+    "]"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"yHRDRange", "[", "luminosity_", "]"}], ":=", "\[IndentingNewLine]", 
   RowBox[{"(*", 
@@ -1061,7 +1044,16 @@ Cell[BoxData[
     RowBox[{"Return", "[", 
      FractionBox["maxLuminosity", "1000"], "]"}], ",", "\[IndentingNewLine]", 
     RowBox[{"Return", "[", "maxLuminosity", "]"}]}], "\[IndentingNewLine]", 
-   "]"}]}]], "Input"]
+   "]"}]}]}], "Input",
+ CellChangeTimes->{{3.671028291678049*^9, 3.671028412995721*^9}, {
+  3.671028573125948*^9, 3.671028580465958*^9}, {3.6710286953636208`*^9, 
+  3.6710287148961477`*^9}, {3.671028762183715*^9, 3.6710287647237186`*^9}, {
+  3.67102887896638*^9, 3.6710288914088974`*^9}, {3.6710290910641804`*^9, 
+  3.6710290930041833`*^9}, {3.6710291772643023`*^9, 3.6710292422493944`*^9}, {
+  3.671029289379461*^9, 3.67102948687224*^9}, {3.671029523142291*^9, 
+  3.6710295301473017`*^9}, {3.6710295624998474`*^9, 3.671029799870184*^9}, {
+  3.671029911110341*^9, 3.671029911530342*^9}, {3.671029985172946*^9, 
+  3.6710301531831837`*^9}}]
 }, Open  ]]
 }, Open  ]],
 
@@ -1378,7 +1370,7 @@ Cell[BoxData[
        PlotLabel -> "\!\(\*SubscriptBox[\(T\), \(c\)]\) vs. Time", AxesStyle -> 
        Directive[Black, Thick]]}}, ImageSize -> Full, Frame -> All], 
    StandardForm],
-  ImageSizeCache->{1218., {250., 254.}}]], "Output",
+  ImageSizeCache->{1234., {253., 257.}}]], "Output",
  CellChangeTimes->{
   3.6710194674887567`*^9, {3.671019575611408*^9, 3.67101962656398*^9}, 
    3.6710196611165285`*^9, 3.6710197572641635`*^9, {3.671019802999228*^9, 
@@ -1412,43 +1404,41 @@ Cell[CellGroupData[{
 Cell[1212, 43, 267, 6, 42, "Chapter"],
 Cell[CellGroupData[{
 Cell[1504, 53, 845, 12, 30, "Input"],
-Cell[2352, 67, 5777, 116, 708, "Output"]
+Cell[2352, 67, 5636, 116, 675, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[8178, 189, 292, 6, 42, "Chapter"],
+Cell[8037, 189, 292, 6, 42, "Chapter"],
 Cell[CellGroupData[{
-Cell[8495, 199, 371, 8, 46, "Section"],
-Cell[8869, 209, 6854, 148, 451, "Input",
+Cell[8354, 199, 371, 8, 46, "Section"],
+Cell[8728, 209, 6854, 148, 451, "Input",
  InitializationCell->True],
-Cell[15726, 359, 26020, 428, 825, "Input",
+Cell[15585, 359, 25712, 423, 792, "Input",
  InitializationCell->True]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[41783, 792, 369, 8, 46, "Section"],
-Cell[42155, 802, 5177, 110, 284, "Input",
+Cell[41334, 787, 369, 8, 46, "Section"],
+Cell[41706, 797, 5177, 110, 284, "Input",
  InitializationCell->True],
-Cell[47335, 914, 2561, 51, 131, "Input",
+Cell[46886, 909, 2561, 51, 131, "Input",
  InitializationCell->True]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[49933, 970, 411, 7, 46, "Section"],
-Cell[50347, 979, 2209, 41, 209, "Input",
- InitializationCell->True],
-Cell[52559, 1022, 1843, 41, 229, "Input"]
+Cell[49484, 965, 411, 7, 46, "Section"],
+Cell[49898, 974, 3981, 81, 428, "Input"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[54451, 1069, 374, 7, 42, "Chapter"],
+Cell[53928, 1061, 374, 7, 42, "Chapter"],
 Cell[CellGroupData[{
-Cell[54850, 1080, 233, 5, 46, "Section"],
-Cell[55086, 1087, 2542, 78, 108, "Text"]
+Cell[54327, 1072, 233, 5, 46, "Section"],
+Cell[54563, 1079, 2542, 78, 114, "Text"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[57665, 1170, 321, 7, 33, "Section"],
+Cell[57142, 1162, 321, 7, 33, "Section"],
 Cell[CellGroupData[{
-Cell[58011, 1181, 6692, 152, 391, "Input"],
-Cell[64706, 1335, 2582, 49, 518, "Output"]
+Cell[57488, 1173, 6692, 152, 371, "Input"],
+Cell[64183, 1327, 2582, 49, 524, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
