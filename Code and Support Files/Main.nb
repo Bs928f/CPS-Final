@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     69794,       1463]
-NotebookOptionsPosition[     68143,       1400]
-NotebookOutlinePosition[     68545,       1417]
-CellTagsIndexPosition[     68502,       1414]
+NotebookDataLength[     73037,       1530]
+NotebookOptionsPosition[     71243,       1462]
+NotebookOutlinePosition[     71645,       1479]
+CellTagsIndexPosition[     71602,       1476]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -67,28 +67,29 @@ Cell[BoxData[
 
 Cell[BoxData[
  DynamicModuleBox[{$CellContext`color$$ = 
-  1.1291116156922034`, $CellContext`radius$$ = 
-  0.8856520348406376, $CellContext`surfaceTemp$$ = 
-  5615.571848990674, $CellContext`centerTemp$$ = 
-  1.337460014978588*^7, $CellContext`luminosity$$ = 
-  0.7003969180633277, $CellContext`stepFunction$$}, 
+  0.4784869511613947, $CellContext`radius$$ = 
+  2.0899211516066982`, $CellContext`surfaceTemp$$ = 
+  4985.230172008501, $CellContext`centerTemp$$ = 
+  2.507393826610019*^7, $CellContext`luminosity$$ = 
+  2.422382230568908, $CellContext`stepFunction$$}, 
   TagBox[
    StyleBox[
-    DynamicModuleBox[{$CellContext`max$$ = 1, $CellContext`min$$ = 1, 
-     Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
-     Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
-     1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
+    DynamicModuleBox[{$CellContext`max$$ = 
+     1.23015028*^10, $CellContext`min$$ = 1., Typeset`show$$ = True, 
+     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+     "\"untitled\"", Typeset`specs$$ = {{
        Hold[$CellContext`min$$], 1, 1.23015028*^10}, {
        Hold[$CellContext`max$$], 1, 1.23015028*^10}}, Typeset`size$$ = {
      590., {316., 323.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-     Typeset`skipInitDone$$ = True, $CellContext`min$207135$$ = 
-     0, $CellContext`max$207136$$ = 0}, 
+     Typeset`skipInitDone$$ = True, $CellContext`min$82519$$ = 
+     0, $CellContext`max$82520$$ = 0}, 
      DynamicBox[Manipulate`ManipulateBoxes[
       1, StandardForm, 
        "Variables" :> {$CellContext`max$$ = 1, $CellContext`min$$ = 1}, 
        "ControllerVariables" :> {
-         Hold[$CellContext`min$$, $CellContext`min$207135$$, 0], 
-         Hold[$CellContext`max$$, $CellContext`max$207136$$, 0]}, 
+         Hold[$CellContext`min$$, $CellContext`min$82519$$, 0], 
+         Hold[$CellContext`max$$, $CellContext`max$82520$$, 0]}, 
        "OtherVariables" :> {
         Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
          Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -108,24 +109,26 @@ $CellContext`centerTempFunction[$CellContext`age]; GraphicsGrid[{{
               PlotRange -> $CellContext`sphereRange[$CellContext`radius$$], 
               Axes -> True, ImageSize -> Large], 
              Panel[
-              
-              ListPlot[{{$CellContext`surfaceTemp$$, \
-$CellContext`luminosity$$}}, PlotRange -> {{0, $CellContext`maxTSurface}, {0, 
+              Show[
+               
+               ListPlot[{{$CellContext`surfaceTemp$$, \
+$CellContext`luminosity$$}}, PlotStyle -> {
+                  PointSize[Large], Purple}], 
+               ParametricPlot[{
+                 $CellContext`surfaceTempFunction[$CellContext`u], 
+                 $CellContext`luminosityFunction[$CellContext`u]}, \
+{$CellContext`u, 1, $CellContext`maxAge}, PlotStyle -> {Blue, Dashed}], 
+               PlotRange -> {{0, $CellContext`maxTSurface}, {0, 
                   $CellContext`yHRDRange[$CellContext`luminosity$$]}}, 
                ScalingFunctions -> {"Reverse", Identity}, Axes -> True, 
                GridLines -> Automatic, Background -> Black, AxesStyle -> 
-               Directive[Red], PlotStyle -> PointSize[Large], 
+               Directive[Red], 
                AxesLabel -> {
                 "\!\(\*SubscriptBox[\(T\), \(s\)]\)", "L\[CircleDot]"}], 
               Background -> Black]}, {
-             Graphics[{
-               Hue[0.02], 
-               Tooltip[
-                Disk[{0, 0}, 1]], 
-               Hue[0.15], 
-               Tooltip[
-                Disk[{0, 0}, 1/$CellContext`age]]}, PlotRange -> 1.1, 
-              Background -> Darker[Gray, 0.75]], 
+             Graphics[
+              $CellContext`coreFunction[], PlotRange -> 1.1, Background -> 
+              Darker[Gray, 0.75]], 
              Panel[
               Graphics[{FontSize -> 16, 
                 Text[
@@ -173,7 +176,12 @@ $CellContext`luminosity$$}}, PlotRange -> {{0, $CellContext`maxTSurface}, {0,
   3.671113020467494*^9, 3.671113148617673*^9, 3.671113202897749*^9, {
    3.6711132393178005`*^9, 3.671113251197817*^9}, {3.6711132824078608`*^9, 
    3.6711133065178947`*^9}, 3.6711134329980717`*^9, 3.6711138375186377`*^9, 
-   3.6711138930887156`*^9, 3.6711143568624134`*^9, 3.6711144851616154`*^9}]
+   3.6711138930887156`*^9, 3.6711143568624134`*^9, 3.6711144851616154`*^9, 
+   3.6711170302191916`*^9, 3.671117340472704*^9, 3.671117836678516*^9, 
+   3.6711179219306583`*^9, 3.671118006926798*^9, {3.671118057092879*^9, 
+   3.6711180825779195`*^9}, 3.6711181262009907`*^9, {3.6711182611452107`*^9, 
+   3.6711182774882374`*^9}, 3.6711187205124173`*^9, 3.671118962108813*^9, 
+   3.671119038310938*^9}]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
@@ -431,12 +439,32 @@ Cell[BoxData[
                "\[IndentingNewLine]", 
                RowBox[{"Panel", "[", 
                 RowBox[{
-                 RowBox[{"ListPlot", "[", 
+                 RowBox[{"Show", "[", "\[IndentingNewLine]", 
                   RowBox[{
-                   RowBox[{"{", 
+                   RowBox[{"ListPlot", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
                     RowBox[{"{", 
                     RowBox[{"surfaceTemp", ",", "luminosity"}], "}"}], "}"}], 
-                   ",", 
+                    ",", 
+                    RowBox[{"PlotStyle", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"PointSize", "[", "Large", "]"}], ",", "Purple"}],
+                     "}"}]}]}], "]"}], ",", "\[IndentingNewLine]", 
+                   RowBox[{"ParametricPlot", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"surfaceTempFunction", "[", "u", "]"}], ",", 
+                    RowBox[{"luminosityFunction", "[", "u", "]"}]}], "}"}], 
+                    ",", 
+                    RowBox[{"{", 
+                    RowBox[{"u", ",", "1", ",", "maxAge"}], "}"}], ",", 
+                    RowBox[{"PlotStyle", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{"Blue", ",", "Dashed"}], "}"}]}]}], "]"}], ",", 
+                   "\[IndentingNewLine]", 
                    RowBox[{"PlotRange", "\[Rule]", 
                     RowBox[{"{", 
                     RowBox[{
@@ -455,38 +483,34 @@ Cell[BoxData[
                    RowBox[{"Background", "\[Rule]", "Black"}], ",", 
                    RowBox[{"AxesStyle", "\[Rule]", 
                     RowBox[{"Directive", "[", "Red", "]"}]}], ",", 
-                   RowBox[{"PlotStyle", "\[Rule]", 
-                    RowBox[{"PointSize", "[", "Large", "]"}]}], ",", 
                    RowBox[{"AxesLabel", "\[Rule]", 
                     RowBox[{"{", 
                     RowBox[{
                     "\"\<\!\(\*SubscriptBox[\(T\), \(s\)]\)\>\"", ",", 
                     "\"\<L\[CircleDot]\>\""}], "}"}]}]}], "]"}], ",", 
+                 "\[IndentingNewLine]", 
                  RowBox[{"Background", "\[Rule]", "Black"}]}], "]"}]}], "}"}],
               ",", "\[IndentingNewLine]", 
              RowBox[{"(*", 
-              RowBox[{"The", " ", "HR", " ", "Diagram"}], "*)"}], 
-             "\[IndentingNewLine]", 
+              RowBox[{"The", " ", "HR", " ", 
+               RowBox[{"Diagram", ":", " ", 
+                RowBox[{
+                "Shows", " ", "both", " ", "the", " ", "star", " ", "at", " ",
+                  "its", " ", "current", " ", "age", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"purple", " ", "point"}], ")"}], " ", "and", " ", 
+                 "a", " ", "plot", " ", "of", " ", "how", " ", "the", " ", 
+                 "star", " ", "will", " ", "move", " ", "through", " ", "the",
+                  " ", "graph", " ", 
+                 RowBox[{
+                  RowBox[{"(", 
+                   RowBox[{"dashed", " ", "line"}], ")"}], "."}]}]}]}], 
+              "*)"}], "\[IndentingNewLine]", 
              RowBox[{"{", 
               RowBox[{
                RowBox[{"Graphics", "[", 
                 RowBox[{
-                 RowBox[{"{", 
-                  RowBox[{
-                   RowBox[{"Hue", "[", "0.02", "]"}], ",", 
-                   RowBox[{"Tooltip", "[", 
-                    RowBox[{"Disk", "[", 
-                    RowBox[{
-                    RowBox[{"{", 
-                    RowBox[{"0", ",", "0"}], "}"}], ",", "1"}], "]"}], "]"}], 
-                   ",", 
-                   RowBox[{"Hue", "[", "0.15", "]"}], ",", 
-                   RowBox[{"Tooltip", "[", 
-                    RowBox[{"Disk", "[", 
-                    RowBox[{
-                    RowBox[{"{", 
-                    RowBox[{"0", ",", "0"}], "}"}], ",", 
-                    FractionBox["1", "age"]}], "]"}], "]"}]}], "}"}], ",", 
+                 RowBox[{"coreFunction", "[", "]"}], ",", 
                  RowBox[{"PlotRange", "\[Rule]", "1.1"}], ",", 
                  RowBox[{"Background", "\[Rule]", 
                   RowBox[{"Darker", "[", 
@@ -792,7 +816,14 @@ Cell[BoxData[
    3.671113129487646*^9, 3.671113142727665*^9}, {3.6711131923277345`*^9, 
    3.6711131974077415`*^9}, {3.671113230637788*^9, 3.671113428508065*^9}, {
    3.671113825538621*^9, 3.6711138329586315`*^9}, {3.6711138737086887`*^9, 
-   3.6711139173687496`*^9}, {3.671114346572399*^9, 3.6711143533124084`*^9}}]
+   3.6711139173687496`*^9}, {3.671114346572399*^9, 3.6711143533124084`*^9}, {
+   3.671117162900413*^9, 3.6711171891824555`*^9}, {3.671117303699644*^9, 
+   3.6711173038396444`*^9}, {3.671117556879062*^9, 3.6711176887752757`*^9}, {
+   3.671117769072407*^9, 3.6711178297265043`*^9}, {3.6711178853105965`*^9, 
+   3.6711179182766514`*^9}, {3.6711179771227493`*^9, 
+   3.6711179844567614`*^9}, {3.6711180484948645`*^9, 3.671118077829912*^9}, {
+   3.671118118679979*^9, 3.671118122350985*^9}, {3.6711181688040595`*^9, 
+   3.6711182742322316`*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -971,7 +1002,7 @@ Cell[BoxData[
    3.671026452611379*^9, 3.671026892218009*^9}, {3.671027124721356*^9, 
    3.6710272184942055`*^9}, {3.671027250384324*^9, 3.6710272514368286`*^9}, {
    3.671027390749843*^9, 3.671027604790638*^9}}]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -1061,15 +1092,46 @@ Cell[BoxData[
         "So"}], " ", "instead", " ", "we", " ", "use", " ", "this", " ", 
       "makeshift", " ", 
       RowBox[{"solution", "."}]}]}]}], "*)"}], "\[IndentingNewLine]", 
-  RowBox[{"If", "[", 
+  RowBox[{"Which", "[", "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"luminosity", "<", 
-     FractionBox["maxLuminosity", "1000"]}], ",", "\[IndentingNewLine]", 
+     FractionBox["maxLuminosity", "1000"]}], ",", 
     RowBox[{"Return", "[", 
      FractionBox["maxLuminosity", "1000"], "]"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"luminosity", "<", 
+     FractionBox["maxLuminosity", "100"]}], ",", 
+    RowBox[{"Return", "[", 
+     FractionBox["maxLuminosity", "100"], "]"}], ",", "\[IndentingNewLine]", 
+    "True", ",", 
     RowBox[{"Return", "[", "maxLuminosity", "]"}]}], "\[IndentingNewLine]", 
    "]"}]}]], "Input",
- InitializationCell->True]
+ InitializationCell->True,
+ CellChangeTimes->{{3.6711185515491405`*^9, 3.6711185665461655`*^9}, {
+  3.6711186155132475`*^9, 3.671118702483388*^9}, {3.6711188825486813`*^9, 
+  3.6711188925896983`*^9}, {3.6711189429687815`*^9, 3.671118955912802*^9}, {
+  3.6711190333439293`*^9, 3.671119034307931*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["CoreFunction:",
+ FontFamily->"Times New Roman",
+ FontSize->16,
+ FontWeight->"Bold",
+ FontColor->RGBColor[0., 0., 0.]]], "Section",
+ CellChangeTimes->{{3.6695110152244797`*^9, 3.6695110219661794`*^9}, {
+  3.6705114859285517`*^9, 3.67051149050111*^9}, {3.671020930167638*^9, 
+  3.6710209511776676`*^9}, {3.671028263723009*^9, 3.6710282863655415`*^9}, {
+  3.6711172343365307`*^9, 3.6711172413385425`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"coreFunction", "[", "]"}], ":=", " ", "\[IndentingNewLine]", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", "}"}], ","}], "\[IndentingNewLine]", "]"}]}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.6711172514825583`*^9, 3.671117295805631*^9}}]
 }, Open  ]]
 }, Open  ]],
 
@@ -1394,8 +1456,8 @@ Cell[BoxData[
    3.6710198411617813`*^9}, 3.671020837880005*^9, 3.671028523645878*^9, 
    3.671112335416535*^9, 3.6711124960367594`*^9}]
 }, {2}]]
-}, Open  ]]
-}, Open  ]]
+}, Closed]]
+}, Closed]]
 }, Open  ]]
 },
 WindowToolbars->"EditBar",
@@ -1422,48 +1484,53 @@ Cell[CellGroupData[{
 Cell[1212, 43, 267, 6, 42, "Chapter"],
 Cell[CellGroupData[{
 Cell[1504, 53, 845, 12, 30, "Input"],
-Cell[2352, 67, 5386, 108, 808, "Output"]
+Cell[2352, 67, 5888, 116, 808, "Output"]
 }, Open  ]],
-Cell[7753, 178, 96, 1, 30, "Input"]
+Cell[8255, 186, 96, 1, 30, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[7886, 184, 292, 6, 42, "Chapter"],
+Cell[8388, 192, 292, 6, 42, "Chapter"],
 Cell[CellGroupData[{
-Cell[8203, 194, 371, 8, 46, "Section"],
-Cell[8577, 204, 7073, 153, 471, "Input",
+Cell[8705, 202, 371, 8, 46, "Section"],
+Cell[9079, 212, 7073, 153, 471, "Input",
  InitializationCell->True],
-Cell[15653, 359, 26766, 435, 848, "Input",
+Cell[16155, 367, 28114, 458, 845, "Input",
  InitializationCell->True]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[42456, 799, 369, 8, 46, "Section"],
-Cell[42828, 809, 5177, 110, 284, "Input",
+Cell[44306, 830, 369, 8, 46, "Section"],
+Cell[44678, 840, 5177, 110, 269, "Input",
  InitializationCell->True],
-Cell[48008, 921, 2561, 51, 131, "Input",
+Cell[49858, 952, 2561, 51, 124, "Input",
  InitializationCell->True]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[50606, 977, 411, 7, 46, "Section"],
-Cell[51020, 986, 2209, 41, 209, "Input",
- InitializationCell->True],
-Cell[53232, 1029, 1870, 42, 229, "Input",
- InitializationCell->True]
-}, Open  ]]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[55151, 1077, 374, 7, 42, "Chapter"],
-Cell[CellGroupData[{
-Cell[55550, 1088, 233, 5, 46, "Section"],
-Cell[55786, 1095, 2542, 78, 102, "Text"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[58365, 1178, 321, 7, 33, "Section"],
+Cell[52456, 1008, 411, 7, 33, "Section"],
+Cell[52870, 1017, 2209, 41, 209, "Input",
+ InitializationCell->True],
+Cell[55082, 1060, 2352, 51, 290, "Input",
+ InitializationCell->True]
+}, Open  ]],
 Cell[CellGroupData[{
-Cell[58711, 1189, 6747, 153, 371, "Input"],
-Cell[65461, 1344, 2633, 50, 524, "Output"]
+Cell[57471, 1116, 426, 8, 46, "Section"],
+Cell[57900, 1126, 302, 7, 71, "Input",
+ InitializationCell->True]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[58251, 1139, 374, 7, 42, "Chapter"],
+Cell[CellGroupData[{
+Cell[58650, 1150, 233, 5, 43, "Section"],
+Cell[58886, 1157, 2542, 78, 91, "Text"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[61465, 1240, 321, 7, 31, "Section"],
+Cell[CellGroupData[{
+Cell[61811, 1251, 6747, 153, 334, "Input"],
+Cell[68561, 1406, 2633, 50, 497, "Output"]
 }, {2}]]
-}, Open  ]]
-}, Open  ]]
+}, Closed]]
+}, Closed]]
 }, Open  ]]
 }
 ]
