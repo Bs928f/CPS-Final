@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     87117,       1864]
-NotebookOptionsPosition[     85208,       1792]
-NotebookOutlinePosition[     85610,       1809]
-CellTagsIndexPosition[     85567,       1806]
+NotebookDataLength[     87201,       1866]
+NotebookOptionsPosition[     85293,       1794]
+NotebookOutlinePosition[     85694,       1811]
+CellTagsIndexPosition[     85651,       1808]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -69,25 +69,25 @@ Cell[BoxData[
 
 Cell[BoxData[
  DynamicModuleBox[{$CellContext`color$$, $CellContext`radius$$ = 
-  86.44179430920153, $CellContext`surfaceTemp$$ = 
-  3837.8892937898045`, $CellContext`centerTemp$$ = 
-  1.0092132237578925`*^8, $CellContext`luminosity$$ = 
-  1205.7926511792007`, $CellContext`stepFunction$$, $CellContext`startReal$$ =
+  66.21904147191528, $CellContext`surfaceTemp$$ = 
+  6724.869329368285, $CellContext`centerTemp$$ = 
+  8.393085166150856*^7, $CellContext`luminosity$$ = 
+  8052.7307810672955`, $CellContext`stepFunction$$, $CellContext`startReal$$ =
    0., $CellContext`stopReal$$ = 1.23015028*^10}, 
   TagBox[
    StyleBox[
-    DynamicModuleBox[{$CellContext`age$$ = 1.206986861352791*^10, 
-     Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
-     Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
-     1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+    DynamicModuleBox[{$CellContext`age$$ = 1.23015028*^10, Typeset`show$$ = 
+     True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+     "\"untitled\"", Typeset`specs$$ = {{{
         Hold[$CellContext`age$$], 0., "Age"}, 0., 1.23015028*^10}}, 
      Typeset`size$$ = {550., {273., 277.}}, Typeset`update$$ = 0, 
      Typeset`initDone$$, Typeset`skipInitDone$$ = 
-     True, $CellContext`age$741$$ = 0}, 
+     True, $CellContext`age$39517$$ = 0}, 
      DynamicBox[Manipulate`ManipulateBoxes[
       1, StandardForm, "Variables" :> {$CellContext`age$$ = 0.}, 
        "ControllerVariables" :> {
-         Hold[$CellContext`age$$, $CellContext`age$741$$, 0]}, 
+         Hold[$CellContext`age$$, $CellContext`age$39517$$, 0]}, 
        "OtherVariables" :> {
         Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
          Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -157,7 +157,7 @@ $CellContext`luminosity$$}}, PlotStyle -> {
        "Specifications" :> {{{$CellContext`age$$, 0., "Age"}, 0., 
           1.23015028*^10}}, "Options" :> {ContentSize -> {600, 600}}, 
        "DefaultOptions" :> {}],
-      ImageSizeCache->{590., {329., 336.}},
+      ImageSizeCache->{590., {316., 323.}},
       SingleEvaluation->True],
      Deinitialization:>None,
      DynamicModuleValues:>{},
@@ -187,9 +187,10 @@ $CellContext`luminosity$$}}, PlotStyle -> {
    3.6711340237918525`*^9, 3.6711340394678526`*^9}, {3.671134348843262*^9, 
    3.6711343538930607`*^9}, 3.6711346492482777`*^9, 3.6711347680942774`*^9, 
    3.6711348179322777`*^9, {3.671136068374587*^9, 3.6711361326222744`*^9}, {
-   3.67113616477361*^9, 3.6711361817927876`*^9}}]
-}, Closed]]
-}, Closed]],
+   3.67113616477361*^9, 3.6711361817927876`*^9}, 3.671141060138379*^9, 
+   3.671141304968379*^9}]
+}, Open  ]]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -1211,7 +1212,7 @@ Cell[BoxData[
        RowBox[{
         RowBox[{"{", 
          RowBox[{"Red", ",", 
-          RowBox[{"Circle", "[", 
+          RowBox[{"Disk", "[", 
            RowBox[{
             RowBox[{"{", 
              RowBox[{"0", ",", "0"}], "}"}], ",", 
@@ -1219,7 +1220,7 @@ Cell[BoxData[
         ",", "\[IndentingNewLine]", 
         RowBox[{"{", 
          RowBox[{"Blue", ",", 
-          RowBox[{"Circle", "[", 
+          RowBox[{"Disk", "[", 
            RowBox[{
             RowBox[{"{", 
              RowBox[{"0", ",", "0"}], "}"}], ",", 
@@ -1227,7 +1228,7 @@ Cell[BoxData[
         "\[IndentingNewLine]", 
         RowBox[{"{", 
          RowBox[{"Black", ",", 
-          RowBox[{"Circle", "[", 
+          RowBox[{"Disk", "[", 
            RowBox[{
             RowBox[{"{", 
              RowBox[{"0", ",", "0"}], "}"}], ",", 
@@ -1235,7 +1236,7 @@ Cell[BoxData[
         "\[IndentingNewLine]", 
         RowBox[{"{", 
          RowBox[{"Pink", ",", 
-          RowBox[{"Circle", "[", 
+          RowBox[{"Disk", "[", 
            RowBox[{
             RowBox[{"{", 
              RowBox[{"0", ",", "0"}], "}"}], ",", 
@@ -1246,7 +1247,8 @@ Cell[BoxData[
  CellChangeTimes->{{3.6711172514825583`*^9, 3.671117295805631*^9}, {
    3.671132608996628*^9, 3.671132716833515*^9}, 3.67113316987679*^9, {
    3.6711337610042505`*^9, 3.6711338118587456`*^9}, {3.671134413917674*^9, 
-   3.671134426769163*^9}, {3.6711349051232777`*^9, 3.6711349083422775`*^9}}]
+   3.671134426769163*^9}, {3.6711349051232777`*^9, 3.6711349083422775`*^9}, {
+   3.671141213208379*^9, 3.6711412406183786`*^9}}]
 }, Closed]],
 
 Cell[CellGroupData[{
@@ -1788,11 +1790,11 @@ Cell[BoxData[
 }, {2}]]
 }, Closed]]
 }, Closed]]
-}, Closed]]
+}, Open  ]]
 },
 WindowToolbars->"EditBar",
-WindowSize->{1366, 686},
-WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+WindowSize->{1350, 686},
+WindowMargins->{{-8, Automatic}, {Automatic, 0}},
 Magnification:>0.95 Inherited,
 FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
 StyleDefinitions->"Default.nb"
@@ -1814,58 +1816,58 @@ Cell[CellGroupData[{
 Cell[1212, 43, 267, 6, 42, "Chapter"],
 Cell[CellGroupData[{
 Cell[1504, 53, 999, 14, 30, "Input"],
-Cell[2506, 69, 6218, 120, 681, "Output"]
+Cell[2506, 69, 6259, 121, 655, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8814, 196, 292, 6, 42, "Chapter"],
+Cell[CellGroupData[{
+Cell[9131, 206, 371, 8, 46, "Section"],
+Cell[9505, 216, 9961, 215, 571, "Input",
+ InitializationCell->True],
+Cell[19469, 433, 28354, 460, 831, "Input",
+ InitializationCell->True]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[47860, 898, 369, 8, 33, "Section"],
+Cell[48232, 908, 5177, 110, 284, "Input",
+ InitializationCell->True],
+Cell[53412, 1020, 2561, 51, 131, "Input",
+ InitializationCell->True]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[56010, 1076, 411, 7, 33, "Section"],
+Cell[56424, 1085, 2209, 41, 209, "Input",
+ InitializationCell->True],
+Cell[58636, 1128, 2352, 51, 257, "Input",
+ InitializationCell->True]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[61025, 1184, 477, 9, 33, "Section"],
+Cell[61505, 1195, 2233, 55, 211, "Input",
+ InitializationCell->True]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[63775, 1255, 480, 9, 33, "Section"],
+Cell[64258, 1266, 1725, 39, 162, "Input",
+ InitializationCell->True]
 }, Closed]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[8773, 195, 292, 6, 32, "Chapter"],
+Cell[66032, 1311, 374, 7, 32, "Chapter"],
 Cell[CellGroupData[{
-Cell[9090, 205, 371, 8, 46, "Section"],
-Cell[9464, 215, 9961, 215, 571, "Input",
- InitializationCell->True],
-Cell[19428, 432, 28354, 460, 831, "Input",
- InitializationCell->True]
+Cell[66431, 1322, 233, 5, 46, "Section"],
+Cell[66667, 1329, 3807, 129, 170, "Text"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[47819, 897, 369, 8, 33, "Section"],
-Cell[48191, 907, 5177, 110, 284, "Input",
- InitializationCell->True],
-Cell[53371, 1019, 2561, 51, 131, "Input",
- InitializationCell->True]
-}, Closed]],
+Cell[70511, 1463, 321, 7, 33, "Section"],
 Cell[CellGroupData[{
-Cell[55969, 1075, 411, 7, 33, "Section"],
-Cell[56383, 1084, 2209, 41, 209, "Input",
- InitializationCell->True],
-Cell[58595, 1127, 2352, 51, 257, "Input",
- InitializationCell->True]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[60984, 1183, 477, 9, 33, "Section"],
-Cell[61464, 1194, 2189, 54, 211, "Input",
- InitializationCell->True]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[63690, 1253, 480, 9, 33, "Section"],
-Cell[64173, 1264, 1725, 39, 162, "Input",
- InitializationCell->True]
-}, Closed]]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[65947, 1309, 374, 7, 32, "Chapter"],
-Cell[CellGroupData[{
-Cell[66346, 1320, 233, 5, 46, "Section"],
-Cell[66582, 1327, 3807, 129, 179, "Text"]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[70426, 1461, 321, 7, 33, "Section"],
-Cell[CellGroupData[{
-Cell[70772, 1472, 10337, 235, 511, "Input"],
-Cell[81112, 1709, 4047, 77, 780, "Output"]
+Cell[70857, 1474, 10337, 235, 485, "Input"],
+Cell[81197, 1711, 4047, 77, 741, "Output"]
 }, {2}]]
 }, Closed]]
 }, Closed]]
-}, Closed]]
+}, Open  ]]
 }
 ]
 *)
