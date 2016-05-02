@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     87201,       1866]
-NotebookOptionsPosition[     85293,       1794]
-NotebookOutlinePosition[     85694,       1811]
-CellTagsIndexPosition[     85651,       1808]
+NotebookDataLength[     87924,       1876]
+NotebookOptionsPosition[     86013,       1804]
+NotebookOutlinePosition[     86415,       1821]
+CellTagsIndexPosition[     86372,       1818]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -52,7 +52,8 @@ Cell[TextData[StyleBox["Output:",
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"StellarEvolutionSimulator", "[", "1", "]"}]], "Input",
+ RowBox[{"StellarEvolutionSimulator", "[", 
+  RowBox[{"1", ",", "0.9999", ",", "1"}], "]"}]], "Input",
  CellChangeTimes->{{3.6695106581691794`*^9, 3.6695106603625793`*^9}, {
    3.669546674836789*^9, 3.6695466794290743`*^9}, {3.6695560939965787`*^9, 
    3.6695561088465786`*^9}, {3.6705181389952393`*^9, 
@@ -65,29 +66,32 @@ Cell[BoxData[
    3.671020502280391*^9, 3.6710205163329115`*^9}, {3.671021099122877*^9, 
    3.671021099935378*^9}, {3.6711259785053363`*^9, 3.671126000741781*^9}, {
    3.671136098051898*^9, 3.6711361319092674`*^9}, {3.6711361632375946`*^9, 
-   3.6711361639186015`*^9}}],
+   3.6711361639186015`*^9}, {3.671192089138422*^9, 3.671192134438492*^9}, {
+   3.671192216531116*^9, 3.6711922183886185`*^9}, {3.671192261091184*^9, 
+   3.6711922692361965`*^9}, {3.671192303763748*^9, 3.6711923039437485`*^9}}],
 
 Cell[BoxData[
  DynamicModuleBox[{$CellContext`color$$, $CellContext`radius$$ = 
-  66.21904147191528, $CellContext`surfaceTemp$$ = 
-  6724.869329368285, $CellContext`centerTemp$$ = 
-  8.393085166150856*^7, $CellContext`luminosity$$ = 
-  8052.7307810672955`, $CellContext`stepFunction$$, $CellContext`startReal$$ =
-   0., $CellContext`stopReal$$ = 1.23015028*^10}, 
+  269.3105180152857, $CellContext`surfaceTemp$$ = 
+  3096.0803337088814`, $CellContext`centerTemp$$ = 
+  8.5386420204446*^7, $CellContext`luminosity$$ = 
+  5983.568012039595, $CellContext`stepFunction$$, $CellContext`startReal$$ = 
+  1.230027264972*^10, $CellContext`stopReal$$ = 1.23015028*^10}, 
   TagBox[
    StyleBox[
-    DynamicModuleBox[{$CellContext`age$$ = 1.23015028*^10, Typeset`show$$ = 
+    DynamicModuleBox[{$CellContext`age$$ = 1.2301306*^10, Typeset`show$$ = 
      True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
      Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
      "\"untitled\"", Typeset`specs$$ = {{{
-        Hold[$CellContext`age$$], 0., "Age"}, 0., 1.23015028*^10}}, 
-     Typeset`size$$ = {550., {273., 277.}}, Typeset`update$$ = 0, 
-     Typeset`initDone$$, Typeset`skipInitDone$$ = 
-     True, $CellContext`age$39517$$ = 0}, 
+        Hold[$CellContext`age$$], 1.230027264972*^10, "Age"}, 
+       1.230027264972*^10, 1.23015028*^10}}, Typeset`size$$ = {
+     550., {273., 277.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+     Typeset`skipInitDone$$ = True, $CellContext`age$73735$$ = 0}, 
      DynamicBox[Manipulate`ManipulateBoxes[
-      1, StandardForm, "Variables" :> {$CellContext`age$$ = 0.}, 
+      1, StandardForm, 
+       "Variables" :> {$CellContext`age$$ = 1.230027264972*^10}, 
        "ControllerVariables" :> {
-         Hold[$CellContext`age$$, $CellContext`age$39517$$, 0]}, 
+         Hold[$CellContext`age$$, $CellContext`age$73735$$, 0]}, 
        "OtherVariables" :> {
         Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
          Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -117,7 +121,8 @@ $CellContext`luminosity$$}}, PlotStyle -> {
               ParametricPlot[{
                 $CellContext`surfaceTempFunction[$CellContext`u], 
                 $CellContext`luminosityFunction[$CellContext`u]}, \
-{$CellContext`u, 1, $CellContext`maxAge}, PlotStyle -> {Blue, Dashed}], 
+{$CellContext`u, 1, $CellContext`maxAge}, PerformanceGoal -> "Quality", 
+               PlotStyle -> {Blue, Dashed}], 
               PlotRange -> {{0, $CellContext`maxTSurface}, {0, 
                  $CellContext`yHRDRange[$CellContext`luminosity$$]}}, 
               ScalingFunctions -> {"Reverse", Identity}, Axes -> True, 
@@ -150,13 +155,12 @@ $CellContext`luminosity$$}}, PlotStyle -> {
                   NumberForm[$CellContext`luminosity$$, DigitBlock -> 3, 
                    NumberSeparator -> ","]], " L\[CircleDot]", "\nAge: ", 
                  ToString[
-                  
                   AccountingForm[$CellContext`age$$, DigitBlock -> 3, 
                    NumberSeparator -> ","]], " Years"]]}]]}}, 
           ContentSelectable -> False, ImageSize -> Full]), 
-       "Specifications" :> {{{$CellContext`age$$, 0., "Age"}, 0., 
-          1.23015028*^10}}, "Options" :> {ContentSize -> {600, 600}}, 
-       "DefaultOptions" :> {}],
+       "Specifications" :> {{{$CellContext`age$$, 1.230027264972*^10, "Age"}, 
+          1.230027264972*^10, 1.23015028*^10}}, 
+       "Options" :> {ContentSize -> {600, 600}}, "DefaultOptions" :> {}],
       ImageSizeCache->{590., {316., 323.}},
       SingleEvaluation->True],
      Deinitialization:>None,
@@ -188,7 +192,10 @@ $CellContext`luminosity$$}}, PlotStyle -> {
    3.6711343538930607`*^9}, 3.6711346492482777`*^9, 3.6711347680942774`*^9, 
    3.6711348179322777`*^9, {3.671136068374587*^9, 3.6711361326222744`*^9}, {
    3.67113616477361*^9, 3.6711361817927876`*^9}, 3.671141060138379*^9, 
-   3.671141304968379*^9}]
+   3.671141304968379*^9, 3.67119194870571*^9, {3.67119209431593*^9, 
+   3.6711921349384923`*^9}, {3.6711922036035967`*^9, 
+   3.6711922188536196`*^9}, {3.671192261846185*^9, 3.6711922699161973`*^9}, 
+   3.67119230475875*^9}]
 }, Open  ]]
 }, Open  ]],
 
@@ -527,6 +534,8 @@ Cell[BoxData[
                    ",", 
                    RowBox[{"{", 
                     RowBox[{"u", ",", "1", ",", "maxAge"}], "}"}], ",", 
+                   RowBox[{"PerformanceGoal", "\[Rule]", "\"\<Quality\>\""}], 
+                   ",", 
                    RowBox[{"PlotStyle", "\[Rule]", 
                     RowBox[{"{", 
                     RowBox[{"Blue", ",", "Dashed"}], "}"}]}]}], "]"}], ",", 
@@ -891,8 +900,9 @@ Cell[BoxData[
    3.6711346448242774`*^9, 3.6711346454502773`*^9}, {3.671134684815277*^9, 
    3.6711347628252773`*^9}, {3.6711348051632776`*^9, 
    3.6711348119722776`*^9}, {3.671135577163578*^9, 3.67113567198958*^9}, {
-   3.6711359550203986`*^9, 3.671136052017413*^9}}]
-}, Closed]],
+   3.6711359550203986`*^9, 3.671136052017413*^9}, {3.6711921923310795`*^9, 
+   3.67119219918609*^9}}]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -1305,7 +1315,7 @@ Cell[BoxData[
   3.6711301712657585`*^9}, {3.6711304138702583`*^9, 3.6711304210402584`*^9}, {
   3.6711348949242773`*^9, 3.671134964999277*^9}}]
 }, Closed]]
-}, Closed]],
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -1793,8 +1803,8 @@ Cell[BoxData[
 }, Open  ]]
 },
 WindowToolbars->"EditBar",
-WindowSize->{1350, 686},
-WindowMargins->{{-8, Automatic}, {Automatic, 0}},
+WindowSize->{1366, 686},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
 Magnification:>0.95 Inherited,
 FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
 StyleDefinitions->"Default.nb"
@@ -1815,55 +1825,55 @@ Cell[580, 22, 607, 17, 106, "Title"],
 Cell[CellGroupData[{
 Cell[1212, 43, 267, 6, 42, "Chapter"],
 Cell[CellGroupData[{
-Cell[1504, 53, 999, 14, 30, "Input"],
-Cell[2506, 69, 6259, 121, 655, "Output"]
+Cell[1504, 53, 1235, 17, 30, "Input"],
+Cell[2742, 72, 6588, 125, 688, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[8814, 196, 292, 6, 42, "Chapter"],
+Cell[9379, 203, 292, 6, 42, "Chapter"],
 Cell[CellGroupData[{
-Cell[9131, 206, 371, 8, 46, "Section"],
-Cell[9505, 216, 9961, 215, 571, "Input",
+Cell[9696, 213, 371, 8, 46, "Section"],
+Cell[10070, 223, 9961, 215, 571, "Input",
  InitializationCell->True],
-Cell[19469, 433, 28354, 460, 831, "Input",
+Cell[20034, 440, 28509, 463, 864, "Input",
  InitializationCell->True]
-}, Closed]],
+}, Open  ]],
 Cell[CellGroupData[{
-Cell[47860, 898, 369, 8, 33, "Section"],
-Cell[48232, 908, 5177, 110, 284, "Input",
+Cell[48580, 908, 369, 8, 46, "Section"],
+Cell[48952, 918, 5177, 110, 269, "Input",
  InitializationCell->True],
-Cell[53412, 1020, 2561, 51, 131, "Input",
+Cell[54132, 1030, 2561, 51, 124, "Input",
  InitializationCell->True]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[56010, 1076, 411, 7, 33, "Section"],
-Cell[56424, 1085, 2209, 41, 209, "Input",
+Cell[56730, 1086, 411, 7, 33, "Section"],
+Cell[57144, 1095, 2209, 41, 198, "Input",
  InitializationCell->True],
-Cell[58636, 1128, 2352, 51, 257, "Input",
+Cell[59356, 1138, 2352, 51, 244, "Input",
  InitializationCell->True]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[61025, 1184, 477, 9, 33, "Section"],
-Cell[61505, 1195, 2233, 55, 211, "Input",
+Cell[61745, 1194, 477, 9, 33, "Section"],
+Cell[62225, 1205, 2233, 55, 200, "Input",
  InitializationCell->True]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[63775, 1255, 480, 9, 33, "Section"],
-Cell[64258, 1266, 1725, 39, 162, "Input",
+Cell[64495, 1265, 480, 9, 33, "Section"],
+Cell[64978, 1276, 1725, 39, 153, "Input",
  InitializationCell->True]
 }, Closed]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[66752, 1321, 374, 7, 42, "Chapter"],
+Cell[CellGroupData[{
+Cell[67151, 1332, 233, 5, 43, "Section"],
+Cell[67387, 1339, 3807, 129, 161, "Text"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[66032, 1311, 374, 7, 32, "Chapter"],
+Cell[71231, 1473, 321, 7, 31, "Section"],
 Cell[CellGroupData[{
-Cell[66431, 1322, 233, 5, 46, "Section"],
-Cell[66667, 1329, 3807, 129, 170, "Text"]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[70511, 1463, 321, 7, 33, "Section"],
-Cell[CellGroupData[{
-Cell[70857, 1474, 10337, 235, 485, "Input"],
-Cell[81197, 1711, 4047, 77, 741, "Output"]
+Cell[71577, 1484, 10337, 235, 460, "Input"],
+Cell[81917, 1721, 4047, 77, 703, "Output"]
 }, {2}]]
 }, Closed]]
 }, Closed]]
