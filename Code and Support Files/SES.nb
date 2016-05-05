@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    452810,       8037]
-NotebookOptionsPosition[    450712,       7961]
-NotebookOutlinePosition[    451114,       7978]
-CellTagsIndexPosition[    451071,       7975]
+NotebookDataLength[    453394,       8049]
+NotebookOptionsPosition[    451296,       7973]
+NotebookOutlinePosition[    451698,       7990]
+CellTagsIndexPosition[    451655,       7987]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -119,31 +119,31 @@ Cell[BoxData[
    3.6713829212152076`*^9}],
 
 Cell[BoxData[
- DynamicModuleBox[{$CellContext`mass$$ = 0.0945747399, $CellContext`radius$$ =
-   0.028503975102637868`, $CellContext`luminosity$$ = 
-  0.000011846537949511676`, $CellContext`surfaceTemp$$ = 
-  2007.4034212985607`, $CellContext`centerTemp$$ = 
-  1.6002977329554937`*^6, $CellContext`coreHydrogen$$ = 
-  2.94425732*^-11, $CellContext`coreHelium$$ = 
-  0.979965332, $CellContext`coreCarbon$$ = 
-  0.0000425772164, $CellContext`coreNitrogen$$ = 
-  0.016432091, $CellContext`coreOxygen$$ = 
-  1.10761699*^-10, $CellContext`startReal$$ = 0., $CellContext`stopReal$$ = 
+ DynamicModuleBox[{$CellContext`mass$$ = 0.1, $CellContext`radius$$ = 
+  0.13419702836496922`, $CellContext`luminosity$$ = 
+  0.0008691956216361133, $CellContext`surfaceTemp$$ = 
+  2707.680579194195, $CellContext`centerTemp$$ = 
+  4.336659957964755*^6, $CellContext`coreHydrogen$$ = 
+  0.698490994, $CellContext`coreHelium$$ = 
+  0.281392784, $CellContext`coreCarbon$$ = 
+  0.00353980867, $CellContext`coreNitrogen$$ = 
+  0.00106566226, $CellContext`coreOxygen$$ = 
+  0.0100996559, $CellContext`startReal$$ = 0., $CellContext`stopReal$$ = 
   4.65512648*^12}, 
   TagBox[
    StyleBox[
-    DynamicModuleBox[{$CellContext`age$$ = 4.65512648*^12, Typeset`show$$ = 
-     True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    DynamicModuleBox[{$CellContext`age$$ = 0., Typeset`show$$ = True, 
+     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
      Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
      "\"untitled\"", Typeset`specs$$ = {{{
         Hold[$CellContext`age$$], 0., "Age"}, 0., 4.65512648*^12}}, 
      Typeset`size$$ = {875., {246., 250.}}, Typeset`update$$ = 0, 
      Typeset`initDone$$, Typeset`skipInitDone$$ = 
-     True, $CellContext`age$351125$$ = 0}, 
+     True, $CellContext`age$60498$$ = 0}, 
      DynamicBox[Manipulate`ManipulateBoxes[
       1, StandardForm, "Variables" :> {$CellContext`age$$ = 0.}, 
        "ControllerVariables" :> {
-         Hold[$CellContext`age$$, $CellContext`age$351125$$, 0]}, 
+         Hold[$CellContext`age$$, $CellContext`age$60498$$, 0]}, 
        "OtherVariables" :> {
         Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
          Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -206,7 +206,8 @@ $CellContext`age$$]],
               $CellContext`mCFunction[$CellContext`age$$], 
               $CellContext`mNFunction[$CellContext`age$$], 
               $CellContext`mOFunction[$CellContext`age$$]}, PlotRange -> 1, 
-             ChartLabels -> {"H", "He", "C", "N", "O"}], 
+             ChartLabels -> {"H", "He", "C", "N", "O"}, PlotLabel -> 
+             "Percent Composition of Star by Mass"], 
             Graphics[
              $CellContext`core[$CellContext`age$$], PlotLabel -> "Core", Axes -> 
              True, Background -> Black], 
@@ -3898,7 +3899,7 @@ x/+f+d8qq0Ml1sfcpmT/C04orSA=
     4.65512648*^12, $CellContext`sphereRange = 
     CompiledFunction[{10, 10.1, 5468}, {
        Blank[Real]}, {{3, 0, 0}, {3, 0, 
-      2}}, {{275.89231287562427`, {3, 0, 1}}, {0.01, {3, 0, 3}}, {
+      2}}, {{0.1433762377044107, {3, 0, 1}}, {0.01, {3, 0, 3}}, {
        7., {3, 0, 4}}}, {1, 0, 6, 0, 0}, {{46, 
         Function[{$CellContext`radius}, $CellContext`maxRadius], 3, 0, 0, 3, 
         0, 2}, {16, 2, 3, 2}, {27, 3, 4, 0, 2, 0}, {2, 0, 6}, {46, 
@@ -3921,7 +3922,9 @@ $CellContext`rCFunction[$CellContext`age] + \
 $CellContext`rOFunction[$CellContext`age]}, 
       Return[{{Red, 
          Tooltip[
-          Disk[{0., 0.}, 0.1], "0.1 M\[CircleDot] Scale Factor"]}, {Blue, 
+          Disk[{0., 0.}, 
+           $CellContext`radiusFunction[$CellContext`age]], "Exterior"]}, {
+        Blue, 
          Tooltip[
           Disk[{0., 0.}, 
            $CellContext`rHeFunction[$CellContext`age]], "Helium"]}, {Black, 
@@ -4568,7 +4571,7 @@ dw==
     5661.765138671125, $CellContext`yHRDRange = 
     CompiledFunction[{10, 10.1, 5468}, {
        Blank[Real]}, {{3, 0, 0}, {3, 0, 
-      2}}, {{0.001, {3, 0, 3}}, {8065.049179540713, {3, 0, 1}}, {
+      2}}, {{0.001, {3, 0, 3}}, {0.00607239829983551, {3, 0, 1}}, {
        0.01, {3, 0, 6}}, {7., {3, 0, 4}}}, {2, 0, 8, 0, 0}, {{46, 
         Function[{$CellContext`luminosity}, $CellContext`maxLuminosity], 3, 0,
          0, 3, 0, 2}, {16, 2, 3, 2}, {27, 3, 4, 0, 2, 0}, {2, 0, 6}, {46, 
@@ -4628,7 +4631,8 @@ dw==
    3.6713822052381887`*^9, 3.6713823031383257`*^9, 3.671382381998436*^9, 
    3.6713824373995132`*^9, {3.671382603807756*^9, 3.671382623977784*^9}, {
    3.6713827261719327`*^9, 3.6713827299419384`*^9}, {3.671382796445033*^9, 
-   3.671382799745037*^9}, 3.6713828899251633`*^9, 3.6713829222352085`*^9}]
+   3.671382799745037*^9}, 3.6713828899251633`*^9, 3.6713829222352085`*^9, 
+   3.6714071750653877`*^9, 3.671407306675573*^9}]
 }, Open  ]]
 }, Open  ]],
 
@@ -5280,7 +5284,10 @@ Cell[BoxData[
                 RowBox[{"{", 
                  RowBox[{"350", ",", "250"}], "}"}]}]}], "]"}], ",", 
              "SpanFromLeft"}], "}"}], ",", "\[IndentingNewLine]", 
-           RowBox[{"{", "\[IndentingNewLine]", 
+           RowBox[{"{", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+            RowBox[{"(*", 
+             RowBox[{"The", " ", "Bar", " ", "Chart"}], "*)"}], 
+            "\[IndentingNewLine]", 
             RowBox[{
              RowBox[{"BarChart", "[", 
               RowBox[{
@@ -5297,8 +5304,11 @@ Cell[BoxData[
                 RowBox[{"{", 
                  RowBox[{
                  "\"\<H\>\"", ",", "\"\<He\>\"", ",", "\"\<C\>\"", ",", 
-                  "\"\<N\>\"", ",", "\"\<O\>\""}], "}"}]}]}], "]"}], ",", 
-             "\[IndentingNewLine]", "\[IndentingNewLine]", 
+                  "\"\<N\>\"", ",", "\"\<O\>\""}], "}"}]}], ",", 
+               RowBox[{
+               "PlotLabel", "\[Rule]", 
+                "\"\<Percent Composition of Star by Mass\>\""}]}], "]"}], ",",
+              "\[IndentingNewLine]", "\[IndentingNewLine]", 
              RowBox[{"(*", 
               RowBox[{"The", " ", "Internal", " ", "Diagram"}], "*)"}], 
              "\[IndentingNewLine]", 
@@ -5714,7 +5724,8 @@ Cell[BoxData[
    3.671382165138132*^9, 3.671382167108135*^9}, {3.6713822766682887`*^9, 
    3.6713822978683186`*^9}, {3.6713823559783993`*^9, 
    3.6713823769584293`*^9}, {3.671382424948496*^9, 3.671382429989503*^9}, {
-   3.671382588797735*^9, 3.671382596307746*^9}}]
+   3.671382588797735*^9, 3.671382596307746*^9}, {3.671407158730365*^9, 
+   3.6714071644503727`*^9}, {3.6714072741430273`*^9, 3.6714072984655614`*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -6104,9 +6115,9 @@ Cell[BoxData[
             RowBox[{"Disk", "[", 
              RowBox[{
               RowBox[{"{", 
-               RowBox[{"0.", ",", "0."}], "}"}], ",", "0.1"}], "]"}], ",", 
-            "\"\<0.1 M\[CircleDot] Scale Factor\>\""}], "]"}]}], "}"}], ",", 
-        "\[IndentingNewLine]", 
+               RowBox[{"0.", ",", "0."}], "}"}], ",", 
+              RowBox[{"radiusFunction", "[", "age", "]"}]}], "]"}], ",", 
+            "\"\<Exterior\>\""}], "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
         RowBox[{"{", 
          RowBox[{"Blue", ",", 
           RowBox[{"Tooltip", "[", 
@@ -6155,7 +6166,8 @@ Cell[BoxData[
    3.671377799221052*^9, {3.671378019837369*^9, 3.6713780244073753`*^9}, {
    3.671378081227455*^9, 3.6713781161675034`*^9}, {3.6713784784100122`*^9, 
    3.6713784986500406`*^9}, 3.6713789335326505`*^9, {3.671382665734844*^9, 
-   3.671382673864856*^9}, {3.6713827617949843`*^9, 3.671382772705*^9}}]
+   3.671382673864856*^9}, {3.6713827617949843`*^9, 3.671382772705*^9}, {
+   3.6714071161678047`*^9, 3.6714071324003277`*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -7983,57 +7995,57 @@ Cell[CellGroupData[{
 Cell[1212, 43, 267, 6, 38, "Chapter"],
 Cell[CellGroupData[{
 Cell[1504, 53, 4813, 65, 26, "Input"],
-Cell[6320, 120, 271763, 4510, 642, "Output"]
+Cell[6320, 120, 271883, 4514, 609, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[278132, 4636, 292, 6, 38, "Chapter"],
+Cell[278252, 4640, 292, 6, 38, "Chapter"],
 Cell[CellGroupData[{
-Cell[278449, 4646, 371, 8, 43, "Section"],
-Cell[278823, 4656, 21568, 456, 1251, "Input",
+Cell[278569, 4650, 371, 8, 43, "Section"],
+Cell[278943, 4660, 21568, 456, 1251, "Input",
  InitializationCell->True],
-Cell[300394, 5114, 634, 15, 45, "Input",
+Cell[300514, 5118, 634, 15, 45, "Input",
  InitializationCell->True],
-Cell[301031, 5131, 36135, 585, 1233, "Input",
+Cell[301151, 5135, 36523, 592, 1269, "Input",
  InitializationCell->True]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[337203, 5721, 369, 8, 43, "Section"],
-Cell[337575, 5731, 6717, 138, 90, "Input",
+Cell[337711, 5732, 369, 8, 43, "Section"],
+Cell[338083, 5742, 6717, 138, 76, "Input",
  InitializationCell->True],
-Cell[344295, 5871, 2611, 52, 33, "Input",
+Cell[344803, 5882, 2611, 52, 28, "Input",
  InitializationCell->True]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[346943, 5928, 411, 7, 32, "Section"],
-Cell[347357, 5937, 2765, 52, 183, "Input",
+Cell[347451, 5939, 411, 7, 32, "Section"],
+Cell[347865, 5948, 2765, 52, 155, "Input",
  InitializationCell->True],
-Cell[350125, 5991, 2917, 62, 202, "Input",
+Cell[350633, 6002, 2917, 62, 171, "Input",
  InitializationCell->True]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[353079, 6058, 626, 11, 32, "Section"],
-Cell[353708, 6071, 3946, 86, 240, "Input",
+Cell[353587, 6069, 626, 11, 32, "Section"],
+Cell[354216, 6082, 4022, 87, 207, "Input",
  InitializationCell->True]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[357691, 6162, 480, 9, 43, "Section"],
-Cell[358174, 6173, 2055, 45, 131, "Input",
+Cell[358275, 6174, 480, 9, 43, "Section"],
+Cell[358758, 6185, 2055, 45, 111, "Input",
  InitializationCell->True]
 }, Closed]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[360278, 6224, 374, 7, 38, "Chapter"],
+Cell[360862, 6236, 374, 7, 38, "Chapter"],
 Cell[CellGroupData[{
-Cell[360677, 6235, 233, 5, 36, "Section"],
-Cell[360913, 6242, 5084, 191, 148, "Text"]
+Cell[361261, 6247, 233, 5, 30, "Section"],
+Cell[361497, 6254, 5084, 191, 125, "Text"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[366034, 6438, 321, 7, 33, "Section"],
-Cell[366358, 6447, 305, 6, 27, "Text"],
+Cell[366618, 6450, 321, 7, 28, "Section"],
+Cell[366942, 6459, 305, 6, 22, "Text"],
 Cell[CellGroupData[{
-Cell[366688, 6457, 15694, 360, 317, "Input"],
-Cell[382385, 6819, 68278, 1136, 2202, 5557, 107, "CachedBoxData", "BoxData", \
+Cell[367272, 6469, 15694, 360, 269, "Input"],
+Cell[382969, 6831, 68278, 1136, 1871, 5557, 107, "CachedBoxData", "BoxData", \
 "Output"]
 }, {2}]]
 }, Closed]]
