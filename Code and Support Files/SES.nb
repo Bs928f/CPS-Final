@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    369459,       6656]
-NotebookOptionsPosition[    367433,       6582]
-NotebookOutlinePosition[    367835,       6599]
-CellTagsIndexPosition[    367792,       6596]
+NotebookDataLength[    373907,       6750]
+NotebookOptionsPosition[    371722,       6671]
+NotebookOutlinePosition[    372124,       6688]
+CellTagsIndexPosition[    372081,       6685]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -52,7 +52,8 @@ Cell[TextData[StyleBox["Output:",
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"stellarEvolutionSimulator", "[", "1", "]"}]], "Input",
+ RowBox[{"stellarEvolutionSimulator", "[", 
+  RowBox[{"1", ",", ".999999"}], "]"}]], "Input",
  CellChangeTimes->{{3.6695106581691794`*^9, 3.6695106603625793`*^9}, {
    3.669546674836789*^9, 3.6695466794290743`*^9}, {3.6695560939965787`*^9, 
    3.6695561088465786`*^9}, {3.6705181389952393`*^9, 
@@ -126,35 +127,35 @@ Cell[BoxData[
    3.671449863729889*^9}, {3.671450390394012*^9, 3.671450431354355*^9}, {
    3.671450528668921*^9, 3.6714505463869343`*^9}, {3.6714506688879414`*^9, 
    3.6714506882290473`*^9}, {3.671453288231891*^9, 3.671453288827925*^9}, {
-   3.6714540735588093`*^9, 3.6714540741168413`*^9}}],
+   3.6714540735588093`*^9, 3.6714540741168413`*^9}, {3.6714682515067205`*^9, 
+   3.671468297088328*^9}, {3.6714685932852693`*^9, 3.671468614237468*^9}}],
 
 Cell[BoxData[
  DynamicModuleBox[{$CellContext`mass$$ = 
-  0.9998031458980419, $CellContext`radius$$ = 
-  0.9435341736508834, $CellContext`luminosity$$ = 
-  0.8521960698145374, $CellContext`surfaceTemp$$ = 
-  5714.055834614611, $CellContext`centerTemp$$ = 
-  1.4407197594747776`*^7, $CellContext`coreHydrogen$$ = 
-  0.5279704001834872, $CellContext`coreHelium$$ = 
-  0.45133683833547655`, $CellContext`coreCarbon$$ = 
-  0.000017276781728936336`, $CellContext`coreNitrogen$$ = 
-  0.005249132901239586, $CellContext`coreOxygen$$ = 
-  0.010015256385812802`, $CellContext`startReal$$ = 
-  0., $CellContext`stopReal$$ = 1.23015028*^10}, 
+  0.6314421292888889, $CellContext`radius$$ = 
+  168.06753123318748`, $CellContext`luminosity$$ = 
+  7043.412990879701, $CellContext`surfaceTemp$$ = 
+  4082.6212417033726`, $CellContext`centerTemp$$ = 
+  8.366515770073833*^7, $CellContext`coreHydrogen$$ = 
+  0., $CellContext`coreHelium$$ = 0., $CellContext`coreCarbon$$ = 
+  0.159068953, $CellContext`coreNitrogen$$ = 0., $CellContext`coreOxygen$$ = 
+  0.816596596, $CellContext`startReal$$ = 
+  1.23014904984972*^10, $CellContext`stopReal$$ = 1.23015028*^10}, 
   TagBox[
    StyleBox[
-    DynamicModuleBox[{$CellContext`age$$ = 2.365*^9, Typeset`show$$ = True, 
-     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    DynamicModuleBox[{$CellContext`age$$ = 1.2301492555*^10, Typeset`show$$ = 
+     True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
      Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
      "\"untitled\"", Typeset`specs$$ = {{{
-        Hold[$CellContext`age$$], 0., "Age"}, 0., 1.23015028*^10}}, 
-     Typeset`size$$ = {845., {246., 250.}}, Typeset`update$$ = 0, 
-     Typeset`initDone$$, Typeset`skipInitDone$$ = 
-     True, $CellContext`age$160161$$ = 0}, 
+        Hold[$CellContext`age$$], 1.23014904984972*^10, "Age"}, 
+       1.23014904984972*^10, 1.23015028*^10}}, Typeset`size$$ = {
+     862., {246., 250.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+     Typeset`skipInitDone$$ = True, $CellContext`age$47269$$ = 0}, 
      DynamicBox[Manipulate`ManipulateBoxes[
-      1, StandardForm, "Variables" :> {$CellContext`age$$ = 0.}, 
+      1, StandardForm, 
+       "Variables" :> {$CellContext`age$$ = 1.23014904984972*^10}, 
        "ControllerVariables" :> {
-         Hold[$CellContext`age$$, $CellContext`age$160161$$, 0]}, 
+         Hold[$CellContext`age$$, $CellContext`age$47269$$, 0]}, 
        "OtherVariables" :> {
         Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
          Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -212,6 +213,14 @@ $CellContext`maxRadius,
                   AccountingForm[$CellContext`age$$, DigitBlock -> 3, 
                    NumberSeparator -> ","]], " Years"], Alignment -> Left]}], 
              ImageSize -> {350, 250}], SpanFromLeft}, {
+            
+            BarChart[{$CellContext`mHFunction[$CellContext`age$$] 
+              10^2, $CellContext`mHeFunction[$CellContext`age$$] 
+              10^2, $CellContext`mCFunction[$CellContext`age$$] 
+              10^2, $CellContext`mNFunction[$CellContext`age$$] 
+              10^2, $CellContext`mOFunction[$CellContext`age$$] 10^2}, 
+             PlotRange -> 100, ChartLabels -> {"H", "He", "C", "N", "O"}, 
+             PlotLabel -> "Percent Composition of Core by Mass"], 
             Graphics[
              $CellContext`core[$CellContext`age$$], PlotLabel -> "Core", Axes -> 
              True, Background -> Black], 
@@ -235,8 +244,8 @@ $CellContext`luminosity$$}}, PlotStyle -> {
               "\!\(\*SubscriptBox[\(T\), \(s\)]\)", "L\[CircleDot]"}, 
              PlotLabel -> "HRD", AxesOrigin -> {0, 0}]}}, ContentSelectable -> 
           False, ImageSize -> Full, Background -> Black]), 
-       "Specifications" :> {{{$CellContext`age$$, 0., "Age"}, 0., 
-          1.23015028*^10, ImageSize -> 1000}}, 
+       "Specifications" :> {{{$CellContext`age$$, 1.23014904984972*^10, 
+           "Age"}, 1.23014904984972*^10, 1.23015028*^10, ImageSize -> 1000}}, 
        "Options" :> {ContentSize -> {1035, 625}}, "DefaultOptions" :> {}],
       ImageSizeCache->{899., {295., 300.}},
       SingleEvaluation->True],
@@ -2617,7 +2626,7 @@ cntShFjadnc3sV9ISIwYx3pI/P+i/wGmDFKT
     275.89231287562427`, $CellContext`sphereRange = 
     CompiledFunction[{10, 10.1, 5468}, {
        Blank[Real]}, {{3, 0, 0}, {3, 0, 
-      2}}, {{0.1433762377044107, {3, 0, 1}}, {0.01, {3, 0, 3}}, {
+      2}}, {{275.89231287562427`, {3, 0, 1}}, {0.01, {3, 0, 3}}, {
        7., {3, 0, 4}}}, {1, 0, 6, 0, 0}, {{46, 
         Function[{$CellContext`radius}, $CellContext`maxRadius], 3, 0, 0, 3, 
         0, 2}, {16, 2, 3, 2}, {27, 3, 4, 0, 2, 0}, {2, 0, 6}, {46, 
@@ -3254,7 +3263,11 @@ CtO+W+eeJDS18EbxTIapXbL9O4pM/QvouEMO
    3.671453628135332*^9, 3.6714536954801846`*^9, 3.6714537483712096`*^9, {
    3.671454070483633*^9, 3.6714540940939837`*^9}, 3.671454224432439*^9, {
    3.6714542639797006`*^9, 3.6714542737552595`*^9}, 3.6714543298074656`*^9, 
-   3.671454370130772*^9, {3.6714544308552456`*^9, 3.6714544589418516`*^9}}]
+   3.671454370130772*^9, {3.6714544308552456`*^9, 3.6714544589418516`*^9}, 
+   3.6714678155327845`*^9, {3.6714682535108356`*^9, 3.6714682979233756`*^9}, {
+   3.671468605990996*^9, 3.6714686149175067`*^9}, 3.6714686613681636`*^9, 
+   3.6714687038705945`*^9, {3.671468770858426*^9, 3.6714687984770055`*^9}, 
+   3.6714688626266747`*^9}]
 }, Open  ]]
 }, Open  ]],
 
@@ -3657,6 +3670,18 @@ stop value 1.\>\""}], ";", "\[IndentingNewLine]",
              "]"}]}], "]"}], ",", "First"}], "]"}], ",", 
         RowBox[{"InterpolationOrder", "\[Rule]", "1"}]}], "]"}]}], ";", 
      "\[IndentingNewLine]", 
+     RowBox[{"maxTime", "=", 
+      RowBox[{"Switch", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"data", "[", "\"\<Mass\>\"", "]"}], "[", 
+         RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", "1", ",", 
+        RowBox[{"(", 
+         RowBox[{"maxAge", "+=", 
+          RowBox[{"(", 
+           RowBox[{"maxAge", "*", "0.000003"}], ")"}]}], ")"}], ",", 
+        "\[IndentingNewLine]", "_", ",", "maxAge"}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
      RowBox[{"(*", 
       RowBox[{
        RowBox[{
@@ -3745,7 +3770,11 @@ stop value 1.\>\""}], ";", "\[IndentingNewLine]",
    3.6712829273317175`*^9}, {3.67128331506553*^9, 3.671283318455535*^9}, 
    3.671285839298364*^9, {3.6713674744325356`*^9, 3.6713675129325895`*^9}, {
    3.6713713902722363`*^9, 3.6713714065122595`*^9}, {3.6714198139239607`*^9, 
-   3.671419833873989*^9}, {3.671450456561797*^9, 3.6714504823802733`*^9}}],
+   3.671419833873989*^9}, {3.671450456561797*^9, 3.6714504823802733`*^9}, {
+   3.6714680866692924`*^9, 3.671468245520378*^9}, {3.6714683236368465`*^9, 
+   3.6714683274690657`*^9}, {3.6714683700925035`*^9, 3.671468419071305*^9}, {
+   3.6714684892643194`*^9, 3.6714685815045958`*^9}, {3.671468669734642*^9, 
+   3.6714686980182595`*^9}, {3.6714687600618086`*^9, 3.6714688509750085`*^9}}],
 
 Cell[BoxData[{
  RowBox[{
@@ -3837,18 +3866,25 @@ Cell[BoxData[
             RowBox[{
              RowBox[{"Graphics3D", "[", 
               RowBox[{
-               RowBox[{"{", 
+               RowBox[{"Which", "[", "\[IndentingNewLine]", 
                 RowBox[{
-                 RowBox[{"Hue", "[", 
-                  RowBox[{"colorFunction", "[", 
-                   RowBox[{"minRadius", ",", "maxRadius", ",", 
-                    RowBox[{"radiusFunction", "[", "age", "]"}]}], "]"}], 
-                  "]"}], ",", 
-                 RowBox[{"Sphere", "[", 
+                 RowBox[{
                   RowBox[{
-                   RowBox[{"{", 
-                    RowBox[{"0.", ",", "0.", ",", "0."}], "}"}], " ", ",", 
-                   "radius"}], "]"}]}], "}"}], ",", 
+                   RowBox[{"massFunction", "[", "1", "]"}], "\[Equal]", "1"}],
+                   "&&", 
+                  RowBox[{"age", ">", 
+                   RowBox[{"maxAge", "*", "0.999999"}]}]}], ",", 
+                 RowBox[{"planetaryNebula", "[", "age", "]"}], ",", 
+                 "\[IndentingNewLine]", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"massFunction", "[", "1", "]"}], "<", "1"}], "&&", 
+                  RowBox[{"age", ">", 
+                   RowBox[{"maxAge", "*", "0.75"}]}]}], " ", 
+                 RowBox[{"(*", 
+                  RowBox[{"NOT", " ", "REAL", " ", "VALUE"}], "*)"}], ",", 
+                 RowBox[{"simpleCollapse", "[", "age", "]"}]}], 
+                "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", ",", 
                RowBox[{"Background", "\[Rule]", "Black"}], ",", 
                RowBox[{"Boxed", "\[Rule]", "True"}], ",", 
                RowBox[{"AxesStyle", "\[Rule]", "White"}], ",", 
@@ -4391,7 +4427,11 @@ Cell[BoxData[
    3.671454038564808*^9, 3.6714540528996277`*^9}, {3.6714540867975664`*^9, 
    3.6714540874946065`*^9}, {3.671454219091133*^9, 3.6714542601794834`*^9}, 
    3.6714543128464956`*^9, {3.671454353507821*^9, 3.671454359832183*^9}, {
-   3.6714544107540956`*^9, 3.6714544263729887`*^9}, 3.671454477000885*^9}]
+   3.6714544107540956`*^9, 3.6714544263729887`*^9}, 3.671454477000885*^9, {
+   3.6714693364867783`*^9, 3.6714693405880127`*^9}, {3.6714694421618223`*^9, 
+   3.671469449968269*^9}, {3.6714694855143023`*^9, 3.671469495060848*^9}, {
+   3.671469529101795*^9, 3.6714696699598513`*^9}, {3.6714697673234205`*^9, 
+   3.67146994809876*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -4603,7 +4643,7 @@ Cell[BoxData[
 
 Cell[CellGroupData[{
 
-Cell[TextData[StyleBox["Plot Scaling Function (SphereRange and yHRDRange):",
+Cell[TextData[StyleBox["SphereRange:",
  FontFamily->"Times New Roman",
  FontSize->16,
  FontWeight->"Bold",
@@ -4611,7 +4651,7 @@ Cell[TextData[StyleBox["Plot Scaling Function (SphereRange and yHRDRange):",
  CellChangeTimes->{{3.6695110152244797`*^9, 3.6695110219661794`*^9}, {
    3.6705114859285517`*^9, 3.67051149050111*^9}, {3.671020930167638*^9, 
    3.6710209511776676`*^9}, {3.671028263723009*^9, 3.6710282863655415`*^9}, 
-   3.671448376723837*^9}],
+   3.671448376723837*^9, {3.671468997538391*^9, 3.671469002782691*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -4663,7 +4703,7 @@ Cell[BoxData[
    3.6712099958986607`*^9, 3.671209997835664*^9}, 3.671210043973754*^9, {
    3.671210087008828*^9, 3.671210105259859*^9}, 3.671210158356947*^9, {
    3.6714484197482977`*^9, 3.671448431175951*^9}}]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -4838,7 +4878,56 @@ Cell[BoxData[
    3.671419570373618*^9, 3.6714195897436457`*^9}, {3.6714196258336964`*^9, 
    3.6714196281636996`*^9}, {3.6714196834787774`*^9, 3.671419734533849*^9}, {
    3.67141977784391*^9, 3.6714197848639197`*^9}}]
-}, Closed]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Conditional Functions (StandardSphere, \
+SimpleCollapse, and PlanetaryNebula):",
+ FontFamily->"Times New Roman",
+ FontSize->16,
+ FontWeight->"Bold",
+ FontColor->RGBColor[0., 0., 0.]]], "Section",
+ CellChangeTimes->{{3.6695110152244797`*^9, 3.6695110219661794`*^9}, {
+   3.6705114859285517`*^9, 3.67051149050111*^9}, {3.671020930167638*^9, 
+   3.6710209511776676`*^9}, {3.671028263723009*^9, 3.6710282863655415`*^9}, 
+   3.671448376723837*^9, {3.671468997538391*^9, 3.671469084338356*^9}, {
+   3.671469252024947*^9, 3.6714692686188965`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"standardSphere", "[", "age_", "]"}], ":=", "\[IndentingNewLine]", 
+  RowBox[{"Block", "[", 
+   RowBox[{
+    RowBox[{"{", "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"Return", "[", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Hue", "[", 
+        RowBox[{"colorFunction", "[", 
+         RowBox[{"minRadius", ",", "maxRadius", ",", 
+          RowBox[{"radiusFunction", "[", "age", "]"}]}], "]"}], "]"}], ",", 
+       RowBox[{"Sphere", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0.", ",", "0.", ",", "0."}], "}"}], " ", ",", 
+         RowBox[{"radiusFunction", "[", "age", "]"}]}], "]"}]}], "}"}], 
+     "]"}]}], "\[IndentingNewLine]", "]"}]}]], "Input",
+ CellChangeTimes->{{3.671469271324051*^9, 3.671469297912572*^9}, {
+  3.6714693452722807`*^9, 3.6714693751609898`*^9}, {3.671469413636191*^9, 
+  3.6714694142252245`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"simpleCollapse", "[", "age_", "]"}], ":=", "\[IndentingNewLine]", 
+  RowBox[{"Block", "[", 
+   RowBox[{
+    RowBox[{"{", "}"}], ",", "\[IndentingNewLine]", "Return"}], 
+   "\[IndentingNewLine]", "]"}]}]], "Input",
+ CellChangeTimes->{{3.6714690888896165`*^9, 3.6714691025393972`*^9}, {
+  3.671469148290014*^9, 3.6714691637678995`*^9}, {3.6714692083294477`*^9, 
+  3.671469229962685*^9}}]
+}, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -6603,56 +6692,61 @@ Cell[580, 22, 607, 17, 96, "Title"],
 Cell[CellGroupData[{
 Cell[1212, 43, 267, 6, 38, "Chapter"],
 Cell[CellGroupData[{
-Cell[1504, 53, 5595, 75, 26, "Input"],
-Cell[7102, 130, 187354, 3126, 642, "Output"]
+Cell[1504, 53, 5724, 77, 26, "Input"],
+Cell[7231, 132, 188147, 3137, 609, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[194505, 3262, 292, 6, 38, "Chapter"],
+Cell[195427, 3275, 292, 6, 38, "Chapter"],
 Cell[CellGroupData[{
-Cell[194822, 3272, 371, 8, 43, "Section"],
-Cell[195196, 3282, 21988, 465, 1287, "Input",
+Cell[195744, 3285, 371, 8, 43, "Section"],
+Cell[196118, 3295, 22777, 481, 1341, "Input",
  InitializationCell->True],
-Cell[217187, 3749, 634, 15, 45, "Input",
+Cell[218898, 3778, 634, 15, 45, "Input",
  InitializationCell->True],
-Cell[217824, 3766, 38541, 627, 1309, "Input",
+Cell[219535, 3795, 39197, 638, 1363, "Input",
  InitializationCell->True]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[256402, 4398, 369, 8, 43, "Section"],
-Cell[256774, 4408, 6717, 138, 167, "Input",
+Cell[258769, 4438, 369, 8, 43, "Section"],
+Cell[259141, 4448, 6717, 138, 141, "Input",
  InitializationCell->True],
-Cell[263494, 4548, 2611, 52, 71, "Input",
+Cell[265861, 4588, 2611, 52, 60, "Input",
  InitializationCell->True]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[266142, 4605, 438, 8, 32, "Section"],
-Cell[266583, 4615, 2665, 49, 218, "Input",
+Cell[268509, 4645, 446, 8, 32, "Section"],
+Cell[268958, 4655, 2665, 49, 218, "Input",
  InitializationCell->True]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[271660, 4709, 626, 11, 32, "Section"],
+Cell[272289, 4722, 4022, 87, 90, "Input",
+ InitializationCell->True]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[276348, 4814, 480, 9, 32, "Section"],
+Cell[276831, 4825, 2494, 54, 76, "Input",
+ InitializationCell->True]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[279362, 4884, 564, 10, 32, "Section"],
+Cell[279929, 4896, 887, 21, 81, "Input"],
+Cell[280819, 4919, 420, 9, 81, "Input"]
+}, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[269285, 4669, 626, 11, 43, "Section"],
-Cell[269914, 4682, 4022, 87, 106, "Input",
- InitializationCell->True]
+Cell[281288, 4934, 374, 7, 38, "Chapter"],
+Cell[CellGroupData[{
+Cell[281687, 4945, 233, 5, 43, "Section"],
+Cell[281923, 4952, 5084, 191, 45, "Text"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[273973, 4774, 480, 9, 32, "Section"],
-Cell[274456, 4785, 2494, 54, 90, "Input",
- InitializationCell->True]
-}, Closed]]
-}, Open  ]],
+Cell[287044, 5148, 321, 7, 32, "Section"],
+Cell[287368, 5157, 305, 6, 26, "Text"],
 Cell[CellGroupData[{
-Cell[276999, 4845, 374, 7, 38, "Chapter"],
-Cell[CellGroupData[{
-Cell[277398, 4856, 233, 5, 43, "Section"],
-Cell[277634, 4863, 5084, 191, 54, "Text"]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[282755, 5059, 321, 7, 32, "Section"],
-Cell[283079, 5068, 305, 6, 26, "Text"],
-Cell[CellGroupData[{
-Cell[283409, 5078, 15694, 360, 118, "Input"],
-Cell[299106, 5440, 68278, 1136, 1274, 5557, 107, "CachedBoxData", "BoxData", \
+Cell[287698, 5167, 15694, 360, 100, "Input"],
+Cell[303395, 5529, 68278, 1136, 1274, 5557, 107, "CachedBoxData", "BoxData", \
 "Output"]
 }, {2}]]
 }, Open  ]]
