@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    125824,       2669]
-NotebookOptionsPosition[    123798,       2594]
-NotebookOutlinePosition[    124200,       2611]
-CellTagsIndexPosition[    124157,       2608]
+NotebookDataLength[    126191,       2679]
+NotebookOptionsPosition[    124166,       2604]
+NotebookOutlinePosition[    124568,       2621]
+CellTagsIndexPosition[    124525,       2618]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1762,19 +1762,22 @@ Cell[BoxData[
        FontWeight->"Plain"], 
       StyleBox["\[IndentingNewLine]",
        FontWeight->"Plain"], 
-      StyleBox[
-       RowBox[{"{", 
-        RowBox[{
-         RowBox[{"Hue", "[", 
-          RowBox[{"colorFunction", "[", 
-           RowBox[{"minRadius", ",", "maxRadius", ",", 
-            RowBox[{"radiusFunction", "[", "age", "]"}]}], "]"}], "]"}], ",", 
-         RowBox[{"Sphere", "[", 
-          RowBox[{
-           RowBox[{"{", 
-            RowBox[{"0.", ",", "0.", ",", "0."}], "}"}], " ", ",", 
-           RowBox[{"radiusFunction", "[", "age", "]"}]}], "]"}]}], "}"}],
-       FontWeight->"Plain"], 
+      RowBox[{"Return", "[", 
+       StyleBox[
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Hue", "[", 
+           RowBox[{"colorFunction", "[", 
+            RowBox[{"minRadius", ",", "maxRadius", ",", 
+             RowBox[{"radiusFunction", "[", "age", "]"}]}], "]"}], "]"}], ",", 
+          RowBox[{"Sphere", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"0.", ",", "0.", ",", "0."}], "}"}], " ", ",", 
+            RowBox[{"radiusFunction", "[", "age", "]"}]}], "]"}]}], "}"}],
+        FontWeight->"Plain"], 
+       StyleBox["]",
+        FontWeight->"Plain"]}], 
       StyleBox[",",
        FontWeight->"Plain"], 
       StyleBox["\[IndentingNewLine]",
@@ -1803,36 +1806,41 @@ Cell[BoxData[
          RowBox[{"age", ">", 
           RowBox[{"0.99", "*", "maxAge"}]}]}], ")"}]}], ",", 
       "\[IndentingNewLine]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"Lighter", "[", 
+      RowBox[{"Return", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Lighter", "[", 
+          RowBox[{
+           RowBox[{"Hue", "[", 
+            RowBox[{"colorFunction", "[", 
+             RowBox[{"minRadius", ",", "maxRadius", ",", 
+              RowBox[{"radiusFunction", "[", "age", "]"}]}], "]"}], "]"}], 
+           ",", 
+           FractionBox[
+            RowBox[{"age", "-", "startReal"}], 
+            RowBox[{"stopReal", "-", "startReal"}]]}], "]"}], ",", 
+         RowBox[{"Sphere", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0.", ",", "0.", ",", "0."}], "}"}], " ", ",", 
+           RowBox[{"radiusFunction", "[", "age", "]"}]}], "]"}]}], "}"}], 
+       "]"}], ",", "\[IndentingNewLine]", "True", ",", "\[IndentingNewLine]", 
+      RowBox[{"Return", "[", 
+       StyleBox[
+        RowBox[{"{", 
          RowBox[{
           RowBox[{"Hue", "[", 
            RowBox[{"colorFunction", "[", 
             RowBox[{"minRadius", ",", "maxRadius", ",", 
              RowBox[{"radiusFunction", "[", "age", "]"}]}], "]"}], "]"}], ",", 
-          FractionBox[
-           RowBox[{"age", "-", "startReal"}], 
-           RowBox[{"stopReal", "-", "startReal"}]]}], "]"}], ",", 
-        RowBox[{"Sphere", "[", 
-         RowBox[{
-          RowBox[{"{", 
-           RowBox[{"0.", ",", "0.", ",", "0."}], "}"}], " ", ",", 
-          RowBox[{"radiusFunction", "[", "age", "]"}]}], "]"}]}], "}"}], ",", 
-      "\[IndentingNewLine]", "True", ",", "\[IndentingNewLine]", 
-      StyleBox[
-       RowBox[{"{", 
-        RowBox[{
-         RowBox[{"Hue", "[", 
-          RowBox[{"colorFunction", "[", 
-           RowBox[{"minRadius", ",", "maxRadius", ",", 
-            RowBox[{"radiusFunction", "[", "age", "]"}]}], "]"}], "]"}], ",", 
-         RowBox[{"Sphere", "[", 
-          RowBox[{
-           RowBox[{"{", 
-            RowBox[{"0.", ",", "0.", ",", "0."}], "}"}], " ", ",", 
-           RowBox[{"radiusFunction", "[", "age", "]"}]}], "]"}]}], "}"}],
-       FontWeight->"Plain"]}], 
+          RowBox[{"Sphere", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"0.", ",", "0.", ",", "0."}], "}"}], " ", ",", 
+            RowBox[{"radiusFunction", "[", "age", "]"}]}], "]"}]}], "}"}],
+        FontWeight->"Plain"], 
+       StyleBox["]",
+        FontWeight->"Plain"]}]}], 
      StyleBox["\[IndentingNewLine]",
       FontWeight->"Plain"], 
      StyleBox["]",
@@ -1868,7 +1876,9 @@ Cell[BoxData[
    3.671837407562333*^9}, {3.671837608605832*^9, 3.6718376804719424`*^9}, {
    3.6718377293737392`*^9, 3.671837747929801*^9}, 3.671837852394776*^9, {
    3.67183800387844*^9, 3.671838025433673*^9}, {3.671838178901451*^9, 
-   3.6718381994296255`*^9}, {3.6718382358727093`*^9, 3.6718382366797557`*^9}}]
+   3.6718381994296255`*^9}, {3.6718382358727093`*^9, 
+   3.6718382366797557`*^9}, {3.6718455254825716`*^9, 
+   3.6718455516726084`*^9}, {3.6718455896526623`*^9, 3.6718456036026816`*^9}}]
 }, Open  ]]
 }, Open  ]],
 
@@ -2629,19 +2639,19 @@ Cell[26202, 582, 40123, 650, 1343, "Input",
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[66362, 1237, 369, 8, 43, "Section"],
-Cell[66734, 1247, 6747, 139, 273, "Input",
+Cell[66734, 1247, 6747, 139, 232, "Input",
  InitializationCell->True],
-Cell[73484, 1388, 2611, 52, 117, "Input",
+Cell[73484, 1388, 2611, 52, 99, "Input",
  InitializationCell->True]
 }, Closed]],
 Cell[CellGroupData[{
 Cell[76132, 1445, 446, 8, 32, "Section"],
-Cell[76581, 1455, 3081, 56, 300, "Input",
+Cell[76581, 1455, 3081, 56, 255, "Input",
  InitializationCell->True]
 }, Closed]],
 Cell[CellGroupData[{
 Cell[79699, 1516, 626, 11, 32, "Section"],
-Cell[80328, 1529, 4189, 91, 148, "Input",
+Cell[80328, 1529, 4189, 91, 125, "Input",
  InitializationCell->True]
 }, Closed]],
 Cell[CellGroupData[{
@@ -2651,22 +2661,22 @@ Cell[85037, 1636, 3729, 67, 126, "Input",
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[88803, 1708, 549, 10, 43, "Section"],
-Cell[89355, 1720, 5993, 150, 241, "Input",
+Cell[89355, 1720, 6361, 160, 241, "Input",
  InitializationCell->True]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[95397, 1876, 374, 7, 38, "Chapter"],
+Cell[95765, 1886, 374, 7, 38, "Chapter"],
 Cell[CellGroupData[{
-Cell[95796, 1887, 233, 5, 36, "Section"],
-Cell[96032, 1894, 5084, 191, 15, "Text"]
+Cell[96164, 1897, 233, 5, 30, "Section"],
+Cell[96400, 1904, 5084, 191, 12, "Text"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[101153, 2090, 321, 7, 27, "Section"],
-Cell[101477, 2099, 305, 6, 12, "Text"],
+Cell[101521, 2100, 321, 7, 22, "Section"],
+Cell[101845, 2109, 305, 6, 10, "Text"],
 Cell[CellGroupData[{
-Cell[101807, 2109, 15694, 360, 351, "Input"],
-Cell[117504, 2471, 6242, 117, 667, "Output"]
+Cell[102175, 2119, 15694, 360, 298, "Input"],
+Cell[117872, 2481, 6242, 117, 566, "Output"]
 }, Open  ]]
 }, Closed]]
 }, Closed]]
