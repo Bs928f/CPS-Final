@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    208440,       4154]
-NotebookOptionsPosition[    206174,       4072]
-NotebookOutlinePosition[    206576,       4089]
-CellTagsIndexPosition[    206533,       4086]
+NotebookDataLength[    219884,       4453]
+NotebookOptionsPosition[    216806,       4343]
+NotebookOutlinePosition[    217208,       4360]
+CellTagsIndexPosition[    217165,       4357]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -2325,6 +2325,277 @@ Cell[BoxData[
   3.6719051135083075`*^9}, {3.6719056298218384`*^9, 3.6719056504820204`*^9}, {
   3.6719060678088903`*^9, 3.671906068459927*^9}, {3.671906152710746*^9, 
   3.6719061568259816`*^9}, {3.67190623127724*^9, 3.6719063342291284`*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["UI:",
+ FontFamily->"Times New Roman",
+ FontSize->16,
+ FontWeight->"Bold",
+ FontColor->RGBColor[0., 0., 0.]]], "Section",
+ CellChangeTimes->{{3.671927065799647*^9, 3.671927066679697*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Home Screen:",
+ FontFamily->"Times New Roman",
+ FontSize->16,
+ FontColor->RGBColor[0., 0., 0.]]], "Subsection",
+ CellChangeTimes->{{3.671927379407584*^9, 3.6719273909092417`*^9}, 
+   3.671928521135887*^9}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Main Code:",
+ FontFamily->"Times New Roman",
+ FontSize->14,
+ FontWeight->"Bold",
+ FontColor->RGBColor[0., 0., 0.]]], "Subsubsection",
+ CellChangeTimes->{{3.671928560727152*^9, 3.6719285628292723`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"homeScreen", "[", "]"}], ":=", "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+   "This", " ", "function", " ", "produces", " ", "the", " ", "homescreen", 
+    " ", "and", " ", "will", " ", "take", " ", "the", " ", "value", " ", 
+    "inputed", " ", "by", " ", "the", " ", "button", " ", "pressed", " ", 
+    "to", " ", "open", " ", "the", " ", "bounds", " ", "palette"}], "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", "choice", "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"CreatePalette", "[", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Column", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"TextCell", "[", 
+           RowBox[{
+           "\"\<Stellar Evolution Simulator\>\"", ",", "\"\<Title\>\"", ",", 
+            RowBox[{"FontSize", "\[Rule]", "24"}]}], "]"}], ",", 
+          RowBox[{"TextCell", "[", 
+           RowBox[{
+           "\"\<Please choose the desired starting mass of the star (in MSun)\
+\>\"", ",", "\"\<Text\>\"", ",", 
+            RowBox[{"FontSize", "\[Rule]", "18"}]}], "]"}]}], "}"}], "]"}], 
+       ",", "\[IndentingNewLine]", 
+       RowBox[{"ButtonBar", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"0.1", "\[RuleDelayed]", 
+            RowBox[{"action", "[", 
+             RowBox[{"0.1", ",", "choice"}], "]"}]}], ",", 
+           RowBox[{"0.5", "\[RuleDelayed]", 
+            RowBox[{"action", "[", 
+             RowBox[{"0.5", ",", "choice"}], "]"}]}], ",", 
+           RowBox[{"1", "\[RuleDelayed]", 
+            RowBox[{"action", "[", 
+             RowBox[{"1", ",", "choice"}], "]"}]}], ",", 
+           RowBox[{"3", "\[RuleDelayed]", 
+            RowBox[{"action", "[", 
+             RowBox[{"3", ",", "choice"}], "]"}]}], ",", 
+           RowBox[{"5", "\[RuleDelayed]", 
+            RowBox[{"action", "[", 
+             RowBox[{"5", ",", "choice"}], "]"}]}], ",", 
+           RowBox[{"7", "\[RuleDelayed]", 
+            RowBox[{"action", "[", 
+             RowBox[{"7", ",", "choice"}], "]"}]}], ",", 
+           RowBox[{"9", "\[RuleDelayed]", 
+            RowBox[{"action", "[", 
+             RowBox[{"9", ",", "choice"}], "]"}]}], ",", 
+           RowBox[{"11", "\[RuleDelayed]", 
+            RowBox[{"action", "[", 
+             RowBox[{"11", ",", "choice"}], "]"}]}], ",", 
+           RowBox[{"13", "\[RuleDelayed]", 
+            RowBox[{"action", "[", 
+             RowBox[{"13", ",", "choice"}], "]"}]}], ",", 
+           RowBox[{"15", "\[RuleDelayed]", 
+            RowBox[{"action", "[", 
+             RowBox[{"15", ",", "choice"}], "]"}]}], ",", 
+           RowBox[{"20", "\[RuleDelayed]", 
+            RowBox[{"action", "[", 
+             RowBox[{"20", ",", "choice"}], "]"}]}], ",", 
+           RowBox[{"30", "\[RuleDelayed]", 
+            RowBox[{"action", "[", 
+             RowBox[{"30", ",", "choice"}], "]"}]}], ",", 
+           RowBox[{"40", "\[RuleDelayed]", 
+            RowBox[{"action", "[", 
+             RowBox[{"40", ",", "choice"}], "]"}]}], ",", 
+           RowBox[{"50", "\[RuleDelayed]", 
+            RowBox[{"action", "[", 
+             RowBox[{"50", ",", "choice"}], "]"}]}], ",", 
+           RowBox[{"75", "\[RuleDelayed]", 
+            RowBox[{"action", "[", 
+             RowBox[{"75", ",", "choice"}], "]"}]}], ",", 
+           RowBox[{"100", "\[RuleDelayed]", 
+            RowBox[{"action", "[", 
+             RowBox[{"100", ",", "choice"}], "]"}]}]}], "}"}], ",", 
+         RowBox[{"ImageSize", "\[Rule]", 
+          RowBox[{"{", 
+           RowBox[{"50", ",", "50"}], "}"}]}]}], "]"}]}], "}"}], "]"}]}], 
+   "\[IndentingNewLine]", "]"}]}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.6719273983966703`*^9, 3.671927484882617*^9}, {
+  3.6719276726323557`*^9, 3.6719277010059786`*^9}, {3.6719279170073333`*^9, 
+  3.6719279538084383`*^9}, {3.6719280116007433`*^9, 3.6719281655985518`*^9}, {
+  3.6719282196486435`*^9, 3.671928222158787*^9}, {3.6719284578142653`*^9, 
+  3.671928488416016*^9}, {3.6719291083694754`*^9, 3.6719291738502207`*^9}, {
+  3.671929228998375*^9, 3.671929231778534*^9}, {3.6719318587557883`*^9, 
+  3.6719318624730005`*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Helper Function:",
+ FontFamily->"Times New Roman",
+ FontSize->14,
+ FontWeight->"Bold",
+ FontColor->RGBColor[0., 0., 0.]]], "Subsubsection",
+ CellChangeTimes->{{3.6719285844925113`*^9, 3.6719285908978777`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"action", "[", 
+    RowBox[{"num_", ",", "choice_"}], "]"}], ":=", 
+   RowBox[{"Return", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"choice", "=", "num"}], ",", 
+      RowBox[{"NotebookClose", "[", "]"}], ",", 
+      RowBox[{"bounds", "[", "num", "]"}]}], "}"}], "]"}]}], ";"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.6719278371367645`*^9, 3.6719279108559813`*^9}, {
+  3.6719282391337576`*^9, 3.6719282414538903`*^9}, {3.6719286393076468`*^9, 
+  3.6719286434218817`*^9}}]
+}, Closed]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Bounds:",
+ FontFamily->"Times New Roman",
+ FontSize->16,
+ FontColor->RGBColor[0., 0., 0.]]], "Subsection",
+ CellChangeTimes->{{3.671928624718812*^9, 3.6719286262709007`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"bounds", "[", "num_", "]"}], ":=", "\[IndentingNewLine]", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"min", "=", "0"}], ",", 
+      RowBox[{"max", "=", "1"}], ",", "ena1", ",", "ena2"}], "}"}], ",", 
+    RowBox[{"(*", 
+     RowBox[{
+     "min", " ", "and", " ", "max", " ", "will", " ", "store", " ", "the", 
+      " ", "lower", " ", "and", " ", "upper", " ", "bounds", " ", "while", 
+      " ", "ena1", " ", "and", " ", "ena2", " ", "will", " ", "store", " ", 
+      "whether", " ", "or", " ", "not", " ", "that", " ", "particular", " ", 
+      "input", " ", "field", " ", "will", " ", "be", " ", "enabled"}], "*)"}],
+     "\[IndentingNewLine]", 
+    RowBox[{"CreatePalette", "[", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"TextCell", "[", 
+        RowBox[{
+        "\"\<If you would like to enter upper and lower bounds for the star, \
+enter them while the checkboxes are checked.\>\"", ",", "\"\<Text\>\"", ",", 
+         RowBox[{"FontSize", "\[Rule]", "18"}]}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Row", "[", 
+        RowBox[{"{", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"Column", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"TextCell", "[", 
+              RowBox[{"\"\<Lower Bound\>\"", ",", "\"\<Text\>\"", ",", 
+               RowBox[{"FontSize", "\[Rule]", "12"}]}], "]"}], ",", 
+             RowBox[{"Checkbox", "[", 
+              RowBox[{"Dynamic", "[", "ena1", "]"}], "]"}], ",", 
+             RowBox[{"InputField", "[", 
+              RowBox[{
+               RowBox[{"Dynamic", "[", "min", "]"}], ",", "Number", ",", 
+               RowBox[{"Enabled", "\[Rule]", 
+                RowBox[{"Dynamic", "[", "ena1", "]"}]}]}], "]"}]}], "}"}], 
+           "]"}], ",", "\[IndentingNewLine]", 
+          RowBox[{"Column", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"TextCell", "[", 
+              RowBox[{"\"\<Upper Bound\>\"", ",", "\"\<Text\>\"", ",", 
+               RowBox[{"FontSize", "\[Rule]", "12"}]}], "]"}], ",", 
+             RowBox[{"Checkbox", "[", 
+              RowBox[{"Dynamic", "[", "ena2", "]"}], "]"}], ",", 
+             RowBox[{"InputField", "[", 
+              RowBox[{
+               RowBox[{"Dynamic", "[", "max", "]"}], ",", "Number", ",", 
+               RowBox[{"Enabled", "\[Rule]", 
+                RowBox[{"Dynamic", "[", "ena2", "]"}]}]}], "]"}]}], "}"}], 
+           "]"}]}], "\[IndentingNewLine]", "}"}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Button", "[", 
+        RowBox[{"\"\<Create My Star!\>\"", ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"NotebookClose", "[", "]"}], ",", 
+           RowBox[{"stellarEvolutionSimulator", "[", 
+            RowBox[{"num", ",", "min", ",", "max"}], "]"}]}], "}"}]}], 
+        "]"}]}], 
+      RowBox[{"(*", 
+       RowBox[{"initialize", " ", "a", " ", "star"}], "*)"}], 
+      "\[IndentingNewLine]", "}"}], "]"}]}], "\[IndentingNewLine]", 
+   "]"}]}]], "Input",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGCQAmIQvVf33oul0a8doy/EvgHRRvw+n0G0ScJMMF2y6MxP
+EF35RodzGZD2O/1SAkTvMn8iB6KDr3/TBtEhe++bgGgNeU47ED1pSXYwiJaM
+Oh4Jomv+rooH0af8+NNAdFZ5eBaIDqpbUQ6izz6yqQDRDqVC9WD9izPAtK33
+gg4Q3Z1W1AWifxy/MxFEc3moTwLRcfIPZ4LonkPz5oHoCMdZG0D0c8fVW0H0
+m93qMsuBNMcPYXkQXTZhoyaIXjF5sTaI3mW5yRBEV75WMALRAS/7zUF02hYj
+CxAtpjffAURvmHXJCURf62d3B9Gfvvl7gOgJVx8HgOgwV58gEH3E1bIVRIvw
+Hu0Ei3dunADm124G02myvDNB9NdCq6UgOsHp/ToQzSSath5EMx5bvBVEF2lY
+bgPRABnF1jE=
+  "]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"bounds", "[", "13", "]"}]], "Input",
+ CellChangeTimes->{{3.671929689532716*^9, 3.671929694288988*^9}, 
+   3.671929878482523*^9, {3.67193181297817*^9, 3.6719318135312014`*^9}}],
+
+Cell[BoxData[
+ TemplateBox[{FrontEndObject[
+    LinkObject["ui2ce_shm", 3, 1]],119,
+   "FrontEndObject[LinkObject[\"ui2ce_shm\", 3, 1]]","119","\"Untitled-35\""},
+  "NotebookObjectUnsaved"]], "Output",
+ CellChangeTimes->{3.671931634677972*^9, 3.6719316879940214`*^9, 
+  3.6719317443102427`*^9, 3.671931782345418*^9, 3.671931814449254*^9, 
+  3.671932213996107*^9, 3.671932298427936*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"homeScreen", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.67193183833862*^9, 3.6719318451670113`*^9}}],
+
+Cell[BoxData[
+ TemplateBox[{FrontEndObject[
+    LinkObject["ui2ce_shm", 3, 1]],107,
+   "FrontEndObject[LinkObject[\"ui2ce_shm\", 3, 1]]","107","\"Untitled-31\""},
+  "NotebookObjectUnsaved"]], "Output",
+ CellChangeTimes->{{3.6719318471671257`*^9, 3.6719318695474052`*^9}}]
+}, Open  ]]
+}, Closed]]
 }, Closed]]
 }, Open  ]],
 
@@ -4098,59 +4369,87 @@ Cell[CellGroupData[{
 Cell[3596, 85, 292, 6, 42, "Chapter"],
 Cell[CellGroupData[{
 Cell[3913, 95, 371, 8, 46, "Section"],
-Cell[4287, 105, 22827, 479, 1431, "Input",
+Cell[4287, 105, 22827, 479, 1359, "Input",
  InitializationCell->True],
-Cell[27117, 586, 634, 15, 51, "Input",
+Cell[27117, 586, 634, 15, 48, "Input",
  InitializationCell->True],
-Cell[27754, 603, 43411, 713, 1537, "Input",
+Cell[27754, 603, 43411, 713, 1460, "Input",
  InitializationCell->True]
 }, Closed]],
 Cell[CellGroupData[{
 Cell[71202, 1321, 369, 8, 33, "Section"],
-Cell[71574, 1331, 6747, 139, 305, "Input",
+Cell[71574, 1331, 6747, 139, 289, "Input",
  InitializationCell->True],
-Cell[78324, 1472, 2611, 52, 131, "Input",
+Cell[78324, 1472, 2611, 52, 124, "Input",
  InitializationCell->True]
 }, Closed]],
 Cell[CellGroupData[{
 Cell[80972, 1529, 446, 8, 33, "Section"],
-Cell[81421, 1539, 2927, 53, 299, "Input",
+Cell[81421, 1539, 2927, 53, 284, "Input",
  InitializationCell->True]
 }, Closed]],
 Cell[CellGroupData[{
 Cell[84385, 1597, 626, 11, 33, "Section"],
-Cell[85014, 1610, 3833, 80, 211, "Input",
+Cell[85014, 1610, 3833, 80, 200, "Input",
  InitializationCell->True]
 }, Closed]],
 Cell[CellGroupData[{
 Cell[88884, 1695, 480, 9, 33, "Section"],
-Cell[89367, 1706, 3729, 67, 142, "Input",
+Cell[89367, 1706, 3729, 67, 134, "Input",
  InitializationCell->True]
 }, Closed]],
 Cell[CellGroupData[{
 Cell[93133, 1778, 549, 10, 33, "Section"],
-Cell[93685, 1790, 13653, 328, 590, "Input",
+Cell[93685, 1790, 13653, 328, 560, "Input",
  InitializationCell->True]
 }, Closed]],
 Cell[CellGroupData[{
 Cell[107375, 2123, 619, 10, 33, "Section"],
-Cell[107997, 2135, 1253, 23, 48, "Text"],
-Cell[109253, 2160, 6184, 166, 294, "Input",
+Cell[107997, 2135, 1253, 23, 45, "Text"],
+Cell[109253, 2160, 6184, 166, 279, "Input",
  InitializationCell->True]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[115474, 2331, 210, 5, 33, "Section"],
+Cell[CellGroupData[{
+Cell[115709, 2340, 229, 5, 70, "Subsection"],
+Cell[CellGroupData[{
+Cell[115963, 2349, 225, 5, 70, "Subsubsection"],
+Cell[116191, 2356, 4183, 92, 70, "Input",
+ InitializationCell->True]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[120411, 2453, 233, 5, 70, "Subsubsection"],
+Cell[120647, 2460, 546, 14, 70, "Input",
+ InitializationCell->True]
+}, Closed]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[121242, 2480, 198, 4, 70, "Subsection"],
+Cell[121443, 2486, 3554, 79, 70, "Input"],
+Cell[CellGroupData[{
+Cell[125022, 2569, 199, 3, 70, "Input"],
+Cell[125224, 2574, 385, 7, 70, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[125646, 2586, 125, 2, 70, "Input"],
+Cell[125774, 2590, 271, 5, 70, "Output"]
+}, Open  ]]
+}, Closed]]
 }, Closed]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[115486, 2332, 374, 7, 42, "Chapter"],
+Cell[126118, 2603, 374, 7, 42, "Chapter"],
 Cell[CellGroupData[{
-Cell[115885, 2343, 233, 5, 46, "Section"],
-Cell[116121, 2350, 5084, 191, 269, "Text"]
+Cell[126517, 2614, 233, 5, 46, "Section"],
+Cell[126753, 2621, 5084, 191, 255, "Text"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[121242, 2546, 321, 7, 33, "Section"],
-Cell[121566, 2555, 415, 7, 29, "Text"],
+Cell[131874, 2817, 321, 7, 33, "Section"],
+Cell[132198, 2826, 415, 7, 27, "Text"],
 Cell[CellGroupData[{
-Cell[122006, 2566, 15694, 360, 713, "Input"],
-Cell[137703, 2928, 68422, 1138, 1276, 5557, 107, "CachedBoxData", "BoxData", \
+Cell[132638, 2837, 15694, 360, 677, "Input"],
+Cell[148335, 3199, 68422, 1138, 1212, 5557, 107, "CachedBoxData", "BoxData", \
 "Output"]
 }, {2}]]
 }, Closed]]
